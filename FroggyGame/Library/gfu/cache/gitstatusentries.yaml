@@ -13,24 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-03-19T19:30:24.591-05:00
+  lastUpdatedAtString: 2020-03-19T19:32:09.610-05:00
   initializedAtString: 2020-03-19T19:09:28.107-05:00
   entries:
   - path: FroggyGame\Library\gfu\cache\branches.yaml
     fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -45,22 +33,16 @@ MonoBehaviour:
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\gfu\cache\gituser.yaml
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gituser.yaml
-    projectPath: Library\gfu\cache\gituser.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5
   - path: FroggyGame\Temp\UnityLockfile
     fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Temp\UnityTempFile-97437e40141c4784dbd253dfcad1e4e7
+    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Temp\UnityTempFile-97437e40141c4784dbd253dfcad1e4e7
+    projectPath: Temp\UnityTempFile-97437e40141c4784dbd253dfcad1e4e7
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
