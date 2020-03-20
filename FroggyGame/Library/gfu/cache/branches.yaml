@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-03-19T19:43:28.493-07:00
-  initializedAtString: 2020-03-19T19:10:51.862-07:00
-  localBranches: []
+  lastUpdatedAtString: 2020-03-19T20:36:42.778-07:00
+  initializedAtString: 2020-03-19T20:36:42.684-07:00
+  localBranches:
+  - name: master
+    tracking: origin/master
   remoteBranches:
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
     tracking: '[None]'
   remotes:
   - name: origin
@@ -28,17 +32,29 @@ MonoBehaviour:
     function: 0
     token: 
   localConfigBranches:
-    keys: []
-    values: []
+    keys:
+    - master
+    values:
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+      trackingBranch: master
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
       - HEAD
+      - master
     subKeyValues:
     - Values:
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+        trackingBranch: 
+      - name: master
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
