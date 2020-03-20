@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-03-19T20:37:27.764-07:00
+  lastUpdatedAtString: 2020-03-19T20:44:29.917-07:00
   initializedAtString: 2020-03-19T19:56:24.409-07:00
   entries:
-  - path: FroggyGame\Library\ArtifactDB
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
-    projectPath: Library\ArtifactDB
+  - path: FroggyGame\.gitignore
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.gitignore
+    projectPath: .gitignore
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
