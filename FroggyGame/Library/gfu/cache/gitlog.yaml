@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2020-03-19T19:24:25.982-05:00
+  initializedAtString: 2020-03-19T19:24:25.982-05:00
+  log:
+  - commitID: d7b3385ba5952a997d28d91880bfd54eb8b0a64e
+    mergeA: 
+    mergeB: 
+    authorName: hitesh M
+    authorEmail: 55771842+nindroz@users.noreply.github.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Initial commit
+    description: 
+    timeString: 2020-03-19T14:06:07.000-07:00
+    commitTimeString: 2020-03-19T14:06:07.000-07:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\.gitignore
+      projectPath: ..\.gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: README.md
+      fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\README.md
+      projectPath: ..\README.md
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
