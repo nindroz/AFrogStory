@@ -645,7 +645,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: dd6ffc8d-f76f-4778-9440-215e2577d888
   framebufferDepthMemorylessMode: 0
-  projectName: Froggy Game!
+  projectName: FroggyGame
   organizationId: alayna2198
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
