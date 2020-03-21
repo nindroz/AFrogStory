@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-03-21T12:59:24.111-07:00
   initializedAtString: 2020-03-21T12:59:24.111-07:00
   entries:
@@ -25,6 +26,80 @@ MonoBehaviour:
   - path: FroggyGame\Library\Artifacts\05\058d0b629fca70998aa0d0e4e204214e
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\Artifacts\05\058d0b629fca70998aa0d0e4e204214e
     projectPath: Library\Artifacts\05\058d0b629fca70998aa0d0e4e204214e
+=======
+  lastUpdatedAtString: 2020-03-20T20:47:25.041-07:00
+  initializedAtString: 2020-03-20T20:34:01.031-07:00
+  entries:
+  - path: .gitignore
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\.gitignore
+    projectPath: ..\.gitignore
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: .gitignore.txt
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\.gitignore.txt
+    projectPath: ..\.gitignore.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: FroggyGame\Assets\Prefabs\FrogCharacter.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\FrogCharacter.prefab
+    projectPath: Assets\Prefabs\FrogCharacter.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Prefabs\TestCube.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\TestCube.prefab
+    projectPath: Assets\Prefabs\TestCube.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\TestCube.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\TestCube.prefab.meta
+    projectPath: Assets\Prefabs\TestCube.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Scenes\TestScene.unity
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\TestScene.unity
+    projectPath: Assets\Scenes\TestScene.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Scripts\testCharMovementScript.cs
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\testCharMovementScript.cs
+    projectPath: Assets\Scripts\testCharMovementScript.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Sprites\floorlul.png.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\floorlul.png.meta
+    projectPath: Assets\Sprites\floorlul.png.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ArtifactDB
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\Artifacts\b2\b2e4f65c0e4fe6d26f2a8d7c34db11b6
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\Artifacts\b2\b2e4f65c0e4fe6d26f2a8d7c34db11b6
+    projectPath: Library\Artifacts\b2\b2e4f65c0e4fe6d26f2a8d7c34db11b6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: FroggyGame\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+>>>>>>> master
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -82,6 +157,7 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 3
     workTreeStatus: 3
+<<<<<<< HEAD
   - path: FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -313,11 +389,70 @@ MonoBehaviour:
   - path: FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+=======
+  - path: FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+>>>>>>> master
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\SourceAssetDB
-    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 3
@@ -325,6 +460,30 @@ MonoBehaviour:
   - path: FroggyGame\ProjectSettings\ProjectVersion.txt
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\ProjectVersion.txt
     projectPath: ProjectSettings\ProjectVersion.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\SpriteAtlasDatabase.asset
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SpriteAtlasDatabase.asset
+    projectPath: Library\SpriteAtlasDatabase.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\StateCache\Hierarchy\97ca3f-mainStage.json
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\StateCache\Hierarchy\97ca3f-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\97ca3f-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\StateCache\SceneView\dcbade-mainStage.json
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\StateCache\SceneView\dcbade-mainStage.json
+    projectPath: Library\StateCache\SceneView\dcbade-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\ProjectSettings\TagManager.asset
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\TagManager.asset
+    projectPath: ProjectSettings\TagManager.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
