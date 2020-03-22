@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ParallaxSystem.cs" />
+    <Compile Include="Assets\Scripts\TongueScript.cs" />
     <Compile Include="Assets\Scripts\testCharMovementScript.cs" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
       <HintPath>C:/Users/Arthur/Documents/virtualCodeDay2020TeamRibbit/FroggyGame/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>

@@ -8,6 +8,7 @@ public class testCharMovementScript : MonoBehaviour
     //Note - this movement script is mass independant
     //Singleton 
     public static testCharMovementScript charMoveScript;
+    public static BoxCollider2D charCollider;
     private void Awake()
     {
         charMoveScript = this;
@@ -15,7 +16,6 @@ public class testCharMovementScript : MonoBehaviour
 
     //Components
     private Rigidbody2D charRb;
-    private BoxCollider2D charCollider;
     //input
     private float xInput;
     //Horizontal Movement vars
@@ -28,36 +28,40 @@ public class testCharMovementScript : MonoBehaviour
     public float jumpMaxVel;
     public float jumpMinVel;
     private float jumpTimer = 0f;
-    private float jumpHoldIgnoreTime = 0.2f;//Ignores holding down spacebar for buffer time
-    private float jumpIgnoreGroundedTime = 0.1f;
-    private float jumpIgnoreGrounedTimer = 0f;
-
     public Image jumpBar;
+
+    //Timers
+
+    private float jumpHoldIgnoreTime = 0.2f;//Ignores holding down spacebar for buffer time
+    private float jumpIgnoreGroundedTime = 0.1f;//Buffer time to prevent drag from applying on initial jump
+    private float jumpIgnoreGrounedTimer = 0f;
 
     //character states
     private bool isGrounded = false;
     private bool horizontalMovementActive = true;
+    private bool ignoreHorizontalDrag = false;
     void Start()
     {
         //Gets components
         charRb = gameObject.GetComponent<Rigidbody2D>();
         charCollider = gameObject.GetComponent<BoxCollider2D>();
-
+        
         charRb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
     //input
     void Update()
     {
         jumpIgnoreGrounedTimer -= Time.deltaTime;
+
         xInput = Input.GetAxisRaw("Horizontal");
         //Charging jump
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        if (Input.GetKey(KeyCode.Space) && isGrounded && !TongueScript.charTongueScript.GetTongueOut())
         {
             jumpTimer += Time.deltaTime;
             if (jumpTimer > jumpHoldIgnoreTime)
             {
                 //Updates jump bar
-                jumpBar.transform.localScale = new Vector3(Mathf.Min((jumpTimer - jumpHoldIgnoreTime) / jumpChargeTime, 1), 1, 0);
+                jumpBar.transform.localScale = new Vector3(Mathf.Min((jumpTimer-jumpHoldIgnoreTime) / jumpChargeTime, 1), 1, 0);
                 //locks horizontal movement
                 horizontalMovementActive = false;
             }
@@ -65,17 +69,19 @@ public class testCharMovementScript : MonoBehaviour
         //Release
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            //Hold jump
-            if (isGrounded)
+            if (isGrounded && !TongueScript.charTongueScript.GetTongueOut())
             {
+                //Hold jump
                 if (jumpTimer > jumpHoldIgnoreTime)
                 {
+                    //Ignores drag for charged jumps
+                    ignoreHorizontalDrag = true;
                     //Gets magnitude of jump and direction of jump
                     float jumpRatio = Mathf.Min((jumpTimer - jumpHoldIgnoreTime) / jumpChargeTime, 1);
                     float jumpMagnitude = Mathf.Lerp(jumpMinVel, jumpMaxVel, jumpRatio);
                     Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
                     float angle = Mathf.Atan2(direction.y, direction.x);
-                    charRb.velocity = new Vector2(jumpMagnitude * Mathf.Cos(angle), jumpMagnitude * Mathf.Sin(angle));
+                    charRb.velocity = new Vector2(jumpMagnitude * Mathf.Cos(angle),jumpMagnitude* Mathf.Sin(angle));
                 }
                 //Normal jump
                 else
@@ -83,7 +89,7 @@ public class testCharMovementScript : MonoBehaviour
                     charRb.velocity = new Vector2(charRb.velocity.x, jumpMinVel);
                 }
                 jumpIgnoreGrounedTimer = jumpIgnoreGroundedTime;
-            }
+            }            
             //Resets jumpbar and horizontalMovementActive
             jumpTimer = 0;
             jumpBar.transform.localScale = new Vector3(0, 1, 0);
@@ -97,16 +103,28 @@ public class testCharMovementScript : MonoBehaviour
         //Prevents being checked as grounded immediately after jumping
         if (jumpIgnoreGrounedTimer > 0)
             isGrounded = false;
-        //Velocity slowdown when on ground
-        if (isGrounded && (xInput == 0 || !horizontalMovementActive))
+        //Drag always reenabled when grounded
+        if (ignoreHorizontalDrag && isGrounded)
+            ignoreHorizontalDrag = false;
+
+        if ((xInput == 0 || !horizontalMovementActive) && !ignoreHorizontalDrag)
         {
-            charRb.velocity = new Vector2(charRb.velocity.x / 1.45f, charRb.velocity.y);
+            //Velocity drag when on ground
+            if (isGrounded)
+            {
+                charRb.velocity = new Vector2(charRb.velocity.x / 1.47f, charRb.velocity.y);
+            }
+            //Velocity drag in air
+            else
+            {
+                charRb.velocity = new Vector2(charRb.velocity.x / 1.1f, charRb.velocity.y);
+            }
         }
         //Applies horizontal movement
         if (horizontalMovementActive)
         {
             //More force while grounded
-            if (isGrounded)
+            if(isGrounded)
             {
                 charRb.AddForce(Vector2.right * xInput * moveForceGround * charRb.mass);
                 //Clamps ground speed to max velocity
@@ -116,7 +134,7 @@ public class testCharMovementScript : MonoBehaviour
             else
             {
                 //Clamps air speed to max velocity
-                if (charRb.velocity.x * xInput < moveVelocity)
+                if(charRb.velocity.x * xInput < moveVelocity)
                     charRb.AddForce(Vector2.right * xInput * moveForceAir * charRb.mass);
             }
         }
@@ -126,12 +144,23 @@ public class testCharMovementScript : MonoBehaviour
     public LayerMask groundedCheckLayerMask;
     private bool CheckForGrounded()
     {
-        Vector2 size = new Vector2(charCollider.size.x - 0.1f, charCollider.size.y - 0.2f);
-        RaycastHit2D groundRaycast = Physics2D.BoxCast(charCollider.bounds.center, size, 0, Vector2.down, 0.2f, groundedCheckLayerMask);
-        if (groundRaycast.collider != null)
+        Vector2 size = new Vector2(charCollider.size.x -0.1f, charCollider.size.y - 0.2f);
+        RaycastHit2D groundRaycast = Physics2D.BoxCast(charCollider.bounds.center, size, 0, Vector2.down, 0.2f,groundedCheckLayerMask);
+        if(groundRaycast.collider != null)
         {
             return true;
         }
         return false;
+    }
+
+    //Accessors/modifiers
+    public bool GetHorizontalMovementActive()
+    {
+        return horizontalMovementActive;
+    }
+
+    public void SetHorizontalMovementActive(bool val)
+    {
+        horizontalMovementActive = val;
     }
 }
