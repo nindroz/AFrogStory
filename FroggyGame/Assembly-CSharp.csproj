@@ -55,6 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CoinCounterScript.cs" />
+     <Compile Include="Assets\Scripts\CoinScript.cs" />
      <Compile Include="Assets\Scripts\ParallaxSystem.cs" />
      <Compile Include="Assets\Scripts\testCharMovementScript.cs" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">

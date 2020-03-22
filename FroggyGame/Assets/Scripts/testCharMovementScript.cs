@@ -122,6 +122,14 @@ public class testCharMovementScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D thing) 
+    {
+        if(thing.gameObject.CompareTag("ConsumableObject")) 
+        {
+            Destroy(thing.gameObject);
+        }
+    }
+
     //Checks if character is grounded
     public LayerMask groundedCheckLayerMask;
     private bool CheckForGrounded()
