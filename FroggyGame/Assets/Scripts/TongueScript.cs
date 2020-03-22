@@ -28,7 +28,7 @@ public class TongueScript : MonoBehaviour
     private bool tongueCooldown = false;
     private float tongueCooldownTime = 1f;
 
-    private Vector2 tongueBaseOffset = Vector2.zero;//Tongue offset from center of character
+    private Vector2 tongueBaseOffset = new Vector2(0,-1f);//Tongue offset from center of character
 
     private float tongueMaxMoveForce = 450f;
 
@@ -66,13 +66,13 @@ public class TongueScript : MonoBehaviour
             testCharMovementScript.charMoveScript.SetHorizontalMovementActive(false);
             //Gets vector from mouse, limits to maxDist if larger
             tongueCooldown = true;
-            Vector2 targetVector = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            Vector2 targetVector = Camera.main.ScreenToWorldPoint(Input.mousePosition) - (transform.position+(Vector3)tongueBaseOffset);
             if(targetVector.magnitude > maxDist)
             {
                 targetVector = targetVector.normalized * maxDist;
             }
 
-            StartCoroutine(GenerateTongue(transform.position, targetVector));
+            StartCoroutine(GenerateTongue((Vector2)transform.position + tongueBaseOffset, targetVector));
         }
         //if mouse not being held down, attempt retract 
         if(!Input.GetMouseButton(0) && tongueOut && tongueCooldown)
@@ -99,7 +99,7 @@ public class TongueScript : MonoBehaviour
         //Binds first joint to fixed position
         GameObject joint = tongueJoints[0];
         Vector2 pos = joint.transform.position;
-        Vector2 diff = pos - (Vector2)transform.position + tongueBaseOffset;
+        Vector2 diff = pos - ((Vector2)transform.position + tongueBaseOffset);
         joint.transform.position = (Vector2)transform.position + diff.normalized * _currentTongueJointDistance;
         //Mouse force
         Vector2 mouseDiff = (mousePos - (Vector2)joint.transform.position);
@@ -109,7 +109,7 @@ public class TongueScript : MonoBehaviour
         {
             joint = tongueJoints[x];
             pos = joint.transform.position;
-            diff = pos - (Vector2)tongueJoints[x - 1].transform.position + tongueBaseOffset;
+            diff = pos - (Vector2)tongueJoints[x - 1].transform.position;
             joint.transform.position = (Vector2)tongueJoints[x - 1].transform.position + diff.normalized * _currentTongueJointDistance;
             //Apply force
             mouseDiff = (mousePos - (Vector2)joint.transform.position);
@@ -119,17 +119,16 @@ public class TongueScript : MonoBehaviour
             joint.GetComponent<Rigidbody2D>().AddForce(mouseDiff.normalized * tongueMaxMoveForce*(mouseDiff.magnitude/maxMouseDist));
         }
         //Grabbed object inherits velocity from mouse movement  
-        //Calculates velocity based on position in previous Update(normal velocity is wack w/ tongue physics)
         if(grabbedObject != null)
         {
             Vector2 grabMouseScreenPos = Input.mousePosition;
             Vector2 grabMouseDiff = (grabMouseScreenPos - initialGrabMouseScreenPos) * 2 * Camera.main.orthographicSize/Screen.height;//Finds mouse movement from origin, converts to units
-            //Starts calculating velocity when over threshhold
+            //Starts calculating velocity when over min threshhold
             if (grabMouseDiff.magnitude >= mousePositionThrowMinThreshhold && !mousePositionMinThreshholdReached)
             {
                 mousePositionMinThreshholdReached = true;
             }
-            //Adds to velocity time
+            //Adds to velocity time when min threshhold passed
             else if(mousePositionMinThreshholdReached)
             {
                 mouseGrabTime += Time.deltaTime;

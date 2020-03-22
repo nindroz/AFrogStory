@@ -13,6 +13,7 @@ public class testCharMovementScript : MonoBehaviour
     //firepoint helper variable
     bool isRight = true;
     public static int direction = 1;
+
     private void Awake()
     {
         charMoveScript = this;
@@ -138,7 +139,7 @@ public class testCharMovementScript : MonoBehaviour
                     direction = 1;//right
                     isRight = true;
                 } 
-                if(xInput<0 && isRight == true )
+                if(xInput< 0 && isRight == true )
                 {
                     direction =-1;//left
                     isRight = false;
