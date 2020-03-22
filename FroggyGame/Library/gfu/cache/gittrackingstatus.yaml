@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2020-03-21T17:12:14.330-07:00
-  initializedAtString: 2020-03-21T16:55:17.394-07:00
-  ahead: 2
+<<<<<<< HEAD
+  lastUpdatedAtString: 2020-03-21T20:09:29.840-07:00
+  initializedAtString: 2020-03-21T20:09:29.840-07:00
+=======
+  lastUpdatedAtString: 2020-03-21T19:02:09.033-07:00
+  initializedAtString: 2020-03-21T19:02:09.033-07:00
+>>>>>>> long-ranged-dart
+  ahead: 0
   behind: 0

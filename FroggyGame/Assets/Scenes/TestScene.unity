@@ -381,7 +381,7 @@ Transform:
   m_GameObject: {fileID: 470434775}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.193125, y: 1.25125, z: 1}
   m_Children:
   - {fileID: 1791275341}
   - {fileID: 1721393987}
@@ -651,6 +651,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &730893593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 730893594}
+  m_Layer: 10
+  m_Name: firePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &730893594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730893593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.97, y: -0.32, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1825237286}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &933384199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,7 +1260,7 @@ Transform:
   m_GameObject: {fileID: 1234959578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.838602, y: -0.7678448, z: -88.89844}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.193125, y: 1.25125, z: 1}
   m_Children:
   - {fileID: 304232362}
   - {fileID: 60939930}
@@ -1916,6 +1946,12 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 1109231650}
+    - target: {fileID: 6553884800286680524, guid: 4399f5c4045d085469ef605e4681419f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 01813f1b6c85edf43a9c028f87f48bc1,
+        type: 3}
     - target: {fileID: 6553884800286680526, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
       propertyPath: jumpChargeTime
@@ -1930,6 +1966,36 @@ PrefabInstance:
         type: 3}
       propertyPath: jumpMinVel
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.64121246
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.61162
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.75959206
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.3613415
       objectReference: {fileID: 0}
     - target: {fileID: 6553884800286680560, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
