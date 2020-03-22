@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6553884798870423408}
   - component: {fileID: 6553884798870423374}
   - component: {fileID: 6553884798870423409}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: jumpBarFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 6553884799156117140}
   - component: {fileID: 6553884799156117138}
   - component: {fileID: 6553884799156117141}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: jumpbarBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 6553884799323317296}
   - component: {fileID: 6553884799323317299}
   - component: {fileID: 6553884799323317298}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,8 @@ GameObject:
   - component: {fileID: 6553884799430365281}
   - component: {fileID: 6553884799430365311}
   - component: {fileID: 6553884799430365310}
-  m_Layer: 9
+  - component: {fileID: 1825237278}
+  m_Layer: 10
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -329,6 +330,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6553884799430365280}
   m_Enabled: 1
+--- !u!114 &1825237278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553884799430365280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bf0e2d9a0fb24438de450c6fbb7626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxObjects: []
 --- !u!1 &6553884800286680560
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,8 +355,9 @@ GameObject:
   - component: {fileID: 6553884800286680525}
   - component: {fileID: 6553884800286680524}
   - component: {fileID: 6553884800286680527}
-  - component: {fileID: 1864554601}
-  m_Layer: 9
+  - component: {fileID: 6553884800286680526}
+  - component: {fileID: 1825237276}
+  m_Layer: 10
   m_Name: FrogCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -381,7 +396,7 @@ Rigidbody2D:
   m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 9
-  m_Material: {fileID: 6200000, guid: 8641edf1e9e4b164d99e7d2da45fb609, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -430,7 +445,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -445,7 +460,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 6553884800286680560}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 8641edf1e9e4b164d99e7d2da45fb609, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -454,7 +469,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2, y: 2}
-    newSize: {x: 0.32, y: 0.32}
+    newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -462,7 +477,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &1864554601
+--- !u!114 &6553884800286680526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -471,14 +486,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 6553884800286680560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08a6151ba9ddebb488552f126c750f03, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f67e1c519cfaf54bb95a8b104413d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveVelocity: 20
-  jumpChargeTime: 2
+  jumpChargeTime: 0
   jumpMaxVel: 0
   jumpMinVel: 0
   jumpBar: {fileID: 6553884798870423409}
   groundedCheckLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 2304
+--- !u!114 &1825237276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553884800286680560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 893ea520edcb047438e363eb316687b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 25
+  tongueJointPrefab: {fileID: 6227374124382625826, guid: f50432e73cf24924ca93f946a6443b07,
+    type: 3}
+  tongueJoints: []
+  tongueHitMask:
+    serializedVersion: 2
+    m_Bits: 2304

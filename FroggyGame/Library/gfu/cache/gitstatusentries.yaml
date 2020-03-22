@@ -13,173 +13,107 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-03-21T15:25:22.540-05:00
-  initializedAtString: 2020-03-21T15:10:10.006-05:00
+  lastUpdatedAtString: 2020-03-21T17:12:14.192-07:00
+  initializedAtString: 2020-03-21T16:55:17.233-07:00
   entries:
-  - path: FroggyGame\Assembly-CSharp.csproj
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: FroggyGame\.vs\FroggyGame\v16\.suo
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
+    projectPath: .vs\FroggyGame\v16\.suo
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
     projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Assets\Other.meta
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Other.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Other.meta
     projectPath: Assets\Other.meta
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
   - path: FroggyGame\FroggyGame.sln
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\FroggyGame.sln
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\FroggyGame.sln
     projectPath: FroggyGame.sln
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Library\ArtifactDB
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
-    projectPath: Library\ArtifactDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\Artifacts\72\725de66a113346cb226adff530686172
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\Artifacts\72\725de66a113346cb226adff530686172
-    projectPath: Library\Artifacts\72\725de66a113346cb226adff530686172
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: FroggyGame\Library\Artifacts\7c\7ca8d7fde05323d204fec80d4c80b73f
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\Artifacts\7c\7ca8d7fde05323d204fec80d4c80b73f
-    projectPath: Library\Artifacts\7c\7ca8d7fde05323d204fec80d4c80b73f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: FroggyGame\Library\Artifacts\96\963dc9b91b01e97db1d3a1cf5f757156
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\Artifacts\96\963dc9b91b01e97db1d3a1cf5f757156
-    projectPath: Library\Artifacts\96\963dc9b91b01e97db1d3a1cf5f757156
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: FroggyGame\Library\Collab\CollabSnapshot_dd6ffc8d-f76f-4778-9440-215e2577d888.txt
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\Collab\CollabSnapshot_dd6ffc8d-f76f-4778-9440-215e2577d888.txt
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\Collab\CollabSnapshot_dd6ffc8d-f76f-4778-9440-215e2577d888.txt
     projectPath: Library\Collab\CollabSnapshot_dd6ffc8d-f76f-4778-9440-215e2577d888.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: FroggyGame\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Library\PackageCache\com.unity.ads@2.0.8\Editor\UnityEditor.Advertisements.dll.mdb.meta
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.ads@2.0.8\Editor\UnityEditor.Advertisements.dll.mdb.meta
-    projectPath: Library\PackageCache\com.unity.ads@2.0.8\Editor\UnityEditor.Advertisements.dll.mdb.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\PackageCache\com.unity.ads@2.0.8\UnityEngine.Advertisements.dll.mdb.meta
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.ads@2.0.8\UnityEngine.Advertisements.dll.mdb.meta
-    projectPath: Library\PackageCache\com.unity.ads@2.0.8\UnityEngine.Advertisements.dll.mdb.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll.mdb.meta
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll.mdb.meta
-    projectPath: Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll.mdb.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.pdb.meta
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.pdb.meta
-    projectPath: Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.pdb.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: FroggyGame\Library\PackageCache\com.unity.ide.rider@1.1.4\package.json
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.ide.rider@1.1.4\package.json
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.ide.rider@1.1.4\package.json
     projectPath: Library\PackageCache\com.unity.ide.rider@1.1.4\package.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.4\package.json
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.4\package.json
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.4\package.json
     projectPath: Library\PackageCache\com.unity.multiplayer-hlapi@1.0.4\package.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe1.log
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe1.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe2.log
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe2.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\SourceAssetDB
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Library\StateCache\Hierarchy\97ca3f-mainStage.json
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\StateCache\Hierarchy\97ca3f-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\97ca3f-mainStage.json
+  - path: FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\ProjectSettings\ProjectSettings.asset
-    fullPath: C:\Users\pengu\OneDrive\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\ProjectSettings.asset
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\ProjectSettings.asset
     projectPath: ProjectSettings\ProjectSettings.asset
     originalPath: 
     indexStatus: 0
