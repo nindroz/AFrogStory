@@ -13,22 +13,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-03-21T13:07:17.576-07:00
   initializedAtString: 2020-03-21T13:07:17.576-07:00
   entries:
   - path: FroggyGame\Assembly-CSharp.csproj
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
+=======
+  lastUpdatedAtString: 2020-03-21T17:12:14.192-07:00
+  initializedAtString: 2020-03-21T16:55:17.233-07:00
+  entries:
+  - path: FroggyGame\.vs\FroggyGame\v16\.suo
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
+    projectPath: .vs\FroggyGame\v16\.suo
+>>>>>>> master
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
+<<<<<<< HEAD
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
+=======
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
+>>>>>>> master
     projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Assets\Other.meta
+<<<<<<< HEAD
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Other.meta
     projectPath: Assets\Other.meta
     originalPath: 
@@ -76,6 +90,31 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
+=======
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Other.meta
+    projectPath: Assets\Other.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\FroggyGame.sln
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\FroggyGame.sln
+    projectPath: FroggyGame.sln
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\Collab\CollabSnapshot_dd6ffc8d-f76f-4778-9440-215e2577d888.txt
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\Collab\CollabSnapshot_dd6ffc8d-f76f-4778-9440-215e2577d888.txt
+    projectPath: Library\Collab\CollabSnapshot_dd6ffc8d-f76f-4778-9440-215e2577d888.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+>>>>>>> master
   - path: FroggyGame\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
@@ -100,6 +139,7 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
   - path: FroggyGame\Library\PackageCache\com.unity.ads@2.0.8\UnityEngine.Advertisements.dll.mdb.meta
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.ads@2.0.8\UnityEngine.Advertisements.dll.mdb.meta
     projectPath: Library\PackageCache\com.unity.ads@2.0.8\UnityEngine.Advertisements.dll.mdb.meta
@@ -139,6 +179,17 @@ MonoBehaviour:
   - path: FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+=======
+  - path: FroggyGame\Library\PackageCache\com.unity.ide.rider@1.1.4\package.json
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.ide.rider@1.1.4\package.json
+    projectPath: Library\PackageCache\com.unity.ide.rider@1.1.4\package.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.4\package.json
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.4\package.json
+    projectPath: Library\PackageCache\com.unity.multiplayer-hlapi@1.0.4\package.json
+>>>>>>> master
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -160,3 +211,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
+=======
+  - path: FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\ProjectSettings\ProjectSettings.asset
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\ProjectSettings.asset
+    projectPath: ProjectSettings\ProjectSettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+>>>>>>> master
