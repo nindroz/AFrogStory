@@ -629,7 +629,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Collab: 1
+    Collab: 0
     UNet: 1
   luminIcon:
     m_Name: 
@@ -643,10 +643,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: dd6ffc8d-f76f-4778-9440-215e2577d888
+  cloudProjectId: 91afbc28-a7a5-419f-a4bb-29b360830b7c
   framebufferDepthMemorylessMode: 0
-  projectName: Froggy Game!
-  organizationId: alayna2198
+  projectName: Froggy Game! (1)
+  organizationId: nindroz11
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

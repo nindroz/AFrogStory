@@ -23,6 +23,10 @@ public class testCharMovementScript : MonoBehaviour
     private float moveForceGround = 100f;
     private float moveForceAir = 70f;
 
+    //direction vars for firePoint
+    public static int direction =0;
+    bool isRight = true;
+
     //Jumping vars
     public float jumpChargeTime;
     public float jumpMaxVel;
@@ -127,6 +131,17 @@ public class testCharMovementScript : MonoBehaviour
             if(isGrounded)
             {
                 charRb.AddForce(Vector2.right * xInput * moveForceGround * charRb.mass);
+                //checks if frog is facing right or left and isRight is used to not repeat one direction multiple times
+                if (xInput > 0 && isRight == false && horizontalMovementActive)
+                {
+                    direction = 1;//right
+                    isRight = true;
+                }
+                if (xInput < 0 && isRight == true && horizontalMovementActive)
+                {
+                    direction = -1;//left
+                    isRight = false;
+                }
                 //Clamps ground speed to max velocity
                 charRb.velocity = new Vector2(Mathf.Clamp(charRb.velocity.x, -moveVelocity, moveVelocity), charRb.velocity.y);
             }
