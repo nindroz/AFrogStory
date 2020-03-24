@@ -32,7 +32,7 @@ public class TongueScript : MonoBehaviour
 
     private float tongueMaxMoveForce = 450f;
 
-    private float minTongueGrabDistance = 1.5f;//When grabbing, pulls to this distance away from char
+    private float minTongueGrabDistance = 2.5f;//When grabbing, pulls to this distance away from char
 
     private float maxTongueJointDrag = 4f;//Drag increases w/ further out joints
     private float minTongueJointDrag = 0.2f;
@@ -82,7 +82,7 @@ public class TongueScript : MonoBehaviour
         }
         if (tongueOut)
         {
-            if(grabbedObject.CompareTag("MoveableObject"))
+            if(grabbedObject.layer == 11)
                 currentTongueJointDistance = Mathf.Min(maxTongueJointDistance, GetMouseDistance()/ (jointCount - 1));
             TonguePhysics(currentTongueJointDistance);
         }
@@ -128,7 +128,7 @@ public class TongueScript : MonoBehaviour
             joint.GetComponent<Rigidbody2D>().AddForce(mouseDiff.normalized * tongueMaxMoveForce*(mouseDiff.magnitude/maxMouseDist));
         }
         //Grabbed object inherits velocity from mouse movement  
-        if(grabbedObject != null && grabbedObject.CompareTag("MoveableObject"))
+        if(grabbedObject != null && grabbedObject.layer == 11)
         {
             Vector2 grabMouseScreenPos = Input.mousePosition;
             Vector2 grabMouseDiff = (grabMouseScreenPos - initialGrabMouseScreenPos) * 2 * Camera.main.orthographicSize/Screen.height;//Finds mouse movement from origin, converts to units
@@ -240,7 +240,7 @@ public class TongueScript : MonoBehaviour
             }
             counter++;
         }
-        if(targetHit.collider == null || !targetHit.collider.gameObject.CompareTag("MoveableObject"))// && !targetHit.collider.gameObject.CompareTag("GrappleObject")))
+        if(targetHit.collider == null || !(targetHit.collider.gameObject.layer == 11))// && !targetHit.collider.gameObject.CompareTag("GrappleObject")))
         {
             StartCoroutine(RetractTongue());
         }

@@ -19,14 +19,14 @@ public class PitayaManagerScript : MonoBehaviour
     private float storedGravity;            //The gravity before it is turned off during the dash
     private int direction;                  //Whether the cursor is pointed left or right of the player before the dash
        
-    void Awake() //Set all the variables
+    void Start() //Set all the variables
     {
         //Feel free to mess around with the dashTime, dashDelay & dashVelocity!
         dashTime = 0.4f;    
         dashDelay = 0.1f;
         dashVelocity = 70;
 
-        charMove = GetComponent<testCharMovementScript>();
+        charMove = testCharMovementScript.charMoveScript;
         rBody = GetComponent<Rigidbody2D>();
         isDashing = false;
         canDash = true;
@@ -79,7 +79,7 @@ public class PitayaManagerScript : MonoBehaviour
             }
         }
         
-        if (charMove.isGrounded && !canDash)            //If the player has touched the ground after dashing...
+        if (charMove.GetIsGrounded() && !canDash)            //If the player has touched the ground after dashing...
         {
                 hasGroundedSinceDash = true;            //Then that shouldn't stop them from dashing again.
         }
