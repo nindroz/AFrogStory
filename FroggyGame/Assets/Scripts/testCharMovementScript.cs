@@ -85,6 +85,7 @@ public class testCharMovementScript : MonoBehaviour
                     float jumpMagnitude = Mathf.Lerp(jumpMinVel, jumpMaxVel, jumpRatio);
                     Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
                     float angle = Mathf.Atan2(direction.y, direction.x);
+                    angle = Mathf.PI / 2;
                     charRb.velocity = new Vector2(jumpMagnitude * Mathf.Cos(angle),jumpMagnitude* Mathf.Sin(angle));
                 }
                 //Normal jump
