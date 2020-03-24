@@ -10,6 +10,10 @@ public class FrogManager : MonoBehaviour
     //spirte render and collider
     public SpriteRenderer render;
     public PolygonCollider2D polygonCollider;
+
+    // frog sprites
+    public Sprite transparentFrog;
+    public Sprite normalFrog;
     private void Awake()
     {
         charFrogManager = this;
@@ -36,6 +40,17 @@ public class FrogManager : MonoBehaviour
             render.flipX = true;
             //polygonCollider.transform.localScale = new Vector2(1, 1);
 
+        }
+
+        //changes opacxity when ghosting
+        if (GhostPowerupScript.isGhosting)
+        {
+
+            render.sprite = transparentFrog;
+        }
+        if(!GhostPowerupScript.isGhosting)
+        {
+            render.sprite = normalFrog;
         }
     }
 

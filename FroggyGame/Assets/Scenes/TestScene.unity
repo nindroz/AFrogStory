@@ -1654,6 +1654,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe7dc4035a2b0c49b56febe7a12201a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  render: {fileID: 1136501925}
+  polygonCollider: {fileID: 1136501928}
+  transparentFrog: {fileID: 21300000, guid: 3313ab310b3c6ea4a9a45ad7acbd60e3, type: 3}
+  normalFrog: {fileID: 21300000, guid: 01813f1b6c85edf43a9c028f87f48bc1, type: 3}
 --- !u!114 &1136501920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,6 +1691,12 @@ MonoBehaviour:
   firePoint: {fileID: 730893594}
   bulletPrefab: {fileID: 5717232577158273558, guid: b7f1ca043d505004eba344c50dd84b11,
     type: 3}
+--- !u!212 &1136501925 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6553884800286680524, guid: 4399f5c4045d085469ef605e4681419f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1825237274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1136501926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1702,6 +1712,59 @@ MonoBehaviour:
   dashTime: 1
   dashDelay: 1
   dashVelocity: 1
+--- !u!60 &1136501928
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136501918}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.96875, y: -1.6875}
+      - {x: 1.9375, y: -1.34375}
+      - {x: 2.28125, y: -0.96875}
+      - {x: 2.28125, y: -0.125}
+      - {x: 2.125, y: -0.0625}
+      - {x: 2.15625, y: 0.34375}
+      - {x: 1.84375, y: 0.84375}
+      - {x: 1.5625, y: 1}
+      - {x: 1.1875, y: 1}
+      - {x: 1.03125, y: 0.90625}
+      - {x: 1, y: 0.71875}
+      - {x: 0.5, y: 1}
+      - {x: -0.21875, y: 1}
+      - {x: -0.375, y: 0.90625}
+      - {x: -0.90625, y: 0.28125}
+      - {x: -1.3125, y: 0.125}
+      - {x: -1.4375, y: -0.0625}
+      - {x: -1.625, y: -0.46875}
+      - {x: -1.90625, y: -0.6875}
+      - {x: -2.09375, y: -0.8125}
+      - {x: -2.3125, y: -1.0625}
+      - {x: -2.25, y: -1.65625}
+      - {x: -1.9375, y: -1.9375}
+      - {x: -2.34375, y: -1.96875}
+      - {x: -2.40625, y: -2.1875}
+      - {x: -2.40625, y: -2.5}
+      - {x: 2.40625, y: -2.5}
+      - {x: 2.40625, y: -2.125}
 --- !u!1 &1211274033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,6 +2875,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 01813f1b6c85edf43a9c028f87f48bc1,
         type: 3}
+    - target: {fileID: 6553884800286680524, guid: 4399f5c4045d085469ef605e4681419f,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6553884800286680526, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
       propertyPath: jumpChargeTime
@@ -2835,7 +2903,7 @@ PrefabInstance:
     - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: 0.014202118
       objectReference: {fileID: 0}
     - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
@@ -2850,17 +2918,17 @@ PrefabInstance:
     - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
       propertyPath: m_Size.x
-      value: 4.8
+      value: 4.6691666
       objectReference: {fileID: 0}
     - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.8
+      value: -0.75352454
       objectReference: {fileID: 0}
     - target: {fileID: 6553884800286680527, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
       propertyPath: m_Size.y
-      value: 3.3
+      value: 3.3929505
       objectReference: {fileID: 0}
     - target: {fileID: 6553884800286680560, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}

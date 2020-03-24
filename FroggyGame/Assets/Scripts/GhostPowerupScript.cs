@@ -8,6 +8,9 @@ public class GhostPowerupScript : MonoBehaviour
     public static GhostPowerupScript charGhostPowerupScript;
     public LayerMask activeMask;
     public LayerMask inactiveMask;
+
+    //bool to see if ghosting
+    public static bool isGhosting = false;
     void Awake()
     {
         charGhostPowerupScript = this;
@@ -34,9 +37,16 @@ public class GhostPowerupScript : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))
+        {
             SetGhostPowerup(true);
+            isGhosting = true;
+        }
         if (Input.GetKeyUp(KeyCode.G))
+        {
             SetGhostPowerup(false);
+            isGhosting = false;
+        }
+            
     }
 
 }
