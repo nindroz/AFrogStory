@@ -19,14 +19,14 @@ public class TongueScript : MonoBehaviour
     private float currentTongueJointDistance = 0.25f;
 
     public float maxDist;
-    private int jointChangeInterval = 20;//Number of joints per wait period when instantiating/removing, higher number means faster
+    private int jointChangeInterval = 15;//Number of joints per wait period when instantiating/removing, higher number means faster
 
     public GameObject tongueJointPrefab;
     public List<GameObject> tongueJoints;
     private int jointCount;
 
     private bool tongueCooldown = false;
-    private float tongueCooldownTime = 1f;
+    private float tongueCooldownTime = 0.25f;
 
     private Vector2 tongueBaseOffset = new Vector2(0,-1f);//Tongue offset from center of character
 
@@ -82,7 +82,8 @@ public class TongueScript : MonoBehaviour
         }
         if (tongueOut)
         {
-            currentTongueJointDistance = Mathf.Min(maxTongueJointDistance, GetMouseDistance()/ (jointCount - 1));
+            if(grabbedObject.CompareTag("MoveableObject"))
+                currentTongueJointDistance = Mathf.Min(maxTongueJointDistance, GetMouseDistance()/ (jointCount - 1));
             TonguePhysics(currentTongueJointDistance);
         }
     }
@@ -95,12 +96,20 @@ public class TongueScript : MonoBehaviour
         //Also apply a force in the direction of the mouse, higher force when mouse is further away 
         float maxMouseDist = 5f;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 targetDiff = mousePos - (Vector2)transform.position;        
+        Vector2 basePosition = (Vector2)transform.position + tongueBaseOffset;
+        //If grapple applies, then distance bind the frog to the point
+        if(grabbedObject != null && grabbedObject.CompareTag("GrappleObject"))
+        {
+            Vector2 grappleDiff = (Vector2)grabbedObject.transform.position - basePosition;
+            gameObject.transform.position = (Vector2)grabbedObject.transform.position - grappleDiff.normalized * _currentTongueJointDistance- tongueBaseOffset;
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.GetComponent<Rigidbody2D>().velocity.x, Mathf.Clamp(gameObject.GetComponent<Rigidbody2D>().velocity.y, -10f, 10f));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(grappleDiff.normalized*5f);
+        }    
         //Binds first joint to fixed position
         GameObject joint = tongueJoints[0];
         Vector2 pos = joint.transform.position;
-        Vector2 diff = pos - ((Vector2)transform.position + tongueBaseOffset);
-        joint.transform.position = (Vector2)transform.position + diff.normalized * _currentTongueJointDistance;
+        Vector2 diff = pos - basePosition;
+        joint.transform.position = basePosition + diff.normalized * _currentTongueJointDistance;
         //Mouse force
         Vector2 mouseDiff = (mousePos - (Vector2)joint.transform.position);
         joint.GetComponent<Rigidbody2D>().AddForce(mouseDiff.normalized * tongueMaxMoveForce* (mouseDiff.magnitude /maxMouseDist));
@@ -119,7 +128,7 @@ public class TongueScript : MonoBehaviour
             joint.GetComponent<Rigidbody2D>().AddForce(mouseDiff.normalized * tongueMaxMoveForce*(mouseDiff.magnitude/maxMouseDist));
         }
         //Grabbed object inherits velocity from mouse movement  
-        if(grabbedObject != null)
+        if(grabbedObject != null && grabbedObject.CompareTag("MoveableObject"))
         {
             Vector2 grabMouseScreenPos = Input.mousePosition;
             Vector2 grabMouseDiff = (grabMouseScreenPos - initialGrabMouseScreenPos) * 2 * Camera.main.orthographicSize/Screen.height;//Finds mouse movement from origin, converts to units
@@ -164,12 +173,15 @@ public class TongueScript : MonoBehaviour
     {
         testCharMovementScript.charMoveScript.SetHorizontalMovementActive(true);
         int counter = 0;
+        //If grapple, remove connection before retracting
+        if (grabbedObject != null && grabbedObject.CompareTag("GrappleObject"))
+            grabbedObject = null;
         //Retract effect by incrimenting jointDistance down
         currentTongueJointDistance = Mathf.Min(maxTongueJointDistance, GetMouseDistance() / (jointCount - 1));
         for (float x = 0;x <= currentTongueJointDistance - minTongueGrabDistance/jointCount; x+= 0.01f)
         {
             TonguePhysics(currentTongueJointDistance - x);
-            if (counter == (int)(jointChangeInterval/10f))
+            if (counter == (int)(jointChangeInterval/7f))
             {
                 counter = 0;
                 yield return new WaitForFixedUpdate();
@@ -228,7 +240,7 @@ public class TongueScript : MonoBehaviour
             }
             counter++;
         }
-        if(targetHit.collider == null || !targetHit.collider.gameObject.CompareTag("MoveableObject"))
+        if(targetHit.collider == null || !targetHit.collider.gameObject.CompareTag("MoveableObject"))// && !targetHit.collider.gameObject.CompareTag("GrappleObject")))
         {
             StartCoroutine(RetractTongue());
         }
@@ -236,8 +248,12 @@ public class TongueScript : MonoBehaviour
         {
             //Removes collisions with target
             //Physics2D.IgnoreCollision(testCharMovementScript.charCollider, targetHit.collider);
-            tongueOut = true;
+                tongueOut = true;
             grabbedObject = targetHit.collider.gameObject;
+            if(grabbedObject.CompareTag("GrappleObject"))
+            {
+                currentTongueJointDistance = ((Vector2)grabbedObject.transform.position - ((Vector2)gameObject.transform.position + tongueBaseOffset)).magnitude;
+            }
         }
 
     }
