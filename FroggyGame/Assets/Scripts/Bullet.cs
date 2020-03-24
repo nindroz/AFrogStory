@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     //chekcs for bullet hits
     void OnTriggerEnter2D( Collider2D hitInfo)
     {
-        Debug.Log(hitInfo.name);
+        //cahnge this when we have an enemyDebug.Log(hitInfo.name);
         Destroy(gameObject);
     }
 
