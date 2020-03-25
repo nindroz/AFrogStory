@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-03-24T13:07:25.138-07:00
   initializedAtString: 2020-03-24T12:39:20.456-07:00
+=======
+  lastUpdatedAtString: 2020-03-21T16:14:39.878-05:00
+  initializedAtString: 2020-03-21T16:07:59.301-05:00
+>>>>>>> coins
   ahead: 0
   behind: 0
