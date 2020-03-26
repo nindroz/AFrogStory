@@ -1,10 +1,13 @@
 ﻿
 using UnityEngine;
 
-//Press "M" To Activate It!
+//Press "E" To Activate It!
 
-public class PitayaManagerScript : MonoBehaviour 
+public class PitayaManagerScript : MonoBehaviour
 {
+    //Singleton
+    public static PitayaManagerScript fireDashPowerupScript;
+
     public float dashTime;                  //How long the dash lasts for
     public float dashDelay;                 //Time period in which you cannot dash again.
     public int dashVelocity;                //Speed at which the frog dashes
@@ -18,11 +21,18 @@ public class PitayaManagerScript : MonoBehaviour
     private float currentDashTime;          //How long the player has been dashing for
     private float storedGravity;            //The gravity before it is turned off during the dash
     private int direction;                  //Whether the cursor is pointed left or right of the player before the dash
-       
-    void Start() //Set all the variables
+
+
+    private bool isFiredashActivated = false;//Whether or not powerup is currently active
+
+    private int dir;
+
+
+    void Awake() //Set all the variables
     {
+        fireDashPowerupScript = this;
         //Feel free to mess around with the dashTime, dashDelay & dashVelocity!
-        dashTime = 0.4f;    
+        dashTime = 0.4f;
         dashDelay = 0.1f;
         dashVelocity = 70;
 
@@ -38,20 +48,18 @@ public class PitayaManagerScript : MonoBehaviour
 
     void FindDirection()    //Detects what direction the pointer is relative to the player to choose which direction to dash in
     {
-        Vector2 pilot = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        if (pilot.x < 0)
-        {
-            direction = -1;
-        }
-        else
+        if (dir == 0)
         {
             direction = 1;
         }
+
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M) && !isDashing && canDash) //If the player presses M and can go into a dash, put them in that state.
+
+        if (Input.GetKeyDown(KeyCode.E) && !isDashing && canDash && isFiredashActivated) //If the player presses E and can go into a dash, put them in that state.
+
         {
             isDashing = true;                       //Put them in the dash state
             canDash = false;                        //Prohibit them from chaining dashes
@@ -61,12 +69,24 @@ public class PitayaManagerScript : MonoBehaviour
             storedGravity = rBody.gravityScale;     //Store the current gravity acting on the player
             rBody.gravityScale = 0;                 //Change the gravity to zero.
             FindDirection();                        //Find out the direction the player is dashing
-        }  
 
+            ParticleManager.particleManager.PlayFiredashPowerupEffectActive();//Plays particle effect
+
+            dir = direction;                        //
+
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            direction = -1;
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            direction = 1;
+        }
         if (isDashing)
         {
             rBody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation; //Freeze their Y Position and Z rotation so they can only move horizontally
-            rBody.velocity = new Vector2(direction * dashVelocity, 0);                                          //Set their horizontal velocity
+            rBody.velocity = new Vector2(dir * dashVelocity, 0);                                          //Set their horizontal velocity
             currentDashTime += Time.deltaTime;                                                                  //Keep track of how long this dash is going on.
 
             if (currentDashTime >= dashTime)                                //When the dash has gone on for as long as it's supposed to:
@@ -78,10 +98,10 @@ public class PitayaManagerScript : MonoBehaviour
                 rBody.constraints = RigidbodyConstraints2D.FreezeRotation;  //Unfreeze the Y axis from motion.
             }
         }
-        
+
         if (charMove.GetIsGrounded() && !canDash)            //If the player has touched the ground after dashing...
         {
-                hasGroundedSinceDash = true;            //Then that shouldn't stop them from dashing again.
+            hasGroundedSinceDash = true;            //Then that shouldn't stop them from dashing again.
         }
 
         if (!canDash)                                   //While the player cannot dash...
@@ -94,11 +114,21 @@ public class PitayaManagerScript : MonoBehaviour
 
             else                                        //But if the cooldown has run out...
             {
-                if(hasGroundedSinceDash)                //And the player has touched the ground since it's last dash...
+                if (hasGroundedSinceDash)                //And the player has touched the ground since it's last dash...
                 {
                     canDash = true;                     //Allow the player to dash again.
                 }
             }
         }
+    }
+
+    public void SetFiredashPowerup(bool var)
+    {
+        isFiredashActivated = var;
+    }
+
+    public bool GetIsDashing()
+    {
+        return isDashing;
     }
 }

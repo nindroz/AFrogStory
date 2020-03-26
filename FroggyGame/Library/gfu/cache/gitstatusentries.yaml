@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-03-24T16:06:05.844-07:00
-  initializedAtString: 2020-03-24T16:00:24.830-07:00
+  lastUpdatedAtString: 2020-03-26T14:16:16.835-07:00
+  initializedAtString: 2020-03-26T13:53:42.753-07:00
   entries:
   - path: FroggyGame\.vs\FroggyGame\v16\.suo
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
@@ -22,36 +22,128 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\.vs\FroggyGame\v16\Server\sqlite3\storage.ide
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\Server\sqlite3\storage.ide
-    projectPath: .vs\FroggyGame\v16\Server\sqlite3\storage.ide
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assembly-CSharp.csproj
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Prefabs\ghostpowerupfruit.prefab
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ghostpowerupfruit.prefab
-    projectPath: Assets\Prefabs\ghostpowerupfruit.prefab
+  - path: FroggyGame\Assets\Prefabs\firedashpowerupfruit.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\firedashpowerupfruit.prefab
+    projectPath: Assets\Prefabs\firedashpowerupfruit.prefab
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: FroggyGame\Assets\Prefabs\ghostpowerupfruit.prefab.meta
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ghostpowerupfruit.prefab.meta
-    projectPath: Assets\Prefabs\ghostpowerupfruit.prefab.meta
+  - path: FroggyGame\Assets\Prefabs\firedashpowerupfruit.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\firedashpowerupfruit.prefab.meta
+    projectPath: Assets\Prefabs\firedashpowerupfruit.prefab.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\FrogCharacter.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\FrogCharacter.prefab
+    projectPath: Assets\Prefabs\FrogCharacter.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems.meta
+    projectPath: Assets\Prefabs\ParticleSystems.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems.prefab
+    projectPath: Assets\Prefabs\ParticleSystems.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems.prefab.meta
+    projectPath: Assets\Prefabs\ParticleSystems.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupActivated.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupActivated.prefab
+    projectPath: Assets\Prefabs\ParticleSystems\FiredashPowerupActivated.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupActivated.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupActivated.prefab.meta
+    projectPath: Assets\Prefabs\ParticleSystems\FiredashPowerupActivated.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupActive 1.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupActive
+      1.prefab
+    projectPath: Assets\Prefabs\ParticleSystems\FiredashPowerupActive 1.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupActive 1.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupActive
+      1.prefab.meta
+    projectPath: Assets\Prefabs\ParticleSystems\FiredashPowerupActive 1.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupDeactivated.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupDeactivated.prefab
+    projectPath: Assets\Prefabs\ParticleSystems\FiredashPowerupDeactivated.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupDeactivated.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\FiredashPowerupDeactivated.prefab.meta
+    projectPath: Assets\Prefabs\ParticleSystems\FiredashPowerupDeactivated.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupActivated.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupActivated.prefab
+    projectPath: Assets\Prefabs\ParticleSystems\GhostPowerupActivated.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupActivated.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupActivated.prefab.meta
+    projectPath: Assets\Prefabs\ParticleSystems\GhostPowerupActivated.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupActive.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupActive.prefab
+    projectPath: Assets\Prefabs\ParticleSystems\GhostPowerupActive.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupActive.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupActive.prefab.meta
+    projectPath: Assets\Prefabs\ParticleSystems\GhostPowerupActive.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupDeActivated.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupDeActivated.prefab
+    projectPath: Assets\Prefabs\ParticleSystems\GhostPowerupDeActivated.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupDeActivated.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\ParticleSystems\GhostPowerupDeActivated.prefab.meta
+    projectPath: Assets\Prefabs\ParticleSystems\GhostPowerupDeActivated.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\TestCube.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\TestCube.prefab
+    projectPath: Assets\Prefabs\TestCube.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Prefabs\tongueSegment.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\tongueSegment.prefab
+    projectPath: Assets\Prefabs\tongueSegment.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: FroggyGame\Assets\Scenes\TestScene.unity
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\TestScene.unity
     projectPath: Assets\Scenes\TestScene.unity
@@ -64,39 +156,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Assets\Scripts\GhostPowerupScript.cs
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\GhostPowerupScript.cs
-    projectPath: Assets\Scripts\GhostPowerupScript.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: FroggyGame\Assets\Scripts\ParticleManager.cs
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\ParticleManager.cs
     projectPath: Assets\Scripts\ParticleManager.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Scripts\ParticleManager.cs.meta
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\ParticleManager.cs.meta
-    projectPath: Assets\Scripts\ParticleManager.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: FroggyGame\Assets\Scripts\PitayaManagerScript.cs
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\PitayaManagerScript.cs
     projectPath: Assets\Scripts\PitayaManagerScript.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Scripts\testCharMovementScript.cs
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\testCharMovementScript.cs
-    projectPath: Assets\Scripts\testCharMovementScript.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Scripts\TongueScript.cs
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\TongueScript.cs
-    projectPath: Assets\Scripts\TongueScript.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -361,12 +429,6 @@ MonoBehaviour:
   - path: FroggyGame\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
     projectPath: Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\ShaderCache\EditorEncounteredVariants
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ShaderCache\EditorEncounteredVariants
-    projectPath: Library\ShaderCache\EditorEncounteredVariants
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

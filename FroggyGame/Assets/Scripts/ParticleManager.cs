@@ -11,21 +11,41 @@ public class ParticleManager : MonoBehaviour
         particleManager = this;
     }
     //Particle effects
-    public ParticleSystem ghostPowerupEffect;
+    public ParticleSystem ghostPowerupEffectActivated;
     public ParticleSystem ghostPowerupEffectDeactivated;
-    void Start()
-    {
-        //Stops all particle systems from playing
-        ghostPowerupEffect.Stop();
-        ghostPowerupEffectDeactivated.Stop();
-    }
+    public ParticleSystem ghostPowerupEffectActive;
 
-    public void PlayGhostPowerupEffect()
+    public ParticleSystem FiredashPowerupEffectActivated;
+    public ParticleSystem FiredashPowerupEffectDeactivated;
+    public ParticleSystem FiredashPowerupEffectActive;
+
+    public void PlayGhostPowerupEffectActivated()
     {
-        ghostPowerupEffect.Play();
+        ghostPowerupEffectActivated.Play();
     }
     public void PlayGhostPowerupEffectDeactivated()
     {
         ghostPowerupEffectDeactivated.Play();
     }
+    public void SetPlayGhostPowerupEffectActive(bool var)
+    {
+        if (var)
+            ghostPowerupEffectActive.Play();
+        else
+            ghostPowerupEffectActive.Stop();
+    }
+
+    public void PlayFiredashPowerupEffectActivated()
+    {
+        FiredashPowerupEffectActivated.Play();
+    }
+    public void PlayFiredashPowerupEffectDeactivated()
+    {
+        FiredashPowerupEffectDeactivated.Play();
+    }
+    public void PlayFiredashPowerupEffectActive()
+    {
+        FiredashPowerupEffectActive.Play();
+    }
+
 }

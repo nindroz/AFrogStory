@@ -6,11 +6,6 @@ public class FrogManager : MonoBehaviour
     //Singleton
     public static FrogManager charFrogManager;
     public static Vector2 respawnPosition;//Respawn/checkpoints
-    private void Awake()
-    {
-        charFrogManager = this;
-    }
-
 
     //spirte render and collider
     public SpriteRenderer render;
@@ -21,14 +16,17 @@ public class FrogManager : MonoBehaviour
     public Sprite normalFrog;
 
     //Timers for powerups
-    private float ghostPowerupDuration = 4f;
+    private float ghostPowerupDuration = 10f;
     private float ghostPowerupTimer = 0;
+    private float firedashPowerupDuration = 10f;
+    private float firedashPowerupTimer = 0;
 
     ParticleManager particleManager;
 
 
-    void Start()
+    void Awake()
     {
+        charFrogManager = this;
         respawnPosition = gameObject.transform.position;
         particleManager = ParticleManager.particleManager;
     }
@@ -43,7 +41,7 @@ public class FrogManager : MonoBehaviour
             //polygonCollider.transform.localScale = new Vector2(-1, 1);
 
         }
-        if(testCharMovementScript.direction == -1)
+        if (testCharMovementScript.direction == -1)
         {
             render.flipX = true;
             //polygonCollider.transform.localScale = new Vector2(1, 1);
@@ -55,20 +53,31 @@ public class FrogManager : MonoBehaviour
         {
             render.sprite = transparentFrog;
         }
-        if(!GhostPowerupScript.isGhosting)
+        if (!GhostPowerupScript.isGhosting)
         {
             render.sprite = normalFrog;
         }
 
         //Timers for powerups
-        if(ghostPowerupTimer > 0)
+        if (ghostPowerupTimer > 0)
         {
             ghostPowerupTimer -= Time.deltaTime;
-            if(ghostPowerupTimer <= 0)
+            if (ghostPowerupTimer <= 0)
             {
                 ghostPowerupTimer = 0;
                 GhostPowerupScript.charGhostPowerupScript.SetGhostPowerup(false);
                 particleManager.PlayGhostPowerupEffectDeactivated();
+                particleManager.SetPlayGhostPowerupEffectActive(false);
+            }
+        }
+        if (firedashPowerupTimer > 0)
+        {
+            firedashPowerupTimer -= Time.deltaTime;
+            if (firedashPowerupTimer <= 0)
+            {
+                firedashPowerupTimer = 0;
+                PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(false);
+                particleManager.PlayFiredashPowerupEffectDeactivated();
             }
         }
     }
@@ -76,19 +85,28 @@ public class FrogManager : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Hitting hazard sends player back to respawn point
-        if(collision.gameObject.CompareTag("Hazard"))
+        if (collision.gameObject.CompareTag("Hazard"))
         {
             gameObject.transform.position = respawnPosition;
 
             StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
         }
         //Activate ghost pwerup
-        if(collision.gameObject.CompareTag("GhostPowerupFruit"))
+        if (collision.gameObject.CompareTag("GhostPowerupFruit"))
         {
             ghostPowerupTimer = ghostPowerupDuration;
             Destroy(collision.gameObject);
-            particleManager.PlayGhostPowerupEffect();
+            particleManager.PlayGhostPowerupEffectActivated();
             GhostPowerupScript.charGhostPowerupScript.SetGhostPowerup(true);
+            particleManager.SetPlayGhostPowerupEffectActive(true);
+        }
+        //Activate firedash pwerup
+        if (collision.gameObject.CompareTag("FiredashPowerupFruit"))
+        {
+            firedashPowerupTimer = firedashPowerupDuration;
+            Destroy(collision.gameObject);
+            particleManager.PlayFiredashPowerupEffectActivated();
+            PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(true);
         }
     }
 }
