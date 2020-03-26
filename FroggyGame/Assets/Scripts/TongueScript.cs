@@ -8,10 +8,6 @@ public class TongueScript : MonoBehaviour
 
     //Singleton
     public static TongueScript charTongueScript;
-    private void Awake()
-    {
-        charTongueScript = this;
-    }
 
     public GameObject parent;
 
@@ -50,12 +46,14 @@ public class TongueScript : MonoBehaviour
     private GameObject grabbedObject;
 
     private bool tongueOut = false;
-    private void Start()
+    private void Awake()
     {
+        charTongueScript = this;
         tongueJoints = new List<GameObject>();
         Physics2D.IgnoreLayerCollision(9, 9);
         Physics2D.IgnoreLayerCollision(9, 10);
         Physics2D.IgnoreLayerCollision(9, 11);
+        Physics2D.IgnoreLayerCollision(9, 14);
     }
     // Update is called once per frame
     void Update()

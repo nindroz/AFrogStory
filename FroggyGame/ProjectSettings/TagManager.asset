@@ -9,6 +9,7 @@ TagManager:
   - GrappleObject
   - GhostPowerupFruit
   - FiredashPowerupFruit
+  - GlidePowerupFruit
   layers:
   - Default
   - TransparentFX
@@ -23,8 +24,8 @@ TagManager:
   - Player
   - MoveableObject
   - GhostTerrain
-  - 
-  - 
+  - NPCs
+  - GlideNPC
   - 
   - 
   - 
@@ -51,6 +52,9 @@ TagManager:
     locked: 0
   - name: EnvironmentBehind
     uniqueID: 515708519
+    locked: 0
+  - name: GamespaceUI
+    uniqueID: 2650408635
     locked: 0
   - name: Tongue
     uniqueID: 1858407567
