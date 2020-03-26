@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MoveableObject
   - Hazard
+  - Platform
   layers:
   - Default
   - TransparentFX

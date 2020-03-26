@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-03-21T17:11:47.377-07:00
-  initializedAtString: 2020-03-21T17:11:47.171-07:00
+  lastUpdatedAtString: 2020-03-25T22:04:16.232-05:00
+  initializedAtString: 2020-03-25T16:39:05.938-05:00
   localBranches:
-  - name: Double's-Test-Branch
-    tracking: origin/Double's-Test-Branch
   - name: master
     tracking: origin/master
   remoteBranches:
@@ -25,7 +23,17 @@ MonoBehaviour:
     tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
+  - name: origin/long-ranged-dart
+    tracking: '[None]'
   - name: origin/master
+    tracking: '[None]'
+  - name: origin/master2
+    tracking: '[None]'
+  - name: origin/star
+    tracking: '[None]'
+  - name: origin/testBranch
+    tracking: '[None]'
+  - name: origin/testbranchnew
     tracking: '[None]'
   remotes:
   - name: origin
@@ -37,14 +45,8 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - Double's-Test-Branch
     - master
     values:
-    - name: Double's-Test-Branch
-      remote:
-        name: origin
-        url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-      trackingBranch: Double's-Test-Branch
     - name: master
       remote:
         name: origin
@@ -57,7 +59,12 @@ MonoBehaviour:
     - Values:
       - Double's-Test-Branch
       - HEAD
+      - long-ranged-dart
       - master
+      - master2
+      - star
+      - testBranch
+      - testbranchnew
     subKeyValues:
     - Values:
       - name: Double's-Test-Branch
@@ -70,7 +77,32 @@ MonoBehaviour:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
         trackingBranch: 
+      - name: long-ranged-dart
+        remote:
+          name: origin
+          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+        trackingBranch: 
       - name: master
+        remote:
+          name: origin
+          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+        trackingBranch: 
+      - name: master2
+        remote:
+          name: origin
+          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+        trackingBranch: 
+      - name: star
+        remote:
+          name: origin
+          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+        trackingBranch: 
+      - name: testBranch
+        remote:
+          name: origin
+          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+        trackingBranch: 
+      - name: testbranchnew
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
