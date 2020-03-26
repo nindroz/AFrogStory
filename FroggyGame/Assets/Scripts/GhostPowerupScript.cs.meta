@@ -1,3 +1,4 @@
+<<<<<<< HEAD:FroggyGame/Assets/Scripts/GhostPowerupScript.cs.meta
 fileFormatVersion: 2
 guid: 806df43250ff41742acf524fe24d5442
 MonoImporter:
@@ -9,3 +10,16 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+fileFormatVersion: 2
+guid: bff25ea4cf0d3d841b6787b9f649f21b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> origin/DashAndJump:FroggyGame/Library/PackageCache/com.unity.analytics@3.3.5/DataPrivacy/DataPrivacy.cs.meta

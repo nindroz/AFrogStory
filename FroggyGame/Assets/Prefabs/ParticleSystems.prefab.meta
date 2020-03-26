@@ -1,0 +1,17 @@
+<<<<<<< HEAD:FroggyGame/Assets/Prefabs/ParticleSystems.prefab.meta
+fileFormatVersion: 2
+guid: 8aa97acfb311dc24bb783d9e057a059a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+=======
+fileFormatVersion: 2
+guid: 7c78b588b2e1f7c4a86ca4a985cf6e4a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> origin/DashAndJump:FroggyGame/Library/PackageCache/com.unity.render-pipelines.core@7.2.1/Runtime/Debugging/Prefabs/Widgets/DebugUI BitField.prefab.meta

@@ -1,0 +1,17 @@
+<<<<<<< HEAD:FroggyGame/Assets/Prefabs/ParticleSystems/FiredashPowerupActive.prefab.meta
+fileFormatVersion: 2
+guid: e73e79040a2e2384fad4f356c5877dd8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+=======
+fileFormatVersion: 2
+guid: 5088d0220f0c4df439cf06c5c270eacb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> origin/DashAndJump:FroggyGame/Library/PackageCache/com.unity.render-pipelines.core@7.2.1/Runtime/Debugging/Prefabs/Widgets/DebugUI ToggleHistory.prefab.meta
