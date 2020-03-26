@@ -9,6 +9,10 @@ public class testCharMovementScript : MonoBehaviour
     //Singleton 
     public static testCharMovementScript charMoveScript;
     public static BoxCollider2D charCollider;
+    private void Awake()
+    {
+        charMoveScript = this;
+    }
 
     //Components
     private Rigidbody2D charRb;
@@ -40,9 +44,8 @@ public class testCharMovementScript : MonoBehaviour
     private bool isGrounded = false;
     private bool horizontalMovementActive = true;
     private bool ignoreHorizontalDrag = false;
-    void Awake()
+    void Start()
     {
-        charMoveScript = this;
         //Gets components
         charRb = gameObject.GetComponent<Rigidbody2D>();
         charCollider = gameObject.GetComponent<BoxCollider2D>();
@@ -109,9 +112,8 @@ public class testCharMovementScript : MonoBehaviour
         if (ignoreHorizontalDrag && isGrounded)
             ignoreHorizontalDrag = false;
 
-        if ((xInput == 0 || !horizontalMovementActive) && !ignoreHorizontalDrag && !PitayaManagerScript.fireDashPowerupScript.GetIsDashing())
+        if ((xInput == 0 || !horizontalMovementActive) && !ignoreHorizontalDrag)
         {
-            print("adsf");
             //Velocity drag when on ground
             if (isGrounded)
             {

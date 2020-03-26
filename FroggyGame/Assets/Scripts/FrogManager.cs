@@ -6,6 +6,11 @@ public class FrogManager : MonoBehaviour
     //Singleton
     public static FrogManager charFrogManager;
     public static Vector2 respawnPosition;//Respawn/checkpoints
+    private void Awake()
+    {
+        charFrogManager = this;
+    }
+
 
     //spirte render and collider
     public SpriteRenderer render;
@@ -16,17 +21,14 @@ public class FrogManager : MonoBehaviour
     public Sprite normalFrog;
 
     //Timers for powerups
-    private float ghostPowerupDuration = 10f;
+    private float ghostPowerupDuration = 4f;
     private float ghostPowerupTimer = 0;
-    private float firedashPowerupDuration = 10f;
-    private float firedashPowerupTimer = 0;
 
     ParticleManager particleManager;
 
 
-    void Awake()
+    void Start()
     {
-        charFrogManager = this;
         respawnPosition = gameObject.transform.position;
         particleManager = ParticleManager.particleManager;
     }
@@ -67,17 +69,6 @@ public class FrogManager : MonoBehaviour
                 ghostPowerupTimer = 0;
                 GhostPowerupScript.charGhostPowerupScript.SetGhostPowerup(false);
                 particleManager.PlayGhostPowerupEffectDeactivated();
-                particleManager.SetPlayGhostPowerupEffectActive(false);
-            }
-        }
-        if (firedashPowerupTimer > 0)
-        {
-            firedashPowerupTimer -= Time.deltaTime;
-            if (firedashPowerupTimer <= 0)
-            {
-                firedashPowerupTimer = 0;
-                PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(false);
-                particleManager.PlayFiredashPowerupEffectDeactivated();
             }
         }
     }
@@ -96,17 +87,8 @@ public class FrogManager : MonoBehaviour
         {
             ghostPowerupTimer = ghostPowerupDuration;
             Destroy(collision.gameObject);
-            particleManager.PlayGhostPowerupEffectActivated();
+            particleManager.PlayGhostPowerupEffect();
             GhostPowerupScript.charGhostPowerupScript.SetGhostPowerup(true);
-            particleManager.SetPlayGhostPowerupEffectActive(true);
-        }
-        //Activate firedash pwerup
-        if (collision.gameObject.CompareTag("FiredashPowerupFruit"))
-        {
-            firedashPowerupTimer = firedashPowerupDuration;
-            Destroy(collision.gameObject);
-            particleManager.PlayFiredashPowerupEffectActivated();
-            PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(true);
         }
     }
 }

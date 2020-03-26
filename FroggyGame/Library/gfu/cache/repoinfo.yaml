@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-03-26T10:29:59.557-07:00
-  initializedAtString: 2020-03-26T10:29:59.557-07:00
+  lastUpdatedAtString: 2020-03-24T16:00:22.995-07:00
+  initializedAtString: 2020-03-24T16:00:22.995-07:00
   currentGitRemote:
     name: origin
     url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
@@ -25,13 +25,13 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: testbranchnew
-    tracking: origin/testbranchnew
+    tracking: 
   currentConfigBranch:
     name: testbranchnew
     remote:
-      name: origin
-      url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-    trackingBranch: testbranchnew
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
     name: origin
     url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
