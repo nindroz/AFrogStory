@@ -38,10 +38,10 @@ public class testCharMovementScript : MonoBehaviour
 
     private float jumpHoldIgnoreTime = 0.2f;//Ignores holding down spacebar for buffer time
     private float jumpIgnoreGroundedTime = 0.1f;//Buffer time to prevent drag from applying on initial jump
-    private float jumpIgnoreGrounedTimer = 0f;
+    private float jumpIgnoreGroundedTimer = 0f;
 
     //character states
-    public bool isGrounded = false;
+    private bool isGrounded = false;
     private bool horizontalMovementActive = true;
     private bool ignoreHorizontalDrag = false;
     void Start()
@@ -55,7 +55,7 @@ public class testCharMovementScript : MonoBehaviour
     //input
     void Update()
     {
-        jumpIgnoreGrounedTimer -= Time.deltaTime;
+        jumpIgnoreGroundedTimer -= Time.deltaTime;
 
         xInput = Input.GetAxisRaw("Horizontal");
         //Charging jump
@@ -93,7 +93,7 @@ public class testCharMovementScript : MonoBehaviour
                 {
                     charRb.velocity = new Vector2(charRb.velocity.x, jumpMinVel);
                 }
-                jumpIgnoreGrounedTimer = jumpIgnoreGroundedTime;
+                jumpIgnoreGroundedTimer = jumpIgnoreGroundedTime;
             }            
             //Resets jumpbar and horizontalMovementActive
             jumpTimer = 0;
@@ -106,7 +106,7 @@ public class testCharMovementScript : MonoBehaviour
     {
         isGrounded = CheckForGrounded();
         //Prevents being checked as grounded immediately after jumping
-        if (jumpIgnoreGrounedTimer > 0)
+        if (jumpIgnoreGroundedTimer > 0)
             isGrounded = false;
         //Drag always reenabled when grounded
         if (ignoreHorizontalDrag && isGrounded)
@@ -186,5 +186,10 @@ public class testCharMovementScript : MonoBehaviour
     public void SetHorizontalMovementActive(bool val)
     {
         horizontalMovementActive = val;
+    }
+
+    public bool GetIsGrounded()
+    {
+        return isGrounded;
     }
 }

@@ -18,6 +18,7 @@ public class GhostPowerupScript : MonoBehaviour
 
     public void SetGhostPowerup(bool var)
     {
+        isGhosting = var;
         Physics2D.IgnoreLayerCollision(10, 12, var);
         Physics2D.IgnoreLayerCollision(9, 12, var);
         if (var ==true)
@@ -34,19 +35,5 @@ public class GhostPowerupScript : MonoBehaviour
     }
 
     //Testing
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            SetGhostPowerup(true);
-            isGhosting = true;
-        }
-        if (Input.GetKeyUp(KeyCode.G))
-        {
-            SetGhostPowerup(false);
-            isGhosting = false;
-        }
-            
-    }
 
 }
