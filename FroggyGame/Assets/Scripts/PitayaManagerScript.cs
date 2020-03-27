@@ -21,13 +21,8 @@ public class PitayaManagerScript : MonoBehaviour
     private float currentDashTime;          //How long the player has been dashing for
     private float storedGravity;            //The gravity before it is turned off during the dash
     private int direction;                  //Whether the cursor is pointed left or right of the player before the dash
-
-
-    private bool isFiredashActivated = false;//Whether or not powerup is currently active
-
     private int dir;
-
-
+       
     void Awake() //Set all the variables
     {
         fireDashPowerupScript = this;
@@ -52,14 +47,20 @@ public class PitayaManagerScript : MonoBehaviour
         {
             direction = 1;
         }
-
+        
     }
 
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.E) && !isDashing && canDash && isFiredashActivated) //If the player presses E and can go into a dash, put them in that state.
-
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            direction = -1;
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            direction = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.M) && !isDashing && canDash) //If the player presses M and can go into a dash, put them in that state.
         {
             isDashing = true;                       //Put them in the dash state
             canDash = false;                        //Prohibit them from chaining dashes
@@ -69,6 +70,8 @@ public class PitayaManagerScript : MonoBehaviour
             storedGravity = rBody.gravityScale;     //Store the current gravity acting on the player
             rBody.gravityScale = 0;                 //Change the gravity to zero.
             FindDirection();                        //Find out the direction the player is dashing
+            dir = direction;                        //
+        }  
 
             ParticleManager.particleManager.PlayFiredashPowerupEffectActive();//Plays particle effect
 
