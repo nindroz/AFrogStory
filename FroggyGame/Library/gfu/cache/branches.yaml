@@ -13,17 +13,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-03-25T22:04:16.232-05:00
-  initializedAtString: 2020-03-25T16:39:05.938-05:00
+  lastUpdatedAtString: 2020-03-26T18:27:51.184-07:00
+  initializedAtString: 2020-03-26T18:27:51.134-07:00
   localBranches:
+  - name: coins
+    tracking: origin/coins
+  - name: DashAndJump
+    tracking: origin/DashAndJump
   - name: master
     tracking: origin/master
+  - name: master2
+    tracking: origin/master2
+  - name: testbranchnew
+    tracking: origin/testbranchnew
   remoteBranches:
-  - name: origin/Double's-Test-Branch
+  - name: origin/coins
     tracking: '[None]'
-  - name: origin/HEAD
-    tracking: '[None]'
-  - name: origin/long-ranged-dart
+  - name: origin/DashAndJump
     tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
@@ -31,7 +37,7 @@ MonoBehaviour:
     tracking: '[None]'
   - name: origin/star
     tracking: '[None]'
-  - name: origin/testBranch
+  - name: origin/star2
     tracking: '[None]'
   - name: origin/testbranchnew
     tracking: '[None]'
@@ -45,39 +51,57 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - coins
+    - DashAndJump
     - master
+    - master2
+    - testbranchnew
     values:
+    - name: coins
+      remote:
+        name: origin
+        url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+      trackingBranch: coins
+    - name: DashAndJump
+      remote:
+        name: origin
+        url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+      trackingBranch: DashAndJump
     - name: master
       remote:
         name: origin
         url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
       trackingBranch: master
+    - name: master2
+      remote:
+        name: origin
+        url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+      trackingBranch: master2
+    - name: testbranchnew
+      remote:
+        name: origin
+        url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
+      trackingBranch: testbranchnew
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
-      - Double's-Test-Branch
-      - HEAD
-      - long-ranged-dart
+      - coins
+      - DashAndJump
       - master
       - master2
       - star
-      - testBranch
+      - star2
       - testbranchnew
     subKeyValues:
     - Values:
-      - name: Double's-Test-Branch
+      - name: coins
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
         trackingBranch: 
-      - name: HEAD
-        remote:
-          name: origin
-          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
-      - name: long-ranged-dart
+      - name: DashAndJump
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
@@ -97,7 +121,7 @@ MonoBehaviour:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
         trackingBranch: 
-      - name: testBranch
+      - name: star2
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git

@@ -79,7 +79,7 @@ public class PitayaManagerScript : MonoBehaviour
 
             dir = direction;                        //
 
-        }
+        
         if (Input.GetKeyDown(KeyCode.A))
         {
             direction = -1;

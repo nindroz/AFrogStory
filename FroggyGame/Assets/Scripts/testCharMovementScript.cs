@@ -41,7 +41,7 @@ public class testCharMovementScript : MonoBehaviour
     private float jumpIgnoreGroundedTimer = 0f;
 
     //character states
-    private bool isGrounded = false;
+    public bool isGrounded = false;
     private bool horizontalMovementActive = true;
     private bool ignoreHorizontalDrag = false;
     void Start()
