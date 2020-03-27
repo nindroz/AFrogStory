@@ -16,6 +16,10 @@ public class Bullet : MonoBehaviour
     {
         //cahnge this when we have an enemyDebug.Log(hitInfo.name);
         Destroy(gameObject);
+        if (hitInfo.gameObject.CompareTag("enemy"))
+        {
+            Destroy(hitInfo.gameObject);
+        }
     }
 
     // Update is called once per frame

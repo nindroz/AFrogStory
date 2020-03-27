@@ -1,4 +1,4 @@
-%YAML 1.1
+ %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &1
 MonoBehaviour:
@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1666186674, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   cacheType: 2
   lastUpdatedAtString: 2020-03-26T18:27:51.184-07:00
   initializedAtString: 2020-03-26T18:27:51.134-07:00
@@ -44,11 +44,11 @@ MonoBehaviour:
   remotes:
   - name: origin
     url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-    login: 
-    user: 
-    host: 
+    login:
+    user:
+    host:
     function: 0
-    token: 
+    token:
   localConfigBranches:
     keys:
     - coins
@@ -100,37 +100,37 @@ MonoBehaviour:
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
+        trackingBranch:
       - name: DashAndJump
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
+        trackingBranch:
       - name: master
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
+        trackingBranch:
       - name: master2
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
+        trackingBranch:
       - name: star
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
+        trackingBranch:
       - name: star2
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
+        trackingBranch:
       - name: testbranchnew
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
+        trackingBranch:
   configRemotes:
     keys:
     - origin

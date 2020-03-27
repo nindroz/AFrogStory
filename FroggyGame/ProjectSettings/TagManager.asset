@@ -5,12 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - MoveableObject
-  - ConsumableObject
   - Hazard
-  - Platform
-  - GrappleObject
-  - GhostPowerupFruit
-  - FiredashPowerupFruit
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -24,7 +20,7 @@ TagManager:
   - TongueLayer
   - Player
   - MoveableObject
-  - GhostTerrain
+  - 
   - 
   - 
   - 
@@ -47,25 +43,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Backgrounds
-    uniqueID: 639102047
-    locked: 0
-  - name: EnvironmentBehind
-    uniqueID: 515708519
-    locked: 0
-  - name: Tongue
-    uniqueID: 1858407567
-    locked: 0
-  - name: Particles
-    uniqueID: 1802916821
-    locked: 0
-  - name: Player
-    uniqueID: 3939589021
-    locked: 0
-  - name: EnvironmentInFront
-    uniqueID: 732326293
-    locked: 0
-  - name: Foregrounds
-    uniqueID: 2810557829
     locked: 0
