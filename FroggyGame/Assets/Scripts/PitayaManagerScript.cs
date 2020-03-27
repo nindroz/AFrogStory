@@ -1,4 +1,4 @@
-﻿
+
 using UnityEngine;
 
 //Press "E" To Activate It!
@@ -22,6 +22,8 @@ public class PitayaManagerScript : MonoBehaviour
     private float storedGravity;            //The gravity before it is turned off during the dash
     private int direction;                  //Whether the cursor is pointed left or right of the player before the dash
     private int dir;
+    private bool isFiredashActivated = false;//Whether or not powerup is currently active 
+
        
     void Awake() //Set all the variables
     {
