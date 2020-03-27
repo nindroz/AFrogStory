@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MoveableObject
   - Hazard
+  - enemy
   layers:
   - Default
   - TransparentFX

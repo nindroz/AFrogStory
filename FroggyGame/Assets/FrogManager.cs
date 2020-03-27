@@ -33,5 +33,11 @@ public class FrogManager : MonoBehaviour
 
             StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
         }
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            gameObject.transform.position = respawnPosition;
+
+            StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
+        }
     }
 }
