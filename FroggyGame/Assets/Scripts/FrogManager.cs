@@ -102,6 +102,13 @@ public class FrogManager : MonoBehaviour
 
             StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
         }
+        //hitting enemy does as well 
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            gameObject.transform.position = respawnPosition;
+
+            StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
+        }
         //Activate ghost pwerup
         if (collision.gameObject.CompareTag("GhostPowerupFruit"))
         {
