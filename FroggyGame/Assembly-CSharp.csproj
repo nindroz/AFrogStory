@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GamespaceTextScript.cs" />
+    <Compile Include="Assets\GlidePowerupControlScript.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\BumperScript.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />

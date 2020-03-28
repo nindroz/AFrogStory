@@ -20,6 +20,8 @@ public class FrogManager : MonoBehaviour
     private float ghostPowerupTimer = 0;
     private float firedashPowerupDuration = 10f;
     private float firedashPowerupTimer = 0;
+    private float glidePowerupDuration = 10f;
+    private float glidePowerupTimer = 0;
 
     ParticleManager particleManager;
 
@@ -80,6 +82,15 @@ public class FrogManager : MonoBehaviour
                 particleManager.PlayFiredashPowerupEffectDeactivated();
             }
         }
+        if (glidePowerupTimer > 0)
+        {
+            glidePowerupTimer -= Time.deltaTime;
+            if (glidePowerupTimer <= 0)
+            {
+                glidePowerupTimer = 0;
+                StartCoroutine(GlidePowerupControlScript.glidePowerupScript.DeactivateGlidePowerup());
+            }
+        }
     }
     //Manages collisions
     private void OnCollisionEnter2D(Collision2D collision)
@@ -107,6 +118,13 @@ public class FrogManager : MonoBehaviour
             Destroy(collision.gameObject);
             particleManager.PlayFiredashPowerupEffectActivated();
             PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(true);
+        }
+        //Activate glide pwerup
+        if (collision.gameObject.CompareTag("GlidePowerupFruit"))
+        {
+            glidePowerupTimer = glidePowerupDuration;
+            Destroy(collision.gameObject);
+            StartCoroutine(GlidePowerupControlScript.glidePowerupScript.ActivateGlidePowerup());
         }
     }
 }
