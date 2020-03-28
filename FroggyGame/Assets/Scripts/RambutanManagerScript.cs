@@ -42,7 +42,7 @@ public class RambutanManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(!charMove.isGrounded)
+       if(!charMove.GetIsGrounded())
         {
             if (Input.GetKey(KeyCode.A) && leftBumper.isTouchingWall && !isStickingLeft)
             {
@@ -75,7 +75,7 @@ public class RambutanManagerScript : MonoBehaviour
             rBody.velocity = new Vector2(0, 0);
         }
 
-        if(Input.GetKeyUp(KeyCode.W) && !charMove.isGrounded && (isStickingLeft || isStickingRight))
+        if(Input.GetKeyUp(KeyCode.W) && !charMove.GetIsGrounded() && (isStickingLeft || isStickingRight))
         {
             if (leftBumper.isTouchingWall)
             {

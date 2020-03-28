@@ -41,7 +41,7 @@ public class testCharMovementScript : MonoBehaviour
     private float jumpIgnoreGroundedTimer = 0f;
 
     //character states
-    public bool isGrounded = false;
+    private bool isGrounded = false;
     private bool horizontalMovementActive = true;
     private bool ignoreHorizontalDrag = false;
     void Start()
@@ -155,7 +155,7 @@ public class testCharMovementScript : MonoBehaviour
             }
         }
     }
-
+/*
     private void OnTriggerEnter2D(Collider2D thing) 
     {
         if(thing.gameObject.CompareTag("ConsumableObject")) 
@@ -163,7 +163,7 @@ public class testCharMovementScript : MonoBehaviour
             Destroy(thing.gameObject);
         }
     }
-
+*/
     //Checks if character is grounded
     public LayerMask groundedCheckLayerMask;
     private bool CheckForGrounded()

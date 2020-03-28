@@ -33,7 +33,6 @@ public class PitayaManagerScript : MonoBehaviour
         dashDelay = 0.1f;
         dashVelocity = 70;
 
-        charMove = testCharMovementScript.charMoveScript;
         rBody = GetComponent<Rigidbody2D>();
         isDashing = false;
         canDash = true;
@@ -43,6 +42,10 @@ public class PitayaManagerScript : MonoBehaviour
         direction = 1;
     }
 
+    private void Start()
+    {
+        charMove = testCharMovementScript.charMoveScript;
+    }
     void FindDirection()    //Detects what direction the pointer is relative to the player to choose which direction to dash in
     {
         if (dir == 0)
@@ -73,21 +76,9 @@ public class PitayaManagerScript : MonoBehaviour
             rBody.gravityScale = 0;                 //Change the gravity to zero.
             FindDirection();                        //Find out the direction the player is dashing
             dir = direction;                        //
-        }  
 
             ParticleManager.particleManager.PlayFiredashPowerupEffectActive();//Plays particle effect
-
-            dir = direction;                        //
-
-        
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            direction = -1;
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            direction = 1;
-        }
+        }  
         if (isDashing)
         {
             rBody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation; //Freeze their Y Position and Z rotation so they can only move horizontally
