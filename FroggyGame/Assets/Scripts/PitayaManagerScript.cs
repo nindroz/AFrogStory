@@ -57,15 +57,8 @@ public class PitayaManagerScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            direction = -1;
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            direction = 1;
-        }
-        if (Input.GetKeyDown(KeyCode.M) && !isDashing && canDash) //If the player presses M and can go into a dash, put them in that state.
+        direction = testCharMovementScript.charMoveScript.GetDirection();//Gets player facing direction
+        if (Input.GetKeyDown(KeyCode.E) && !isDashing && canDash && isFiredashActivated) //If the player presses E and can go into a dash, put them in that state.
         {
             isDashing = true;                       //Put them in the dash state
             canDash = false;                        //Prohibit them from chaining dashes

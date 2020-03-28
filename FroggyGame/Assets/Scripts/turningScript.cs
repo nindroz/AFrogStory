@@ -12,7 +12,7 @@ public class turningScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (testCharMovementScript.direction == 1)
+        if (testCharMovementScript.charMoveScript.GetDirection() == 1)
         {
             firePoint.transform.position = new Vector2(player.transform.position.x + 3,firePoint.transform.position.y);
         }

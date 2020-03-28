@@ -36,14 +36,15 @@ public class FrogManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int dir = testCharMovementScript.charMoveScript.GetDirection();
         //filps sprite render and collider
-        if (testCharMovementScript.direction == 1)
+        if (dir == 1)
         {
             render.flipX = false;
             //polygonCollider.transform.localScale = new Vector2(-1, 1);
 
         }
-        if (testCharMovementScript.direction == -1)
+        if (dir == -1)
         {
             render.flipX = true;
             //polygonCollider.transform.localScale = new Vector2(1, 1);

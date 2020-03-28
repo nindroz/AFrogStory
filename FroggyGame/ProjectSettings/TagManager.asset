@@ -21,12 +21,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Terrain
+  - MoveableObject
+  - GhostTerrain
+  - Player
+  - NPCS
+  - TongueLayer
   - 
   - 
   - 
@@ -72,6 +72,9 @@ TagManager:
     locked: 0
   - name: NPCS
     uniqueID: 3652110701
+    locked: 0
+  - name: CharacterUI
+    uniqueID: 2517282469
     locked: 0
   - name: EnvironmentForeground
     uniqueID: 305702459

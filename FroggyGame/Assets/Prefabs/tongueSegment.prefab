@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6227374124382625838}
   - component: {fileID: 6227374124382625837}
   - component: {fileID: 6227374124382625836}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: tongueSegment
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6013252463872464238}
   - component: {fileID: 6013252463872464529}
-  m_Layer: 14
+  m_Layer: 12
   m_Name: BirdGlidePowerup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 6013252464833770342}
   - component: {fileID: 6013252464833770343}
   - component: {fileID: 512881653}
-  m_Layer: 14
+  m_Layer: 12
   m_Name: BirdNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}

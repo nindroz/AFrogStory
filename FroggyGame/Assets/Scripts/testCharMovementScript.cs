@@ -23,9 +23,8 @@ public class testCharMovementScript : MonoBehaviour
     private float moveForceGround = 100f;
     private float moveForceAir = 70f;
 
-    //direction vars for firePoint
-    public static int direction =0;
-    bool isRight = true;
+    //direction for other scripts
+    private int direction = 0;
 
     //Jumping vars
     public float jumpChargeTime;
@@ -56,7 +55,7 @@ public class testCharMovementScript : MonoBehaviour
     void Update()
     {
         jumpIgnoreGroundedTimer -= Time.deltaTime;
-
+        
         xInput = Input.GetAxisRaw("Horizontal");
         //Charging jump
         if (Input.GetKey(KeyCode.Space) && isGrounded && !TongueScript.charTongueScript.GetTongueOut())
@@ -128,21 +127,12 @@ public class testCharMovementScript : MonoBehaviour
         //Applies horizontal movement
         if (horizontalMovementActive)
         {
+            if(xInput != 0)
+                direction = (int)xInput;
             //More force while grounded
             if(isGrounded)
             {
                 charRb.AddForce(Vector2.right * xInput * moveForceGround * charRb.mass);
-                //checks if frog is facing right or left and isRight is used to not repeat one direction multiple times
-                if (xInput > 0 && isRight == false && horizontalMovementActive)
-                {
-                    direction = 1;//right
-                    isRight = true;
-                }
-                if (xInput < 0 && isRight == true && horizontalMovementActive)
-                {
-                    direction = -1;//left
-                    isRight = false;
-                }
                 //Clamps ground speed to max velocity
                 charRb.velocity = new Vector2(Mathf.Clamp(charRb.velocity.x, -moveVelocity, moveVelocity), charRb.velocity.y);
             }
@@ -191,5 +181,10 @@ public class testCharMovementScript : MonoBehaviour
     public bool GetIsGrounded()
     {
         return isGrounded;
+    }
+
+    public int GetDirection()
+    {
+        return direction;
     }
 }

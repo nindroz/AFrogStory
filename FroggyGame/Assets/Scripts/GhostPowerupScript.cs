@@ -19,8 +19,8 @@ public class GhostPowerupScript : MonoBehaviour
     public void SetGhostPowerup(bool var)
     {
         isGhosting = var;
-        Physics2D.IgnoreLayerCollision(10, 12, var);
-        Physics2D.IgnoreLayerCollision(9, 12, var);
+        Physics2D.IgnoreLayerCollision(11, 10, var);
+        Physics2D.IgnoreLayerCollision(13, 10, var);
         if (var ==true)
         {
             //Change masks to ignore layer

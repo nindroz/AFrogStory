@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {   
         //moves bullet
-        rb.velocity = transform.right * Speed * testCharMovementScript.direction;
+        rb.velocity = transform.right * Speed * testCharMovementScript.charMoveScript.GetDirection();
     }
     //chekcs for bullet hits
     void OnTriggerEnter2D( Collider2D hitInfo)

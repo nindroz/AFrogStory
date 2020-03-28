@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6384997882556754829}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FiredashPowerups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6384997883361555273}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GhostPowerups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6384997883392025873}
   - component: {fileID: 6384997883392025872}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ParticleSystems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,6 +189,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostPowerupActive
       objectReference: {fileID: 0}
+    - target: {fileID: 6825400909385673422, guid: c6d320475be8fcf439730880c224fe1b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6d320475be8fcf439730880c224fe1b, type: 3}
 --- !u!4 &6384997882472223933 stripped
@@ -219,6 +224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GhostPowerupActivated
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482321795271246132, guid: 99d6e8765d5c7f44cb27d7aa40d71f0e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5482321795271246135, guid: 99d6e8765d5c7f44cb27d7aa40d71f0e,
         type: 3}
@@ -472,6 +482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GhostPowerupDeActivated
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043706848827593128, guid: 3c8c1690e7eddae428a0e52b435626c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3043706848827593133, guid: 3c8c1690e7eddae428a0e52b435626c3,
         type: 3}

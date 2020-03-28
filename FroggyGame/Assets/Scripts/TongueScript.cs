@@ -50,10 +50,10 @@ public class TongueScript : MonoBehaviour
     {
         charTongueScript = this;
         tongueJoints = new List<GameObject>();
-        Physics2D.IgnoreLayerCollision(9, 9);
-        Physics2D.IgnoreLayerCollision(9, 10);
-        Physics2D.IgnoreLayerCollision(9, 11);
-        Physics2D.IgnoreLayerCollision(9, 14);
+        Physics2D.IgnoreLayerCollision(13, 9);
+        Physics2D.IgnoreLayerCollision(13, 11);
+        Physics2D.IgnoreLayerCollision(13, 12);
+        Physics2D.IgnoreLayerCollision(13, 13);
     }
     // Update is called once per frame
     void Update()
@@ -80,7 +80,7 @@ public class TongueScript : MonoBehaviour
         }
         if (tongueOut)
         {
-            if(grabbedObject.layer == 11)
+            if(grabbedObject.layer == 9)
                 currentTongueJointDistance = Mathf.Min(maxTongueJointDistance, GetMouseDistance()/ (jointCount - 1));
             TonguePhysics(currentTongueJointDistance);
         }
@@ -126,7 +126,7 @@ public class TongueScript : MonoBehaviour
             joint.GetComponent<Rigidbody2D>().AddForce(mouseDiff.normalized * tongueMaxMoveForce*(mouseDiff.magnitude/maxMouseDist));
         }
         //Grabbed object inherits velocity from mouse movement  
-        if(grabbedObject != null && grabbedObject.layer == 11)
+        if(grabbedObject != null && grabbedObject.layer == 9)
         {
             Vector2 grabMouseScreenPos = Input.mousePosition;
             Vector2 grabMouseDiff = (grabMouseScreenPos - initialGrabMouseScreenPos) * 2 * Camera.main.orthographicSize/Screen.height;//Finds mouse movement from origin, converts to units
@@ -238,7 +238,7 @@ public class TongueScript : MonoBehaviour
             }
             counter++;
         }
-        if(targetHit.collider == null || !(targetHit.collider.gameObject.layer == 11))// && !targetHit.collider.gameObject.CompareTag("GrappleObject")))
+        if(targetHit.collider == null || !(targetHit.collider.gameObject.layer == 9))// && !targetHit.collider.gameObject.CompareTag("GrappleObject")))
         {
             StartCoroutine(RetractTongue());
         }
