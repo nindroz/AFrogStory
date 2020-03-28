@@ -13,12 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-<<<<<<< HEAD
-  lastUpdatedAtString: 2020-03-27T18:20:14.224-07:00
-  initializedAtString: 2020-03-27T18:20:14.224-07:00
-=======
-  lastUpdatedAtString: 2020-03-26T14:49:00.135-07:00
-  initializedAtString: 2020-03-26T13:53:42.902-07:00
->>>>>>> testbranchnew
+  lastUpdatedAtString: 2020-03-27T20:29:58.254-07:00
+  initializedAtString: 2020-03-27T20:29:58.254-07:00
   ahead: 0
   behind: 0

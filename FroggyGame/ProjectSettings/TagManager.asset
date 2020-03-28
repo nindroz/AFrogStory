@@ -4,16 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MoveableObject
-  - Hazard
-<<<<<<< HEAD
-  - enemy
-=======
-  - GrappleObject
   - GhostPowerupFruit
   - FiredashPowerupFruit
+  - MoveableObject
   - GlidePowerupFruit
->>>>>>> testbranchnew
+  - GrappleObject
+  - enemy
+  - Hazard
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -23,19 +21,13 @@ TagManager:
   - UI
   - 
   - 
-  - Terrain
-  - TongueLayer
-  - Player
-  - MoveableObject
-<<<<<<< HEAD
   - 
   - 
   - 
-=======
-  - GhostTerrain
-  - NPCs
-  - GlideNPC
->>>>>>> testbranchnew
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -57,30 +49,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
-=======
   - name: Backgrounds
-    uniqueID: 639102047
+    uniqueID: 2816911259
     locked: 0
   - name: EnvironmentBehind
-    uniqueID: 515708519
+    uniqueID: 2715904371
     locked: 0
-  - name: GamespaceUI
-    uniqueID: 2650408635
+  - name: GameSpaceUI
+    uniqueID: 1005726997
+    locked: 0
+  - name: Burd
+    uniqueID: 1399514589
     locked: 0
   - name: Tongue
-    uniqueID: 1858407567
+    uniqueID: 755386361
     locked: 0
   - name: Particles
-    uniqueID: 1802916821
+    uniqueID: 2250345433
     locked: 0
   - name: Player
-    uniqueID: 3939589021
+    uniqueID: 1382094431
     locked: 0
-  - name: EnvironmentInFront
-    uniqueID: 732326293
+  - name: NPCS
+    uniqueID: 3652110701
+    locked: 0
+  - name: EnvironmentForeground
+    uniqueID: 305702459
     locked: 0
   - name: Foregrounds
-    uniqueID: 2810557829
+    uniqueID: 2631165367
     locked: 0
->>>>>>> testbranchnew
