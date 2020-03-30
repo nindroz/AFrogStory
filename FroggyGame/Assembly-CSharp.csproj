@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\GamespaceTextScript.cs" />
     <Compile Include="Assets\Scripts\GhostPowerupScript.cs" />
     <Compile Include="Assets\Scripts\GlidePowerupControlScript.cs" />
+    <Compile Include="Assets\Scripts\LevePointScript.cs" />
     <Compile Include="Assets\Scripts\ParallaxSystem.cs" />
     <Compile Include="Assets\Scripts\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\PitayaManagerScript.cs" />

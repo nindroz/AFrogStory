@@ -20,7 +20,7 @@ public class testCharMovementScript : MonoBehaviour
     private float xInput;
     //Horizontal Movement vars
     public float moveVelocity = 20;//Maximum horizontal velocity
-    private float moveForceGround = 100f;
+    private float moveForceGround = 130f;
     private float moveForceAir = 70f;
 
     //direction for other scripts
@@ -186,5 +186,10 @@ public class testCharMovementScript : MonoBehaviour
     public int GetDirection()
     {
         return direction;
+    }
+
+    public void SetDirection(int dir)
+    {
+         direction = dir;
     }
 }

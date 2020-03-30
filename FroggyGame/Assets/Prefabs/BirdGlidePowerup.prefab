@@ -47,8 +47,8 @@ MonoBehaviour:
   glideNpc: {fileID: 6013252464833770341}
   summonOffset: {x: 0, y: 20}
   attachOffset: {x: 0, y: 1}
-  flapForce: 150
-  horizontalVelocity: 10
+  flapForce: 2000
+  horizontalVelocity: 20
 --- !u!1 &6013252464833770341
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,8 +118,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1399514589
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 218586b92fc043f459108dc954c66c55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -147,11 +147,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 2
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 3
+  m_Material: {fileID: 6200000, guid: 8641edf1e9e4b164d99e7d2da45fb609, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &512881653
 BoxCollider2D:

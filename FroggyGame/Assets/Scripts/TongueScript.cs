@@ -94,15 +94,7 @@ public class TongueScript : MonoBehaviour
         //Also apply a force in the direction of the mouse, higher force when mouse is further away 
         float maxMouseDist = 5f;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 basePosition = (Vector2)transform.position + tongueBaseOffset;
-        //If grapple applies, then distance bind the frog to the point
-        if(grabbedObject != null && grabbedObject.CompareTag("GrappleObject"))
-        {
-            Vector2 grappleDiff = (Vector2)grabbedObject.transform.position - basePosition;
-            gameObject.transform.position = (Vector2)grabbedObject.transform.position - grappleDiff.normalized * _currentTongueJointDistance- tongueBaseOffset;
-            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.GetComponent<Rigidbody2D>().velocity.x, Mathf.Clamp(gameObject.GetComponent<Rigidbody2D>().velocity.y, -10f, 10f));
-            gameObject.GetComponent<Rigidbody2D>().AddForce(grappleDiff.normalized*5f);
-        }    
+        Vector2 basePosition = (Vector2)transform.position + tongueBaseOffset;  
         //Binds first joint to fixed position
         GameObject joint = tongueJoints[0];
         Vector2 pos = joint.transform.position;
@@ -171,9 +163,6 @@ public class TongueScript : MonoBehaviour
     {
         testCharMovementScript.charMoveScript.SetHorizontalMovementActive(true);
         int counter = 0;
-        //If grapple, remove connection before retracting
-        if (grabbedObject != null && grabbedObject.CompareTag("GrappleObject"))
-            grabbedObject = null;
         //Retract effect by incrimenting jointDistance down
         currentTongueJointDistance = Mathf.Min(maxTongueJointDistance, GetMouseDistance() / (jointCount - 1));
         for (float x = 0;x <= currentTongueJointDistance - minTongueGrabDistance/jointCount; x+= 0.01f)
@@ -195,6 +184,10 @@ public class TongueScript : MonoBehaviour
 /*        //Renables collisions with target
         if(grabbedObject != null)
             Physics2D.IgnoreCollision(testCharMovementScript.charCollider, grabbedObject.GetComponent<Collider2D>(),false);*/
+        if(grabbedObject!= null)
+        {
+            grabbedObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        }
         grabbedObject = null;
         yield return new WaitForSeconds(tongueCooldownTime);
         tongueCooldown = false;
@@ -208,6 +201,11 @@ public class TongueScript : MonoBehaviour
         mousePositionMinThreshholdReached = false;
 
         float dist = _targetVector.magnitude;
+
+        if (_targetVector.x < 0)
+            testCharMovementScript.charMoveScript.SetDirection(-1);
+        else
+            testCharMovementScript.charMoveScript.SetDirection(1);
 
         Vector2 size = new Vector2(1.5f, 1.5f);
         float lengthBuffer = 0.5f;
@@ -248,10 +246,8 @@ public class TongueScript : MonoBehaviour
             //Physics2D.IgnoreCollision(testCharMovementScript.charCollider, targetHit.collider);
                 tongueOut = true;
             grabbedObject = targetHit.collider.gameObject;
-            if(grabbedObject.CompareTag("GrappleObject"))
-            {
-                currentTongueJointDistance = ((Vector2)grabbedObject.transform.position - ((Vector2)gameObject.transform.position + tongueBaseOffset)).magnitude;
-            }
+
+            grabbedObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;//Prevents weird spinning
         }
 
     }
