@@ -81,6 +81,7 @@ public class FrogManager : MonoBehaviour
                 firedashPowerupTimer = 0;
                 PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(false);
                 particleManager.PlayFiredashPowerupEffectDeactivated();
+                particleManager.SetPlayFiredashPowerupEffectPassive(false);
             }
         }
         if (glidePowerupTimer > 0)
@@ -126,6 +127,7 @@ public class FrogManager : MonoBehaviour
             Destroy(collision.gameObject);
             particleManager.PlayFiredashPowerupEffectActivated();
             PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(true);
+            particleManager.SetPlayFiredashPowerupEffectPassive(true);
         }
         //Activate glide pwerup
         if (collision.gameObject.CompareTag("GlidePowerupFruit"))

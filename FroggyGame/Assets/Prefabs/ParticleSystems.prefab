@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6384997882556754829}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FiredashPowerups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,6 +30,7 @@ Transform:
   - {fileID: 228684954732523824}
   - {fileID: 5950957513891186242}
   - {fileID: 8892947426974675064}
+  - {fileID: 6825400908492834074}
   m_Father: {fileID: 6384997883392025873}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42,7 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6384997883361555273}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GhostPowerups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +77,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6384997883392025873}
   - component: {fileID: 6384997883392025872}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ParticleSystems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,6 +118,7 @@ MonoBehaviour:
   FiredashPowerupEffectActivated: {fileID: 228684954732523839}
   FiredashPowerupEffectDeactivated: {fileID: 5950957513891186253}
   FiredashPowerupEffectActive: {fileID: 8892947426974675063}
+  FiredashPowerupEffectActivePassive: {fileID: 6825400908492834072}
 --- !u!1001 &442654895996108300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124,6 +126,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6384997883361555273}
     m_Modifications:
+    - target: {fileID: 6825400909385673392, guid: c6d320475be8fcf439730880c224fe1b,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2044621863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825400909385673392, guid: c6d320475be8fcf439730880c224fe1b,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6825400909385673393, guid: c6d320475be8fcf439730880c224fe1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -184,6 +196,11 @@ PrefabInstance:
       propertyPath: moveWithTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6825400909385673395, guid: c6d320475be8fcf439730880c224fe1b,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6825400909385673422, guid: c6d320475be8fcf439730880c224fe1b,
         type: 3}
       propertyPath: m_Name
@@ -192,7 +209,7 @@ PrefabInstance:
     - target: {fileID: 6825400909385673422, guid: c6d320475be8fcf439730880c224fe1b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6d320475be8fcf439730880c224fe1b, type: 3}
@@ -228,7 +245,17 @@ PrefabInstance:
     - target: {fileID: 5482321795271246132, guid: 99d6e8765d5c7f44cb27d7aa40d71f0e,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482321795271246134, guid: 99d6e8765d5c7f44cb27d7aa40d71f0e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2044621863
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482321795271246134, guid: 99d6e8765d5c7f44cb27d7aa40d71f0e,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5482321795271246135, guid: 99d6e8765d5c7f44cb27d7aa40d71f0e,
         type: 3}
@@ -366,10 +393,30 @@ PrefabInstance:
       propertyPath: lengthInSec
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 7239475760009080200, guid: a063871eba05633478cda17139700255,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239475760009080201, guid: a063871eba05633478cda17139700255,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2044621863
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239475760009080201, guid: a063871eba05633478cda17139700255,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7239475760009080202, guid: a063871eba05633478cda17139700255,
         type: 3}
       propertyPath: m_Name
       value: FiredashPowerupActive 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239475760009080202, guid: a063871eba05633478cda17139700255,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a063871eba05633478cda17139700255, type: 3}
@@ -385,6 +432,92 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 2242177203807247871}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3797502942624147089
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6384997882556754829}
+    m_Modifications:
+    - target: {fileID: 7641413642529072009, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641413642529072116, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+        type: 3}
+      propertyPath: m_Name
+      value: FiredashPowerupActivePassive
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f6be48c5c27d4442b2a67a81eecee60, type: 3}
+--- !u!4 &6825400908492834074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7641413642529072011, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+    type: 3}
+  m_PrefabInstance: {fileID: 3797502942624147089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6825400908492834072 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7641413642529072009, guid: 5f6be48c5c27d4442b2a67a81eecee60,
+    type: 3}
+  m_PrefabInstance: {fileID: 3797502942624147089}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6101112832232674218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -397,10 +530,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: FiredashPowerupDeactivated
       objectReference: {fileID: 0}
+    - target: {fileID: 449671255791195621, guid: 8aef8b7347adf7e47925257e96375a33,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 449671255791195622, guid: 8aef8b7347adf7e47925257e96375a33,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2044621863
+      objectReference: {fileID: 0}
+    - target: {fileID: 449671255791195622, guid: 8aef8b7347adf7e47925257e96375a33,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 449671255791195623, guid: 8aef8b7347adf7e47925257e96375a33,
         type: 3}
       propertyPath: moveWithTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 449671255791195623, guid: 8aef8b7347adf7e47925257e96375a33,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 449671255791195624, guid: 8aef8b7347adf7e47925257e96375a33,
         type: 3}
@@ -486,12 +639,22 @@ PrefabInstance:
     - target: {fileID: 3043706848827593128, guid: 3c8c1690e7eddae428a0e52b435626c3,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3043706848827593133, guid: 3c8c1690e7eddae428a0e52b435626c3,
         type: 3}
       propertyPath: moveWithTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043706848827593134, guid: 3c8c1690e7eddae428a0e52b435626c3,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2044621863
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043706848827593134, guid: 3c8c1690e7eddae428a0e52b435626c3,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3043706848827593135, guid: 3c8c1690e7eddae428a0e52b435626c3,
         type: 3}
@@ -569,6 +732,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6384997882556754829}
     m_Modifications:
+    - target: {fileID: 8465147986041065780, guid: 73fe6944a7eeed6459600f75029a35e6,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2044621863
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465147986041065780, guid: 73fe6944a7eeed6459600f75029a35e6,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8465147986041065781, guid: 73fe6944a7eeed6459600f75029a35e6,
         type: 3}
       propertyPath: playOnAwake
@@ -584,6 +757,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FiredashPowerupActivated
       objectReference: {fileID: 0}
+    - target: {fileID: 8465147986041065783, guid: 73fe6944a7eeed6459600f75029a35e6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8465147986041065786, guid: 73fe6944a7eeed6459600f75029a35e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -592,7 +770,7 @@ PrefabInstance:
     - target: {fileID: 8465147986041065786, guid: 73fe6944a7eeed6459600f75029a35e6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 8465147986041065786, guid: 73fe6944a7eeed6459600f75029a35e6,
         type: 3}

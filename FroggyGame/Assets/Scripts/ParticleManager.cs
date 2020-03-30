@@ -18,6 +18,7 @@ public class ParticleManager : MonoBehaviour
     public ParticleSystem FiredashPowerupEffectActivated;
     public ParticleSystem FiredashPowerupEffectDeactivated;
     public ParticleSystem FiredashPowerupEffectActive;
+    public ParticleSystem FiredashPowerupEffectActivePassive;
 
     public void PlayGhostPowerupEffectActivated()
     {
@@ -46,6 +47,13 @@ public class ParticleManager : MonoBehaviour
     public void PlayFiredashPowerupEffectActive()
     {
         FiredashPowerupEffectActive.Play();
+    }
+    public void SetPlayFiredashPowerupEffectPassive(bool var)
+    {
+        if (var)
+            FiredashPowerupEffectActivePassive.Play();
+        else
+            FiredashPowerupEffectActivePassive.Stop();
     }
 
 }

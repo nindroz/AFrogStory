@@ -34,7 +34,7 @@ public class CameraScript : MonoBehaviour
 
             Vector2 targetpos = cameraSubject.transform.position;
             float dist = (targetpos - (Vector2)transform.position).magnitude;
-            newPosition = Vector2.Lerp(transform.position, targetpos, (0.3f + dist/3) * Time.deltaTime);
+            newPosition = Vector2.Lerp(transform.position, targetpos, (0.4f + dist * dist) * Time.deltaTime);
 
 /*            float yForce = cameraSubject.GetComponent<Rigidbody2D>().velocity.y;
             if (cameraSubject.GetComponent<Rigidbody2D>().velocity.y > 0)
@@ -69,7 +69,7 @@ public class CameraScript : MonoBehaviour
             if(boundTransitionTime > 0)
             {
                 boundTransitionTimer -= Time.deltaTime;
-                newPosition = Vector2.Lerp(transform.position, newPosition, 7f * Time.deltaTime);
+                newPosition = Vector2.Lerp(transform.position, newPosition, 5f * Time.deltaTime);
             }
         }
         transform.position = newPosition;
