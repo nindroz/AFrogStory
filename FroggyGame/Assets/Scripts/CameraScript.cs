@@ -50,8 +50,8 @@ public class CameraScript : MonoBehaviour
         //if bounds are active, ensures camera doesn't leave bounds
         if(followBounds)
         {
-            float aspRatio = Screen.width / Screen.height;
-            float screenWidthBound = _camera.orthographicSize * aspRatio+3;
+            float aspRatio = (float)Screen.width / Screen.height;
+            float screenWidthBound = _camera.orthographicSize * aspRatio;
             float screenHeightBound = _camera.orthographicSize;
 
             float xPos = newPosition.x;
