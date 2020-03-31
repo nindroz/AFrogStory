@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: spritesheet_5
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -5962389079421231736, guid: 064ac03d40f43854191b9a6949d33178,
-    type: 3}
+  m_Sprite: {fileID: 226702753830753226, guid: 064ac03d40f43854191b9a6949d33178, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
