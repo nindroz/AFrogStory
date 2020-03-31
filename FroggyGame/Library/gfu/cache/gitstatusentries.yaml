@@ -13,15 +13,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-03-31T15:49:17.544-07:00
   initializedAtString: 2020-03-31T13:44:12.896-07:00
+=======
+  lastUpdatedAtString: 2020-03-31T15:20:07.030-07:00
+  initializedAtString: 2020-03-31T14:41:30.485-07:00
+>>>>>>> master
   entries:
   - path: FroggyGame\.vs\FroggyGame\v16\.suo
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
     projectPath: .vs\FroggyGame\v16\.suo
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
   - path: FroggyGame\Assets\Scenes\GroundLevel1.unity
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\GroundLevel1.unity
     projectPath: Assets\Scenes\GroundLevel1.unity
@@ -137,15 +143,20 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+=======
+>>>>>>> master
   - path: FroggyGame\Library\SourceAssetDB
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
   - path: FroggyGame\ProjectSettings\QualitySettings.asset
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\QualitySettings.asset
     projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+=======
+>>>>>>> master
