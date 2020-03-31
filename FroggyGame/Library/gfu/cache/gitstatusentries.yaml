@@ -13,191 +13,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-03-30T22:08:16.935-07:00
-  initializedAtString: 2020-03-30T22:08:16.935-07:00
+  lastUpdatedAtString: 2020-03-31T16:13:55.152-07:00
+  initializedAtString: 2020-03-31T16:12:14.734-07:00
   entries:
+  - path: FroggyGame\.vs\FroggyGame\v16\.suo
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
+    projectPath: .vs\FroggyGame\v16\.suo
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\.vs\FroggyGame\v16\Server\sqlite3\storage.ide
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\Server\sqlite3\storage.ide
+    projectPath: .vs\FroggyGame\v16\Server\sqlite3\storage.ide
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assembly-CSharp.csproj
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: FroggyGame\Assets\Scenes\TestScene.unity
     fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\TestScene.unity
     projectPath: Assets\Scenes\TestScene.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\ground6.prefab
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\ground6.prefab
-    projectPath: Assets\Sprites\palettes\ground6.prefab
+  - path: FroggyGame\Assets\Scripts\horizontalenemy.cs
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\horizontalenemy.cs
+    projectPath: Assets\Scripts\horizontalenemy.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\ground6.prefab.meta
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\ground6.prefab.meta
-    projectPath: Assets\Sprites\palettes\ground6.prefab.meta
+  - path: FroggyGame\Assets\Scripts\horizontalenemy.cs.meta
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\horizontalenemy.cs.meta
+    projectPath: Assets\Scripts\horizontalenemy.cs.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_0.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_0.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_0.asset
+  - path: FroggyGame\Assets\Scripts\horizontalenemybullet.cs
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\horizontalenemybullet.cs
+    projectPath: Assets\Scripts\horizontalenemybullet.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Scripts\horizontalenemybullet.cs.meta
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\horizontalenemybullet.cs.meta
+    projectPath: Assets\Scripts\horizontalenemybullet.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Library\APIUpdater\project-dependencies.graph
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\APIUpdater\project-dependencies.graph
+    projectPath: Library\APIUpdater\project-dependencies.graph
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_1.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_1.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_1.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_10.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_10.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_10.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_10.asset.meta
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_10.asset.meta
-    projectPath: Assets\Sprites\palettes\spritesheet 1_10.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_11.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_11.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_11.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_11.asset.meta
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_11.asset.meta
-    projectPath: Assets\Sprites\palettes\spritesheet 1_11.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_12.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_12.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_12.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_12.asset.meta
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_12.asset.meta
-    projectPath: Assets\Sprites\palettes\spritesheet 1_12.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_13.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_13.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_13.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_13.asset.meta
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_13.asset.meta
-    projectPath: Assets\Sprites\palettes\spritesheet 1_13.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_14.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_14.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_14.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_14.asset.meta
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_14.asset.meta
-    projectPath: Assets\Sprites\palettes\spritesheet 1_14.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_2.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_2.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_2.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_3.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_3.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_3.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_4.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_4.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_4.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_5.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_5.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_5.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_6.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_6.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_6.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_7.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_7.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_7.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_8.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_8.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_8.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_9.asset
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_9.asset
-    projectPath: Assets\Sprites\palettes\spritesheet 1_9.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\palettes\spritesheet 1_9.asset.meta
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\palettes\spritesheet
-      1_9.asset.meta
-    projectPath: Assets\Sprites\palettes\spritesheet 1_9.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\spritesheet 1.png
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\spritesheet
-      1.png
-    projectPath: Assets\Sprites\spritesheet 1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\spritesheet 1.png.meta
-    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\spritesheet
-      1.png.meta
-    projectPath: Assets\Sprites\spritesheet 1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: FroggyGame\Library\ArtifactDB
     fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
     projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -216,6 +109,18 @@ MonoBehaviour:
   - path: FroggyGame\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -426,6 +331,18 @@ MonoBehaviour:
   - path: FroggyGame\Library\SourceAssetDB
     fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
