@@ -66,10 +66,10 @@ public class CameraScript : MonoBehaviour
             else if (newPosition.y - screenHeightBound < lowerBound)
                 yPos = lowerBound + screenHeightBound;
             newPosition = new Vector2(xPos, yPos);
-            if(boundTransitionTime > 0)
+            if(boundTransitionTime > 0)//IF transitioning bounds
             {
                 boundTransitionTimer -= Time.deltaTime;
-                newPosition = Vector2.Lerp(transform.position, newPosition, 5f * Time.deltaTime);
+                newPosition = Vector2.Lerp(transform.position, newPosition, 3f * Time.deltaTime);
             }
         }
         transform.position = newPosition;

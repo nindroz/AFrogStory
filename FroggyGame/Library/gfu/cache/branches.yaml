@@ -13,29 +13,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-03-30T22:31:30.060-07:00
-  initializedAtString: 2020-03-30T22:31:28.610-07:00
+  lastUpdatedAtString: 2020-03-31T15:22:19.976-07:00
+  initializedAtString: 2020-03-31T14:17:42.566-07:00
   localBranches:
-  - name: coins
-    tracking: origin/coins
-  - name: long-ranged-dart
-    tracking: origin/long-ranged-dart
   - name: master
     tracking: origin/master
-  - name: star2
-    tracking: origin/star2
   - name: ttttttttttttttttilempa
     tracking: origin/ttttttttttttttttilempa
   remoteBranches:
-  - name: origin/coins
-    tracking: '[None]'
-  - name: origin/DashAndJump
-    tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/master
-    tracking: '[None]'
-  - name: origin/master2
     tracking: '[None]'
   - name: origin/star2
     tracking: '[None]'
@@ -53,32 +41,14 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - coins
-    - long-ranged-dart
     - master
-    - star2
     - ttttttttttttttttilempa
     values:
-    - name: coins
-      remote:
-        name: origin
-        url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-      trackingBranch: coins
-    - name: long-ranged-dart
-      remote:
-        name: origin
-        url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-      trackingBranch: long-ranged-dart
     - name: master
       remote:
         name: origin
         url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
       trackingBranch: master
-    - name: star2
-      remote:
-        name: origin
-        url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-      trackingBranch: star2
     - name: ttttttttttttttttilempa
       remote:
         name: origin
@@ -89,37 +59,19 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
-      - coins
-      - DashAndJump
       - HEAD
       - master
-      - master2
       - star2
       - testbranchnew
       - ttttttttttttttttilempa
     subKeyValues:
     - Values:
-      - name: coins
-        remote:
-          name: origin
-          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
-      - name: DashAndJump
-        remote:
-          name: origin
-          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
       - name: HEAD
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
         trackingBranch: 
       - name: master
-        remote:
-          name: origin
-          url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
-        trackingBranch: 
-      - name: master2
         remote:
           name: origin
           url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git
