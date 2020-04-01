@@ -13,13 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-<<<<<<< Updated upstream
-  lastUpdatedAtString: 2020-04-01T11:43:05.316-07:00
-  initializedAtString: 2020-04-01T11:43:05.316-07:00
-=======
-  lastUpdatedAtString: 2020-03-31T18:39:30.547-07:00
-  initializedAtString: 2020-03-31T18:39:30.547-07:00
->>>>>>> Stashed changes
+  lastUpdatedAtString: 2020-04-01T15:51:46.662-07:00
+  initializedAtString: 2020-04-01T15:51:46.662-07:00
   currentGitRemote:
     name: origin
     url: https://github.com/nindroz/virtualCodeDay2020TeamRibbit.git

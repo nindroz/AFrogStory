@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< Updated upstream
   lastUpdatedAtString: 2020-04-01T16:00:23.997-07:00
+=======
+  lastUpdatedAtString: 2020-04-01T15:59:30.155-07:00
+>>>>>>> Stashed changes
   initializedAtString: 2020-04-01T15:51:50.049-07:00
   entries:
   - path: FroggyGame\Assets\Scenes\GroundLevel1.unity
@@ -33,7 +37,11 @@ MonoBehaviour:
     projectPath: Library\CurrentLayout-default.dwlt
     originalPath: 
     indexStatus: 3
+<<<<<<< Updated upstream
     workTreeStatus: 3
+=======
+    workTreeStatus: 0
+>>>>>>> Stashed changes
   - path: FroggyGame\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
@@ -57,19 +65,31 @@ MonoBehaviour:
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 3
+<<<<<<< Updated upstream
     workTreeStatus: 3
+=======
+    workTreeStatus: 0
+>>>>>>> Stashed changes
   - path: FroggyGame\Library\SceneVisibilityState.asset
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 3
+<<<<<<< Updated upstream
     workTreeStatus: 3
+=======
+    workTreeStatus: 0
+>>>>>>> Stashed changes
   - path: FroggyGame\Library\ShaderCache\EditorEncounteredVariants
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ShaderCache\EditorEncounteredVariants
     projectPath: Library\ShaderCache\EditorEncounteredVariants
     originalPath: 
     indexStatus: 3
+<<<<<<< Updated upstream
     workTreeStatus: 3
+=======
+    workTreeStatus: 0
+>>>>>>> Stashed changes
   - path: FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
