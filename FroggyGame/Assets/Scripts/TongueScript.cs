@@ -140,12 +140,13 @@ public class TongueScript : MonoBehaviour
                 if (vel.magnitude > maxThrowVel)
                     vel = vel.normalized * maxThrowVel;
                 grabbedObject.GetComponent<Rigidbody2D>().velocity = vel;
+                grabbedObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
                 grabbedObject = null;
                 //Retract
                 tongueOut = false;
                 StartCoroutine(RetractTongue());
             }
-            else
+            else 
             {
                 //Grabbed object sticks to last tongue joint
                 grabbedObject.transform.position = tongueJoints[l - 1].transform.position;
@@ -161,8 +162,14 @@ public class TongueScript : MonoBehaviour
     }
     IEnumerator RetractTongue()
     {
+        StartCoroutine(TongueIndicatorScriot.tongueIndicatorScriot.Hide());
         testCharMovementScript.charMoveScript.SetHorizontalMovementActive(true);
         int counter = 0;
+        if(mousePositionMinThreshholdReached && grabbedObject != null)//releases object
+        {
+            grabbedObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            grabbedObject = null;
+        }
         //Retract effect by incrimenting jointDistance down
         currentTongueJointDistance = Mathf.Min(maxTongueJointDistance, GetMouseDistance() / (jointCount - 1));
         for (float x = 0;x <= currentTongueJointDistance - minTongueGrabDistance/jointCount; x+= 0.01f)
@@ -242,9 +249,13 @@ public class TongueScript : MonoBehaviour
         }
         else
         {
+            //Indicators
+            TongueIndicatorScriot.tongueIndicatorScriot.DrawArcInner(mousePositionThrowMinThreshhold,Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            TongueIndicatorScriot.tongueIndicatorScriot.DrawArcOuter(mousePositionThrowMaxThreshhold, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            StartCoroutine(TongueIndicatorScriot.tongueIndicatorScriot.Show());
             //Removes collisions with target
             //Physics2D.IgnoreCollision(testCharMovementScript.charCollider, targetHit.collider);
-                tongueOut = true;
+            tongueOut = true;
             grabbedObject = targetHit.collider.gameObject;
 
             grabbedObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;//Prevents weird spinning
@@ -260,5 +271,14 @@ public class TongueScript : MonoBehaviour
     public bool GetTongueOut()
     {
         return tongueOut;
+    }
+
+    public float GetMousePositionThrowMinThreshhold()
+    {
+        return mousePositionThrowMinThreshhold;
+    }
+    public float GetMousePositionThrowMaxThreshhold()
+    {
+        return mousePositionThrowMaxThreshhold;
     }
 }

@@ -385,6 +385,7 @@ GameObject:
   - component: {fileID: 1119475846}
   - component: {fileID: 1119475847}
   - component: {fileID: 1119475848}
+  - component: {fileID: 1119475854}
   m_Layer: 11
   m_Name: FrogCharacter
   m_TagString: Player
@@ -449,7 +450,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -664,6 +665,25 @@ MonoBehaviour:
   dashTime: 0.5
   dashDelay: 1
   dashVelocity: 3
+--- !u!95 &1119475854
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553884800286680560}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0409f11b80967c84a98ce1770a44c70b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &640954020
 PrefabInstance:
   m_ObjectHideFlags: 0
