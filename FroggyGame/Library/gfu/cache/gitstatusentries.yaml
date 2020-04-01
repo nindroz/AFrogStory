@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< Updated upstream
   lastUpdatedAtString: 2020-04-01T11:56:51.204-07:00
   initializedAtString: 2020-04-01T11:43:09.784-07:00
+=======
+  lastUpdatedAtString: 2020-03-31T19:48:53.968-07:00
+  initializedAtString: 2020-03-31T18:39:35.244-07:00
+>>>>>>> Stashed changes
   entries:
   - path: FroggyGame\.vs\FroggyGame\v16\.suo
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
     projectPath: .vs\FroggyGame\v16\.suo
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\.vs\FroggyGame\v16\Server\sqlite3\storage.ide
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\Server\sqlite3\storage.ide
-    projectPath: .vs\FroggyGame\v16\Server\sqlite3\storage.ide
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -34,21 +33,45 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+  - path: FroggyGame\Assets\BreakingBridge.cs
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\BreakingBridge.cs
+    projectPath: Assets\BreakingBridge.cs
     originalPath: 
+<<<<<<< Updated upstream
     indexStatus: 0
     workTreeStatus: 3
+=======
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\BreakingBridge.cs.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\BreakingBridge.cs.meta
+    projectPath: Assets\BreakingBridge.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+>>>>>>> Stashed changes
   - path: FroggyGame\Assets\Scenes\GroundLevel1.unity
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\GroundLevel1.unity
     projectPath: Assets\Scenes\GroundLevel1.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< Updated upstream
   - path: FroggyGame\Library\APIUpdater\project-dependencies.graph
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\APIUpdater\project-dependencies.graph
     projectPath: Library\APIUpdater\project-dependencies.graph
+=======
+  - path: FroggyGame\Assets\Sprites\Tilemaps\spritesheet 3.png.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Tilemaps\spritesheet
+      3.png.meta
+    projectPath: Assets\Sprites\Tilemaps\spritesheet 3.png.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Sprites\Tilemaps\spritesheet.png.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Tilemaps\spritesheet.png.meta
+    projectPath: Assets\Sprites\Tilemaps\spritesheet.png.meta
+>>>>>>> Stashed changes
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -58,6 +81,7 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< Updated upstream
   - path: FroggyGame\Library\ArtifactDB-lock
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB-lock
     projectPath: Library\ArtifactDB-lock
@@ -67,6 +91,11 @@ MonoBehaviour:
   - path: FroggyGame\Library\CurrentLayout-default.dwlt
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
+=======
+  - path: FroggyGame\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+>>>>>>> Stashed changes
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -88,6 +117,7 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< Updated upstream
   - path: FroggyGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
@@ -451,6 +481,11 @@ MonoBehaviour:
   - path: FroggyGame\Library\ShaderCache\EditorEncounteredVariants
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ShaderCache\EditorEncounteredVariants
     projectPath: Library\ShaderCache\EditorEncounteredVariants
+=======
+  - path: FroggyGame\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
+>>>>>>> Stashed changes
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -463,18 +498,6 @@ MonoBehaviour:
   - path: FroggyGame\Library\SourceAssetDB
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
