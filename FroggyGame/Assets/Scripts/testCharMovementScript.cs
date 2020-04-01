@@ -194,9 +194,9 @@ public class testCharMovementScript : MonoBehaviour
     }
 
     //get input for movement checking
-    public static int getXinput()
+    public static float getXinput()
     {
-        return (int)xInput;
+        return xInput;
         
     }
     
