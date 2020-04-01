@@ -17,7 +17,7 @@ public class testCharMovementScript : MonoBehaviour
     //Components
     private Rigidbody2D charRb;
     //input
-    private float xInput;
+    private static float xInput;
     //Horizontal Movement vars
     public float moveVelocity = 20;//Maximum horizontal velocity
     private float moveForceGround = 130f;
@@ -192,4 +192,12 @@ public class testCharMovementScript : MonoBehaviour
     {
          direction = dir;
     }
+
+    //get input for movement checking
+    public static int getXinput()
+    {
+        return (int)xInput;
+        
+    }
+    
 }

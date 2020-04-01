@@ -13,126 +13,614 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-03-31T17:21:47.042-07:00
-  initializedAtString: 2020-03-31T16:18:08.182-07:00
+  lastUpdatedAtString: 2020-03-31T21:23:03.087-07:00
+  initializedAtString: 2020-03-31T19:56:57.852-07:00
   entries:
   - path: FroggyGame\.vs\FroggyGame\v16\.suo
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
     projectPath: .vs\FroggyGame\v16\.suo
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\.vs\FroggyGame\v16\Server\sqlite3\storage.ide
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\Server\sqlite3\storage.ide
-    projectPath: .vs\FroggyGame\v16\Server\sqlite3\storage.ide
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: FroggyGame\Assembly-CSharp.csproj
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp.csproj
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
     projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Assets\Prefabs\FrogCharacter.prefab
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\FrogCharacter.prefab
-    projectPath: Assets\Prefabs\FrogCharacter.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Assets\Scenes\GroundLevel1.unity
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\GroundLevel1.unity
-    projectPath: Assets\Scenes\GroundLevel1.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: FroggyGame\Assets\Scenes\TestScene.unity
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\TestScene.unity
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\TestScene.unity
     projectPath: Assets\Scenes\TestScene.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Assets\Scripts\TongueIndicatorScriot.cs
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\TongueIndicatorScriot.cs
-    projectPath: Assets\Scripts\TongueIndicatorScriot.cs
+  - path: FroggyGame\Assets\Scripts\FrogManager.cs
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\FrogManager.cs
+    projectPath: Assets\Scripts\FrogManager.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Scripts\testCharMovementScript.cs
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\testCharMovementScript.cs
+    projectPath: Assets\Scripts\testCharMovementScript.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Sprites\Animations\frog_walk.anim
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\frog_walk.anim
+    projectPath: Assets\Sprites\Animations\frog_walk.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Sprites\Animations\frog_walk_ghost.anim
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\frog_walk_ghost.anim
+    projectPath: Assets\Sprites\Animations\frog_walk_ghost.anim
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: FroggyGame\Assets\Scripts\TongueIndicatorScriot.cs.meta
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\TongueIndicatorScriot.cs.meta
-    projectPath: Assets\Scripts\TongueIndicatorScriot.cs.meta
+  - path: FroggyGame\Assets\Sprites\Animations\frog_walk_ghost.anim.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\frog_walk_ghost.anim.meta
+    projectPath: Assets\Sprites\Animations\frog_walk_ghost.anim.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: FroggyGame\Assets\Scripts\TongueScript.cs
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\TongueScript.cs
-    projectPath: Assets\Scripts\TongueScript.cs
+  - path: FroggyGame\Assets\Sprites\Animations\FrogCharacter.controller
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\FrogCharacter.controller
+    projectPath: Assets\Sprites\Animations\FrogCharacter.controller
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Sprites\Animations\idle.anim
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\idle.anim
+    projectPath: Assets\Sprites\Animations\idle.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\Animations\idle.anim.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\idle.anim.meta
+    projectPath: Assets\Sprites\Animations\idle.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\Animations\transpo idle.anim
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\transpo
+      idle.anim
+    projectPath: Assets\Sprites\Animations\transpo idle.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\Animations\transpo idle.anim.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\transpo
+      idle.anim.meta
+    projectPath: Assets\Sprites\Animations\transpo idle.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent.meta
+    projectPath: Assets\Sprites\walk_animation_transparent.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent0.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent0.png
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent0.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent0.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent0.png.meta
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent0.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent1.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent1.png
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent1.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent1.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent1.png.meta
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent1.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent2.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent2.png
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent2.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent2.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent2.png.meta
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent2.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent3.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent3.png
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent3.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent3.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent3.png.meta
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent3.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent4.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent4.png
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent4.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent4.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent4.png.meta
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent4.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent5.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent5.png
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent5.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent5.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent5.png.meta
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent5.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent6.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent6.png
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent6.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent6.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\walk_animation_transparent\sprite_transparent6.png.meta
+    projectPath: Assets\Sprites\walk_animation_transparent\sprite_transparent6.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Library\APIUpdater\project-dependencies.graph
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\APIUpdater\project-dependencies.graph
+    projectPath: Library\APIUpdater\project-dependencies.graph
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\ArtifactDB
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Library\ShaderCache\EditorEncounteredVariants
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ShaderCache\EditorEncounteredVariants
-    projectPath: Library\ShaderCache\EditorEncounteredVariants
+  - path: FroggyGame\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Editor.dll
+    projectPath: Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Editor.pdb
+    projectPath: Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Runtime.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Runtime.dll
+    projectPath: Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Runtime.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Runtime.pdb
+    projectPath: Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Runtime.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-weaver.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-weaver.Editor.dll
+    projectPath: Library\ScriptAssemblies\com.unity.multiplayer-weaver.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-weaver.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\com.unity.multiplayer-weaver.Editor.pdb
+    projectPath: Library\ScriptAssemblies\com.unity.multiplayer-weaver.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Postprocessing.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Postprocessing.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Runtime.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.pdb
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.pdb
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+    projectPath: Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Rider.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Rider.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.ShaderGraph.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+    projectPath: Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.pdb
+    projectPath: Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Timeline.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Timeline.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Timeline.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Timeline.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.Timeline.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.Timeline.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\Unity.VSCode.Editor.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Unity.VSCode.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
+    projectPath: Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEditor.SpatialTracking.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEditor.SpatialTracking.pdb
+    projectPath: Library\ScriptAssemblies\UnityEditor.SpatialTracking.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+    projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEditor.TestRunner.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEditor.TestRunner.pdb
+    projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEditor.UI.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEditor.UI.dll
+    projectPath: Library\ScriptAssemblies\UnityEditor.UI.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
+    projectPath: Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.pdb
+    projectPath: Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
+    projectPath: Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEngine.SpatialTracking.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEngine.SpatialTracking.pdb
+    projectPath: Library\ScriptAssemblies\UnityEngine.SpatialTracking.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+    projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEngine.TestRunner.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEngine.TestRunner.pdb
+    projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEngine.UI.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEngine.UI.dll
+    projectPath: Library\ScriptAssemblies\UnityEngine.UI.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
+    projectPath: Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.pdb
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.pdb
+    projectPath: Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\SourceAssetDB
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\ProjectSettings\QualitySettings.asset
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

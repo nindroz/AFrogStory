@@ -7,9 +7,10 @@ public class FrogManager : MonoBehaviour
     public static FrogManager charFrogManager;
     public static Vector2 respawnPosition;//Respawn/checkpoints
 
-    //spirte render and collider
+    //spirte render and collider and animator
     public SpriteRenderer render;
     public PolygonCollider2D polygonCollider;
+    public Animator animator;
 
     // frog sprites
     public Sprite transparentFrog;
@@ -93,6 +94,13 @@ public class FrogManager : MonoBehaviour
                 StartCoroutine(GlidePowerupControlScript.glidePowerupScript.DeactivateGlidePowerup());
             }
         }
+
+        //to set animator speed commands
+       
+        animator.SetFloat("speed",Mathf.Abs(testCharMovementScript.getXinput()));
+     
+            
+        
     }
     //Manages collisions
     private void OnCollisionEnter2D(Collision2D collision)
