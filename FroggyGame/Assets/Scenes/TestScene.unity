@@ -7218,15 +7218,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1119475845, guid: 4399f5c4045d085469ef605e4681419f, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1119475843}
     - target: {fileID: 1119475854, guid: 4399f5c4045d085469ef605e4681419f, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119475854, guid: 4399f5c4045d085469ef605e4681419f, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6553884799323317296, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1232252771}
+    - target: {fileID: 6553884800286680526, guid: 4399f5c4045d085469ef605e4681419f,
+        type: 3}
+      propertyPath: moveVelocity
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6553884800286680560, guid: 4399f5c4045d085469ef605e4681419f,
         type: 3}
       propertyPath: m_Name
@@ -7292,6 +7305,12 @@ PrefabInstance:
 --- !u!1 &1119475842 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6553884800286680560, guid: 4399f5c4045d085469ef605e4681419f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1119475841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1119475843 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1119475854, guid: 4399f5c4045d085469ef605e4681419f,
     type: 3}
   m_PrefabInstance: {fileID: 1119475841}
   m_PrefabAsset: {fileID: 0}
