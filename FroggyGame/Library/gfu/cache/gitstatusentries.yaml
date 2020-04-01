@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   lastUpdatedAtString: 2020-04-01T16:00:23.997-07:00
 =======
@@ -23,6 +24,26 @@ MonoBehaviour:
   - path: FroggyGame\Assets\Scenes\GroundLevel1.unity
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\GroundLevel1.unity
     projectPath: Assets\Scenes\GroundLevel1.unity
+=======
+  lastUpdatedAtString: 2020-04-01T15:44:25.601-07:00
+  initializedAtString: 2020-04-01T15:38:05.618-07:00
+  entries:
+  - path: FroggyGame\.vs\FroggyGame\v16\.suo
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
+    projectPath: .vs\FroggyGame\v16\.suo
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Scripts\FrogManager.cs
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\FrogManager.cs
+    projectPath: Assets\Scripts\FrogManager.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Sprites\Animations\FrogCharacter.controller
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\FrogCharacter.controller
+    projectPath: Assets\Sprites\Animations\FrogCharacter.controller
+>>>>>>> master
     originalPath: 
     indexStatus: 3
     workTreeStatus: 3
@@ -33,7 +54,11 @@ MonoBehaviour:
     indexStatus: 3
     workTreeStatus: 3
   - path: FroggyGame\Library\CurrentLayout-default.dwlt
+<<<<<<< HEAD
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\CurrentLayout-default.dwlt
+=======
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\CurrentLayout-default.dwlt
+>>>>>>> master
     projectPath: Library\CurrentLayout-default.dwlt
     originalPath: 
     indexStatus: 3
@@ -46,7 +71,11 @@ MonoBehaviour:
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
+<<<<<<< HEAD
     indexStatus: 3
+=======
+    indexStatus: 0
+>>>>>>> master
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitstatusentries.yaml
@@ -67,12 +96,18 @@ MonoBehaviour:
     indexStatus: 3
 <<<<<<< Updated upstream
     workTreeStatus: 3
+<<<<<<< HEAD
 =======
     workTreeStatus: 0
 >>>>>>> Stashed changes
   - path: FroggyGame\Library\SceneVisibilityState.asset
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
+=======
+  - path: FroggyGame\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+>>>>>>> master
     originalPath: 
     indexStatus: 3
 <<<<<<< Updated upstream
