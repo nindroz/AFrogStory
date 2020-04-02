@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BreakingBridge.cs" />
+    <Compile Include="Assets\Scripts\BreakingBridge.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\BumperScript.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
