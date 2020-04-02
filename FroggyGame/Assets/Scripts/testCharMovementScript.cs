@@ -26,6 +26,11 @@ public class testCharMovementScript : MonoBehaviour
     //direction for other scripts
     private int direction = 0;
 
+    
+
+    //checks for jump
+    public static bool isJump;
+
     //Jumping vars
     public float jumpChargeTime;
     public float jumpMaxVel;
@@ -40,7 +45,7 @@ public class testCharMovementScript : MonoBehaviour
     private float jumpIgnoreGroundedTimer = 0f;
 
     //character states
-    private bool isGrounded = false;
+    public static bool isGrounded = false;
     private bool horizontalMovementActive = true;
     private bool ignoreHorizontalDrag = false;
     void Start()
@@ -74,9 +79,11 @@ public class testCharMovementScript : MonoBehaviour
         {
             if (isGrounded && !TongueScript.charTongueScript.GetTongueOut())
             {
+                isJump = true;
                 //Hold jump
                 if (jumpTimer > jumpHoldIgnoreTime)
                 {
+                    
                     //Ignores drag for charged jumps
                     ignoreHorizontalDrag = true;
                     //Gets magnitude of jump and direction of jump
@@ -90,10 +97,12 @@ public class testCharMovementScript : MonoBehaviour
                 //Normal jump
                 else
                 {
+                    
                     charRb.velocity = new Vector2(charRb.velocity.x, jumpMinVel);
                 }
                 jumpIgnoreGroundedTimer = jumpIgnoreGroundedTime;
-            }            
+            } 
+          
             //Resets jumpbar and horizontalMovementActive
             jumpTimer = 0;
             jumpBar.transform.localScale = new Vector3(0, 1, 0);
@@ -199,5 +208,7 @@ public class testCharMovementScript : MonoBehaviour
         return xInput;
         
     }
+
+    
     
 }
