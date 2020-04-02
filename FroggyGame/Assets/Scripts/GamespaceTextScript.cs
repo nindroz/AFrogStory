@@ -9,6 +9,7 @@ public class GamespaceTextScript : MonoBehaviour
     //TExt component
     Text textComponent;
     public float timeToAppear;
+    bool textDisplayed = false;
     private void Awake()
     {
         textComponent = gameObject.GetComponent<Text>();
@@ -18,8 +19,9 @@ public class GamespaceTextScript : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player") && !textDisplayed)
         {
+            textDisplayed = true;
             StartCoroutine(DisplayText());
         }
     }

@@ -7,9 +7,10 @@ public class FrogManager : MonoBehaviour
     public static FrogManager charFrogManager;
     public static Vector2 respawnPosition;//Respawn/checkpoints
 
-    //spirte render and collider
+    //spirte render and collider and animator
     public SpriteRenderer render;
     public PolygonCollider2D polygonCollider;
+    public Animator animator;
 
     // frog sprites
     public Sprite transparentFrog;
@@ -81,6 +82,7 @@ public class FrogManager : MonoBehaviour
                 firedashPowerupTimer = 0;
                 PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(false);
                 particleManager.PlayFiredashPowerupEffectDeactivated();
+                particleManager.SetPlayFiredashPowerupEffectPassive(false);
             }
         }
         if (glidePowerupTimer > 0)
@@ -92,6 +94,14 @@ public class FrogManager : MonoBehaviour
                 StartCoroutine(GlidePowerupControlScript.glidePowerupScript.DeactivateGlidePowerup());
             }
         }
+
+        //to set animator speed commands
+       
+        animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
+        Debug.Log(Mathf.Abs(testCharMovementScript.getXinput()));
+     
+            
+        
     }
     //Manages collisions
     private void OnCollisionEnter2D(Collision2D collision)
@@ -126,6 +136,7 @@ public class FrogManager : MonoBehaviour
             Destroy(collision.gameObject);
             particleManager.PlayFiredashPowerupEffectActivated();
             PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(true);
+            particleManager.SetPlayFiredashPowerupEffectPassive(true);
         }
         //Activate glide pwerup
         if (collision.gameObject.CompareTag("GlidePowerupFruit"))
