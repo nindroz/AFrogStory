@@ -26,7 +26,9 @@ public class testCharMovementScript : MonoBehaviour
     //direction for other scripts
     private int direction = 0;
 
-    
+    //sets previous is grounded
+    public static bool prevGrounded = true;
+    public static bool methodGetGrounded;
 
     //checks for jump
     public static bool isJump;
@@ -65,6 +67,7 @@ public class testCharMovementScript : MonoBehaviour
         //Charging jump
         if (Input.GetKey(KeyCode.Space) && isGrounded && !TongueScript.charTongueScript.GetTongueOut())
         {
+            
             jumpTimer += Time.deltaTime;
             if (jumpTimer > jumpHoldIgnoreTime)
             {
@@ -79,11 +82,12 @@ public class testCharMovementScript : MonoBehaviour
         {
             if (isGrounded && !TongueScript.charTongueScript.GetTongueOut())
             {
-                isJump = true;
+                
+                
                 //Hold jump
                 if (jumpTimer > jumpHoldIgnoreTime)
                 {
-                    
+                    isJump = true;
                     //Ignores drag for charged jumps
                     ignoreHorizontalDrag = true;
                     //Gets magnitude of jump and direction of jump
@@ -97,7 +101,7 @@ public class testCharMovementScript : MonoBehaviour
                 //Normal jump
                 else
                 {
-                    
+                    isJump = true;
                     charRb.velocity = new Vector2(charRb.velocity.x, jumpMinVel);
                 }
                 jumpIgnoreGroundedTimer = jumpIgnoreGroundedTime;
@@ -112,7 +116,9 @@ public class testCharMovementScript : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //prevGrounded = isGrounded;
         isGrounded = CheckForGrounded();
+        methodGetGrounded = isGrounded;
         //Prevents being checked as grounded immediately after jumping
         if (jumpIgnoreGroundedTimer > 0)
             isGrounded = false;
@@ -189,6 +195,7 @@ public class testCharMovementScript : MonoBehaviour
 
     public bool GetIsGrounded()
     {
+        
         return isGrounded;
     }
 
@@ -208,6 +215,7 @@ public class testCharMovementScript : MonoBehaviour
         return xInput;
         
     }
+
 
     
     
