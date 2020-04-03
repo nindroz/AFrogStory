@@ -76,13 +76,14 @@ public class testCharMovementScript : MonoBehaviour
                 //locks horizontal movement
                 horizontalMovementActive = false;
             }
+           
         }
         //Release
         if (Input.GetKeyUp(KeyCode.Space))
         {
             if (isGrounded && !TongueScript.charTongueScript.GetTongueOut())
             {
-                
+
                 
                 //Hold jump
                 if (jumpTimer > jumpHoldIgnoreTime)
@@ -105,9 +106,10 @@ public class testCharMovementScript : MonoBehaviour
                     charRb.velocity = new Vector2(charRb.velocity.x, jumpMinVel);
                 }
                 jumpIgnoreGroundedTimer = jumpIgnoreGroundedTime;
-            } 
-          
+            }
+
             //Resets jumpbar and horizontalMovementActive
+            isJump = true;
             jumpTimer = 0;
             jumpBar.transform.localScale = new Vector3(0, 1, 0);
             horizontalMovementActive = true;
