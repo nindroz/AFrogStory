@@ -16,6 +16,9 @@ public class FrogManager : MonoBehaviour
     public Sprite transparentFrog;
     public Sprite normalFrog;
 
+    //script reference
+    public testCharMovementScript move;
+
     //Timers for powerups
     private float ghostPowerupDuration = 10f;
     private float ghostPowerupTimer = 0;
@@ -95,12 +98,21 @@ public class FrogManager : MonoBehaviour
             }
         }
 
-        //to set animator speed commands
+        //animator stuff
        
-        animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
-     
-            
         
+        
+        if (testCharMovementScript.methodGetGrounded == true && testCharMovementScript.prevGrounded == false)
+        {
+            testCharMovementScript.isJump = false;
+        }
+        testCharMovementScript.prevGrounded = testCharMovementScript.isGrounded;
+        Debug.Log(testCharMovementScript.isJump);
+        animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
+        animator.SetBool("isJump", testCharMovementScript.isJump);
+
+
+
     }
     //Manages collisions
     private void OnCollisionEnter2D(Collision2D collision)

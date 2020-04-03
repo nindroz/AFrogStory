@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-04-02T17:11:54.717-07:00
   initializedAtString: 2020-04-02T15:41:42.902-07:00
   entries:
@@ -30,10 +31,18 @@ MonoBehaviour:
     workTreeStatus: 3
   - path: FroggyGame\Assembly-CSharp.csproj
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp.csproj
+=======
+  lastUpdatedAtString: 2020-04-01T22:12:50.777-07:00
+  initializedAtString: 2020-04-01T21:03:57.743-07:00
+  entries:
+  - path: FroggyGame\Assembly-CSharp.csproj
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp.csproj
+>>>>>>> master
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
   - path: FroggyGame\Assets\Prefabs\firedashpowerupfruit.prefab
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\firedashpowerupfruit.prefab
     projectPath: Assets\Prefabs\firedashpowerupfruit.prefab
@@ -201,39 +210,343 @@ MonoBehaviour:
   - path: FroggyGame\Library\ArtifactDB
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
     projectPath: Library\ArtifactDB
+=======
+  - path: FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
+  - path: FroggyGame\Assets\frog_jump.anim
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\frog_jump.anim
+    projectPath: Assets\frog_jump.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\frog_jump.anim.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\frog_jump.anim.meta
+    projectPath: Assets\frog_jump.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Scenes\TestScene.unity
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\TestScene.unity
+    projectPath: Assets\Scenes\TestScene.unity
+>>>>>>> master
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Scripts\FrogManager.cs
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\FrogManager.cs
+    projectPath: Assets\Scripts\FrogManager.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Scripts\testCharMovementScript.cs
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\testCharMovementScript.cs
+    projectPath: Assets\Scripts\testCharMovementScript.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Sprites\Animations\FrogCharacter.controller
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\Animations\FrogCharacter.controller
+    projectPath: Assets\Sprites\Animations\FrogCharacter.controller
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Sprites\ump_animation.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation.meta
+    projectPath: Assets\Sprites\ump_animation.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_00.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_00.png
+    projectPath: Assets\Sprites\ump_animation\sprite_00.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_00.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_00.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_00.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_01.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_01.png
+    projectPath: Assets\Sprites\ump_animation\sprite_01.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_01.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_01.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_01.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_02.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_02.png
+    projectPath: Assets\Sprites\ump_animation\sprite_02.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_02.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_02.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_02.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_03.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_03.png
+    projectPath: Assets\Sprites\ump_animation\sprite_03.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_03.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_03.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_03.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_04.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_04.png
+    projectPath: Assets\Sprites\ump_animation\sprite_04.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_04.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_04.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_04.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_05.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_05.png
+    projectPath: Assets\Sprites\ump_animation\sprite_05.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_05.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_05.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_05.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_06.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_06.png
+    projectPath: Assets\Sprites\ump_animation\sprite_06.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_06.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_06.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_06.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_07.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_07.png
+    projectPath: Assets\Sprites\ump_animation\sprite_07.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_07.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_07.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_07.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_08.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_08.png
+    projectPath: Assets\Sprites\ump_animation\sprite_08.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_08.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_08.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_08.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_09.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_09.png
+    projectPath: Assets\Sprites\ump_animation\sprite_09.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_09.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_09.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_09.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_10.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_10.png
+    projectPath: Assets\Sprites\ump_animation\sprite_10.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_10.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_10.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_10.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_11.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_11.png
+    projectPath: Assets\Sprites\ump_animation\sprite_11.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_11.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_11.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_11.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_12.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_12.png
+    projectPath: Assets\Sprites\ump_animation\sprite_12.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_12.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_12.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_12.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_13.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_13.png
+    projectPath: Assets\Sprites\ump_animation\sprite_13.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_13.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_13.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_13.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_14.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_14.png
+    projectPath: Assets\Sprites\ump_animation\sprite_14.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_14.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_14.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_14.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_15.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_15.png
+    projectPath: Assets\Sprites\ump_animation\sprite_15.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_15.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_15.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_15.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_16.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_16.png
+    projectPath: Assets\Sprites\ump_animation\sprite_16.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_16.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_16.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_16.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_17.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_17.png
+    projectPath: Assets\Sprites\ump_animation\sprite_17.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_17.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_17.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_17.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_18.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_18.png
+    projectPath: Assets\Sprites\ump_animation\sprite_18.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_18.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_18.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_18.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_19.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_19.png
+    projectPath: Assets\Sprites\ump_animation\sprite_19.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_19.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_19.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_19.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_20.png
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_20.png
+    projectPath: Assets\Sprites\ump_animation\sprite_20.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Sprites\ump_animation\sprite_20.png.meta
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\ump_animation\sprite_20.png.meta
+    projectPath: Assets\Sprites\ump_animation\sprite_20.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Library\ArtifactDB
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
+<<<<<<< HEAD
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
+=======
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gittrackingstatus.yaml
+>>>>>>> master
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
   - path: FroggyGame\Library\InspectorExpandedItems.asset
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\InspectorExpandedItems.asset
     projectPath: Library\InspectorExpandedItems.asset
@@ -242,10 +555,15 @@ MonoBehaviour:
     workTreeStatus: 3
   - path: FroggyGame\Library\SceneVisibilityState.asset
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
+=======
+  - path: FroggyGame\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
+>>>>>>> master
     projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
   - path: FroggyGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
@@ -452,22 +770,31 @@ MonoBehaviour:
     workTreeStatus: 3
   - path: FroggyGame\Library\ShaderCache\EditorEncounteredVariants
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ShaderCache\EditorEncounteredVariants
+=======
+  - path: FroggyGame\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ShaderCache\EditorEncounteredVariants
+>>>>>>> master
     projectPath: Library\ShaderCache\EditorEncounteredVariants
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\Library\SourceAssetDB
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+<<<<<<< HEAD
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+=======
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+>>>>>>> master
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
   - path: FroggyGame\ProjectSettings\EditorBuildSettings.asset
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\EditorBuildSettings.asset
     projectPath: ProjectSettings\EditorBuildSettings.asset
@@ -477,6 +804,11 @@ MonoBehaviour:
   - path: FroggyGame\ProjectSettings\TagManager.asset
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\TagManager.asset
     projectPath: ProjectSettings\TagManager.asset
+=======
+  - path: FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\manth\Desktop\virtualCodeDay2020TeamRibbit\FroggyGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+>>>>>>> master
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
