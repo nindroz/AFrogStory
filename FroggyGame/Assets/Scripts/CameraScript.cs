@@ -15,6 +15,8 @@ public class CameraScript : MonoBehaviour
     //bounds
     private bool followBounds = false;
     private float lowerBound, upperBound, leftBound, rightBound;
+
+    Vector2  newPosition;
     //Bounds transitions
     private float boundTransitionTime = 1f;
     private float boundTransitionTimer = 0;
@@ -27,7 +29,7 @@ public class CameraScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 newPosition = transform.position;
+        newPosition = transform.position;
         //Follows player
         if(cameraMode == 0)
         {
@@ -66,11 +68,11 @@ public class CameraScript : MonoBehaviour
             else if (newPosition.y - screenHeightBound < lowerBound)
                 yPos = lowerBound + screenHeightBound;
             newPosition = new Vector2(xPos, yPos);
-            if(boundTransitionTime > 0)//IF transitioning bounds
-            {
-                boundTransitionTimer -= Time.deltaTime;
-                newPosition = Vector2.Lerp(transform.position, newPosition, 3f * Time.deltaTime);
-            }
+        }
+        if (boundTransitionTime > 0)//IF transitioning bounds
+        {
+            boundTransitionTimer -= Time.deltaTime;
+            newPosition = Vector2.Lerp(transform.position, newPosition, 2f * Time.deltaTime);
         }
         transform.position = newPosition;
         gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -10f);

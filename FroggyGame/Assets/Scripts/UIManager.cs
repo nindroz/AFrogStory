@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     //Singleton
@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public IEnumerator PlaySceneChangeOverlay()
+    public IEnumerator PlaySceneChangeOverlay(string sceneName)
     {
         Color c = respawnOverlay.color;
         for (int x = 0; x <= 50; x++)
@@ -40,6 +40,7 @@ public class UIManager : MonoBehaviour
             respawnOverlay.color = c;
             yield return new WaitForSeconds(0.05f);
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(sceneName);
     }
 }
