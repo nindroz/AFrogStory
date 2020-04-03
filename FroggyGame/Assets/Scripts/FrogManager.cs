@@ -129,24 +129,26 @@ public class FrogManager : MonoBehaviour
 
 
         //checks if it hits the ground after a jump
-        if (testCharMovementScript.methodGetGrounded == true && testCharMovementScript.prevGrounded == false)
-        {
+        if (testCharMovementScript.isGrounded == true && testCharMovementScript.prevGrounded == false)
+       {
             testCharMovementScript.isJump = false;
-        }
+       }
         testCharMovementScript.prevGrounded = testCharMovementScript.isGrounded;
-        //jump anim
-        if (!testCharMovementScript.isGrounded)
-        {
-            testCharMovementScript.isJump = true;
-        }
+
+        //if (testCharMovementScript.isGrounded == false&& PitayaManagerScript.isDashing == false)
+        //{
+           //testCharMovementScript.isJump = true;
+        //}
         Debug.Log(testCharMovementScript.isJump);
         animator.SetBool("isJump", testCharMovementScript.isJump);
 
         //for move animation
-        if (testCharMovementScript.isGrounded) 
+        if ( testCharMovementScript.isJump==false)
         {
-            
+            Debug.Log(testCharMovementScript.getXinput());
             animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
+
+            
         }
         
         
@@ -190,6 +192,7 @@ public class FrogManager : MonoBehaviour
             particleManager.PlayFiredashPowerupEffectActivated();
             PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(true);
             particleManager.SetPlayFiredashPowerupEffectPassive(true);
+            animator.SetBool("isRed", true);
         }
         //Activate glide pwerup
         if (collision.gameObject.CompareTag("GlidePowerupFruit") && (!isPowerupActive || glidePowerupTimer > 0))

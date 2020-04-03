@@ -40,6 +40,9 @@ public class testCharMovementScript : MonoBehaviour
     private float jumpTimer = 0f;
     public Image jumpBar;
 
+    //move checker
+    public static bool isMove;
+
     //Timers
 
     private float jumpHoldIgnoreTime = 0.2f;//Ignores holding down spacebar for buffer time
@@ -48,7 +51,7 @@ public class testCharMovementScript : MonoBehaviour
 
     //character states
     public static bool isGrounded = false;
-    private bool horizontalMovementActive = true;
+    public static bool horizontalMovementActive = true;
     private bool ignoreHorizontalDrag = false;
     void Start()
     {
@@ -106,10 +109,11 @@ public class testCharMovementScript : MonoBehaviour
                     charRb.velocity = new Vector2(charRb.velocity.x, jumpMinVel);
                 }
                 jumpIgnoreGroundedTimer = jumpIgnoreGroundedTime;
+                
             }
 
             //Resets jumpbar and horizontalMovementActive
-            isJump = true;
+            //isJump = true;
             jumpTimer = 0;
             jumpBar.transform.localScale = new Vector3(0, 1, 0);
             horizontalMovementActive = true;
@@ -134,6 +138,7 @@ public class testCharMovementScript : MonoBehaviour
             if (isGrounded)
             {
                 charRb.velocity = new Vector2(charRb.velocity.x / 1.47f, charRb.velocity.y);
+                
             }
             //Velocity drag in air
             else
@@ -156,6 +161,7 @@ public class testCharMovementScript : MonoBehaviour
             //less in air
             else
             {
+                
                 //Clamps air speed to max velocity
                 if(charRb.velocity.x * xInput < moveVelocity)
                     charRb.AddForce(Vector2.right * xInput * moveForceAir * charRb.mass);

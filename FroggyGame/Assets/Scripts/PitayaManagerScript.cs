@@ -14,7 +14,7 @@ public class PitayaManagerScript : MonoBehaviour
 
     private testCharMovementScript charMove;//The character movement script (which is only needed to detect if the player has grounded or not)
     private Rigidbody2D rBody;              //The RigidBody of the player
-    private bool isDashing;                 //Shows if the player is currently dashing
+    public static bool isDashing;                 //Shows if the player is currently dashing
     private bool hasGroundedSinceDash;      //Tracks if the player has touched the ground since their  last dash
     private bool canDash;                   //The player can only dash again if they've waited long enough and have touched the ground since their last dash
     private float timeElapsedSinceDash;     //How long it has been since the last dash ended.
@@ -23,6 +23,8 @@ public class PitayaManagerScript : MonoBehaviour
     private int direction;                  //Whether the cursor is pointed left or right of the player before the dash
     private int dir;
     private bool isFiredashActivated = false;//Whether or not powerup is currently active 
+
+   
 
        
     void Awake() //Set all the variables
@@ -78,6 +80,8 @@ public class PitayaManagerScript : MonoBehaviour
             rBody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation; //Freeze their Y Position and Z rotation so they can only move horizontally
             rBody.velocity = new Vector2(dir * dashVelocity, 0);                                          //Set their horizontal velocity
             currentDashTime += Time.deltaTime;                                                                  //Keep track of how long this dash is going on.
+            //testCharMovementScript.isJump = false;
+            
 
             if (currentDashTime >= dashTime)                                //When the dash has gone on for as long as it's supposed to:
             {
