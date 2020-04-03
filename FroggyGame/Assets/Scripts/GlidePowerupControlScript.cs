@@ -129,7 +129,7 @@ public class GlidePowerupControlScript : MonoBehaviour
         {
             spriteRen.sprite = flapSprite;//For flapping frames
             flapAnimTimer = flapAnimDuration;
-
+            AudioManager.audioManager.PlayJumpSound();
             wingFlapTimer = wingFlapCooldown;
             glideRb.AddForce(new Vector2(0,flapForce * glideRb.mass));
         }

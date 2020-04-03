@@ -72,6 +72,7 @@ public class PitayaManagerScript : MonoBehaviour
 
             gameObject.transform.position = gameObject.transform.position + Vector3.up * 0.1f;
             ParticleManager.particleManager.PlayFiredashPowerupEffectActive();//Plays particle effect
+            StartCoroutine(AudioManager.audioManager.PlayFiredashSound(dashTime));//Plays sound
         }  
         if (isDashing)
         {

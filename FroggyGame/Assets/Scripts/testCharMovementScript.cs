@@ -98,6 +98,8 @@ public class testCharMovementScript : MonoBehaviour
                     float angle = Mathf.Atan2(direction.y, direction.x);
                     angle = Mathf.PI / 2;
                     charRb.velocity = new Vector2(jumpMagnitude * Mathf.Cos(angle),jumpMagnitude* Mathf.Sin(angle));
+                    //Plays sound
+                    AudioManager.audioManager.PlayJumpSound();
                 }
                 //Normal jump
                 else

@@ -11,8 +11,7 @@ public class SceneChangeScript : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(UIManager.uiManager.PlaySceneChangeOverlay());
-            SceneManager.LoadScene(sceneName);
+            StartCoroutine(UIManager.uiManager.PlaySceneChangeOverlay(sceneName));
         }
     }
 }

@@ -162,6 +162,7 @@ public class FrogManager : MonoBehaviour
         {
             gameObject.transform.position = respawnPosition;
 
+            AudioManager.audioManager.PlayDeathSound();
             StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
         }
         //hitting enemy does as well , unless durian is active
@@ -169,6 +170,7 @@ public class FrogManager : MonoBehaviour
         {
             gameObject.transform.position = respawnPosition;
 
+            AudioManager.audioManager.PlayDeathSound();
             StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
         }
         //Activate ghost pwerup
