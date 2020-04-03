@@ -26,6 +26,12 @@ public class GlidePowerupControlScript : MonoBehaviour
     //Control vars
 
     private float xInput;
+
+    //Animation frames
+
+    public Sprite flapSprite;
+    public Sprite glideSprite;
+    public SpriteRenderer spriteRen;
     void Awake()
     {
         glidePowerupScript = this;
@@ -98,6 +104,10 @@ public class GlidePowerupControlScript : MonoBehaviour
     private float wingFlapCooldown = 0.75f;
     private float wingFlapTimer = 0;
     public float flapForce = 50f;
+
+    //Anim
+    private float flapAnimDuration = 0.5f;
+    private float flapAnimTimer = 0f;
     public float horizontalVelocity;
     void Update()
     {
@@ -106,6 +116,10 @@ public class GlidePowerupControlScript : MonoBehaviour
         //Controls
         xInput = Input.GetAxis("Horizontal");
         //Horizontal
+        if (xInput == 1)
+            spriteRen.flipX = true;
+        else if (xInput == -1)
+            spriteRen.flipX = false;
 
         glideRb.velocity = new Vector2(xInput * horizontalVelocity,glideRb.velocity.y);
 
@@ -113,8 +127,20 @@ public class GlidePowerupControlScript : MonoBehaviour
         wingFlapTimer -= Time.deltaTime;
         if(Input.GetKeyDown(KeyCode.Space) && wingFlapTimer <= 0)
         {
+            spriteRen.sprite = flapSprite;//For flapping frames
+            flapAnimTimer = flapAnimDuration;
+
             wingFlapTimer = wingFlapCooldown;
             glideRb.AddForce(new Vector2(0,flapForce * glideRb.mass));
+        }
+
+        if(flapAnimTimer > 0)
+        {
+            flapAnimTimer -= Time.deltaTime;
+            if(flapAnimTimer <= 0)
+            {
+                spriteRen.sprite = glideSprite;
+            }
         }
 
     }

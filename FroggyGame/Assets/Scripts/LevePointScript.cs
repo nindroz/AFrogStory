@@ -20,7 +20,7 @@ public class LevePointScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("LevelPointTrigger"))
         {
             //Sets bounds
             CameraScript camScript = CameraScript.cameraScript;

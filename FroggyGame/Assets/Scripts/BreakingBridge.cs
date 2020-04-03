@@ -11,8 +11,14 @@ public class BreakingBridge : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            rb1.bodyType = RigidbodyType2D.Dynamic;
-            rb2.bodyType = RigidbodyType2D.Dynamic;
+            StartCoroutine(Break());
         }
+    }
+
+    IEnumerator Break()
+    {
+        yield return new WaitForSeconds(0.35f);
+        rb1.bodyType = RigidbodyType2D.Dynamic;
+        rb2.bodyType = RigidbodyType2D.Dynamic;
     }
 }

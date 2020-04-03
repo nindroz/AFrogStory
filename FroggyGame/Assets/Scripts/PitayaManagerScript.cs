@@ -70,6 +70,7 @@ public class PitayaManagerScript : MonoBehaviour
             FindDirection();                        //Find out the direction the player is dashing
             dir = direction;                        //
 
+            gameObject.transform.position = gameObject.transform.position + Vector3.up * 0.1f;
             ParticleManager.particleManager.PlayFiredashPowerupEffectActive();//Plays particle effect
         }  
         if (isDashing)

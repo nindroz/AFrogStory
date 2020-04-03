@@ -98,7 +98,6 @@ public class FrogManager : MonoBehaviour
         //to set animator speed commands
        
         animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
-        Debug.Log(Mathf.Abs(testCharMovementScript.getXinput()));
      
             
         

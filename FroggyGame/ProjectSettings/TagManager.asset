@@ -12,6 +12,7 @@ TagManager:
   - enemy
   - Hazard
   - Platform
+  - LevelPointTrigger
   layers:
   - Default
   - TransparentFX
@@ -61,17 +62,20 @@ TagManager:
   - name: Burd
     uniqueID: 1399514589
     locked: 0
-  - name: Tongue
-    uniqueID: 755386361
-    locked: 0
   - name: Particles
     uniqueID: 2250345433
     locked: 0
   - name: Player
     uniqueID: 1382094431
     locked: 0
+  - name: Tongue
+    uniqueID: 755386361
+    locked: 0
   - name: NPCS
     uniqueID: 3652110701
+    locked: 0
+  - name: ForegroundParticles
+    uniqueID: 521713233
     locked: 0
   - name: CharacterUI
     uniqueID: 2517282469

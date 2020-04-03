@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\SceneChangeScript.cs" />
     <Compile Include="Assets\Scripts\BreakingBridge.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\BumperScript.cs" />
@@ -70,10 +71,12 @@
     <Compile Include="Assets\Scripts\CoinCounterScript.cs" />
     <Compile Include="Assets\Scripts\CoinScript.cs" />
     <Compile Include="Assets\Scripts\FrogManager.cs" />
+    <Compile Include="Assets\Scripts\FruitSpawnerScript.cs" />
     <Compile Include="Assets\Scripts\GamespaceTextScript.cs" />
     <Compile Include="Assets\Scripts\GhostPowerupScript.cs" />
     <Compile Include="Assets\Scripts\GlidePowerupControlScript.cs" />
     <Compile Include="Assets\Scripts\LevePointScript.cs" />
+    <Compile Include="Assets\Scripts\LeverScript.cs" />
     <Compile Include="Assets\Scripts\ParallaxSystem.cs" />
     <Compile Include="Assets\Scripts\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\PitayaManagerScript.cs" />
