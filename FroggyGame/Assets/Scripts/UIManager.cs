@@ -34,9 +34,9 @@ public class UIManager : MonoBehaviour
     public IEnumerator PlaySceneChangeOverlay(string sceneName)
     {
         Color c = respawnOverlay.color;
-        for (int x = 0; x <= 50; x++)
+        for (int x = 0; x <= 25; x++)
         {
-            c.a = (x / 50f);
+            c.a = (x / 25f);
             respawnOverlay.color = c;
             yield return new WaitForSeconds(0.05f);
         }
