@@ -125,7 +125,7 @@ public class GlidePowerupControlScript : MonoBehaviour
 
         //Rising
         wingFlapTimer -= Time.deltaTime;
-        if(Input.GetKeyDown(KeyCode.Space) && wingFlapTimer <= 0)
+        if(Input.GetKeyDown(KeyCode.Space) && wingFlapTimer <= 0 && isGlidePowerupActive)
         {
             spriteRen.sprite = flapSprite;//For flapping frames
             flapAnimTimer = flapAnimDuration;
