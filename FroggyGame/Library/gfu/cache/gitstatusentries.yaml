@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-04-03T09:53:46.927-07:00
   initializedAtString: 2020-04-03T01:13:26.297-07:00
   entries:
@@ -42,12 +43,36 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+=======
+  lastUpdatedAtString: 2020-04-03T01:32:06.918-07:00
+  initializedAtString: 2020-04-03T01:32:06.918-07:00
+  entries:
+  - path: FroggyGame\Assembly-CSharp.csproj
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\FroggyGame.sln
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\FroggyGame.sln
+    projectPath: FroggyGame.sln
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+>>>>>>> master
   - path: FroggyGame\Library\ArtifactDB
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
   - path: FroggyGame\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
@@ -78,9 +103,20 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+=======
+>>>>>>> master
   - path: FroggyGame\Library\SourceAssetDB
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< HEAD
+=======
+  - path: FroggyGame\ProjectSettings\QualitySettings.asset
+    fullPath: C:\Users\Sarah Wang\Desktop\random coding stuff\virtualCodeDay2020TeamRibbit\FroggyGame\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+>>>>>>> master
