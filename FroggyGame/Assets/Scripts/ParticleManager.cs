@@ -20,6 +20,8 @@ public class ParticleManager : MonoBehaviour
     public ParticleSystem FiredashPowerupEffectActive;
     public ParticleSystem FiredashPowerupEffectActivePassive;
 
+    public ParticleSystem DurianPowerupEffectActive;
+
     public void PlayGhostPowerupEffectActivated()
     {
         ghostPowerupEffectActivated.Play();
@@ -54,6 +56,14 @@ public class ParticleManager : MonoBehaviour
             FiredashPowerupEffectActivePassive.Play();
         else
             FiredashPowerupEffectActivePassive.Stop();
+    }
+
+    public void SetPlayDurianPowerupEffectActive(bool var)
+    {
+        if (var)
+            DurianPowerupEffectActive.Play();
+        else
+            DurianPowerupEffectActive.Stop();
     }
 
 }
