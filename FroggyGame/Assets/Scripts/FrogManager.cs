@@ -16,6 +16,7 @@ public class FrogManager : MonoBehaviour
     public Sprite transparentFrog;
     public Sprite normalFrog;
 
+       
     //script reference
     public testCharMovementScript move;
 
@@ -97,6 +98,8 @@ public class FrogManager : MonoBehaviour
                 PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(false);
                 particleManager.PlayFiredashPowerupEffectDeactivated();
                 particleManager.SetPlayFiredashPowerupEffectPassive(false);
+                animator.SetBool("isRed",false);
+
             }
         }
         if (glidePowerupTimer > 0)
@@ -132,15 +135,21 @@ public class FrogManager : MonoBehaviour
         }
         testCharMovementScript.prevGrounded = testCharMovementScript.isGrounded;
         //jump anim
+        if (!testCharMovementScript.isGrounded)
+        {
+            testCharMovementScript.isJump = true;
+        }
+        Debug.Log(testCharMovementScript.isJump);
         animator.SetBool("isJump", testCharMovementScript.isJump);
 
         //for move animation
         if (testCharMovementScript.isGrounded) 
         {
+            
             animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
         }
         
-       
+        
 
 
 

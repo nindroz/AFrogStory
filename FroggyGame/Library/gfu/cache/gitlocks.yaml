@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 7
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-04-02T22:21:56.537-07:00
   initializedAtString: 2020-04-02T22:02:35.856-07:00
+=======
+  lastUpdatedAtString: 2020-04-02T21:40:52.561-07:00
+  initializedAtString: 2020-04-02T20:47:05.050-07:00
+>>>>>>> master
   gitLocks: []
