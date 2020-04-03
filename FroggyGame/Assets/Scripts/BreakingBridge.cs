@@ -20,5 +20,7 @@ public class BreakingBridge : MonoBehaviour
         yield return new WaitForSeconds(0.35f);
         rb1.bodyType = RigidbodyType2D.Dynamic;
         rb2.bodyType = RigidbodyType2D.Dynamic;
+        rb1.gameObject.layer = 8;
+        rb2.gameObject.layer = 8;
     }
 }
