@@ -84,7 +84,7 @@ public class testCharMovementScript : MonoBehaviour
             if (isGrounded && !TongueScript.charTongueScript.GetTongueOut())
             {
 
-                
+                ParticleManager.particleManager.PlayJumpEffect();
                 //Hold jump
                 if (jumpTimer > jumpHoldIgnoreTime)
                 {
@@ -151,7 +151,7 @@ public class testCharMovementScript : MonoBehaviour
             {
                 charRb.AddForce(Vector2.right * xInput * moveForceGround * charRb.mass);
                 //Clamps ground speed to max velocity
-                charRb.velocity = new Vector2(Mathf.Clamp(charRb.velocity.x, -moveVelocity, moveVelocity), charRb.velocity.y);
+                charRb.velocity = new Vector2(Mathf.Clamp(charRb.velocity.x, -moveVelocity, moveVelocity), charRb.velocity.y+0.1f);
             }
             //less in air
             else

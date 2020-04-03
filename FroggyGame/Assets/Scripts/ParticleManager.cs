@@ -22,6 +22,8 @@ public class ParticleManager : MonoBehaviour
 
     public ParticleSystem DurianPowerupEffectActive;
 
+    public ParticleSystem jumpEffect;
+
     public void PlayGhostPowerupEffectActivated()
     {
         ghostPowerupEffectActivated.Play();
@@ -64,6 +66,11 @@ public class ParticleManager : MonoBehaviour
             DurianPowerupEffectActive.Play();
         else
             DurianPowerupEffectActive.Stop();
+    }
+
+    public void PlayJumpEffect()
+    {
+        jumpEffect.Play();
     }
 
 }

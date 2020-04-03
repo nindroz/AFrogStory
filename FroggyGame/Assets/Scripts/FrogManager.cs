@@ -171,49 +171,46 @@ public class FrogManager : MonoBehaviour
 
             StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
         }
-        if(!isPowerupActive)
+        //Activate ghost pwerup
+        if (collision.gameObject.CompareTag("GhostPowerupFruit") && (!isPowerupActive || ghostPowerupTimer > 0))
         {
-            //Activate ghost pwerup
-            if (collision.gameObject.CompareTag("GhostPowerupFruit"))
-            {
-                isPowerupActive = true;
-                ghostPowerupTimer = ghostPowerupDuration;
-                Destroy(collision.gameObject);
-                particleManager.PlayGhostPowerupEffectActivated();
-                GhostPowerupScript.charGhostPowerupScript.SetGhostPowerup(true);
-                particleManager.SetPlayGhostPowerupEffectActive(true);
-            }
-            //Activate firedash pwerup
-            if (collision.gameObject.CompareTag("FiredashPowerupFruit"))
-            {
-                isPowerupActive = true;
-                firedashPowerupTimer = firedashPowerupDuration;
-                Destroy(collision.gameObject);
-                particleManager.PlayFiredashPowerupEffectActivated();
-                PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(true);
-                particleManager.SetPlayFiredashPowerupEffectPassive(true);
-            }
-            //Activate glide pwerup
-            if (collision.gameObject.CompareTag("GlidePowerupFruit"))
-            {
-                isPowerupActive = true;
-                glidePowerupTimer = glidePowerupDuration;
-                Destroy(collision.gameObject);
-                StartCoroutine(GlidePowerupControlScript.glidePowerupScript.ActivateGlidePowerup());
-            }
-            //Activate durian pwerup
-            if (collision.gameObject.CompareTag("DurianPowerupFruit"))
-            {
-                durianPowerupActive = true;//for immunity against enemies
-                isPowerupActive = true;
-                durianPowerupTimer = durianPowerupDuration;
-                Destroy(collision.gameObject);
-                //Slows down during durian powerup
-                durianPowerupMovespeedSave = testCharMovementScript.charMoveScript.moveVelocity;
-                testCharMovementScript.charMoveScript.moveVelocity = durianPowerupMovespeed;
+            isPowerupActive = true;
+            ghostPowerupTimer = ghostPowerupDuration;
+            Destroy(collision.gameObject);
+            particleManager.PlayGhostPowerupEffectActivated();
+            GhostPowerupScript.charGhostPowerupScript.SetGhostPowerup(true);
+            particleManager.SetPlayGhostPowerupEffectActive(true);
+        }
+        //Activate firedash pwerup
+        if (collision.gameObject.CompareTag("FiredashPowerupFruit") && (!isPowerupActive || firedashPowerupTimer > 0))
+        {
+            isPowerupActive = true;
+            firedashPowerupTimer = firedashPowerupDuration;
+            Destroy(collision.gameObject);
+            particleManager.PlayFiredashPowerupEffectActivated();
+            PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(true);
+            particleManager.SetPlayFiredashPowerupEffectPassive(true);
+        }
+        //Activate glide pwerup
+        if (collision.gameObject.CompareTag("GlidePowerupFruit") && (!isPowerupActive || glidePowerupTimer > 0))
+        {
+            isPowerupActive = true;
+            glidePowerupTimer = glidePowerupDuration;
+            Destroy(collision.gameObject);
+            StartCoroutine(GlidePowerupControlScript.glidePowerupScript.ActivateGlidePowerup());
+        }
+        //Activate durian pwerup
+        if (collision.gameObject.CompareTag("DurianPowerupFruit") && (!isPowerupActive || durianPowerupTimer > 0))
+        {
+            durianPowerupActive = true;//for immunity against enemies
+            isPowerupActive = true;
+            durianPowerupTimer = durianPowerupDuration;
+            Destroy(collision.gameObject);
+            //Slows down during durian powerup
+            durianPowerupMovespeedSave = testCharMovementScript.charMoveScript.moveVelocity;
+            testCharMovementScript.charMoveScript.moveVelocity = durianPowerupMovespeed;
 
-                particleManager.SetPlayDurianPowerupEffectActive(true);
-            }
+            particleManager.SetPlayDurianPowerupEffectActive(true);
         }
         
     }

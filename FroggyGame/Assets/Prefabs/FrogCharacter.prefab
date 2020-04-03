@@ -98,7 +98,7 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1777684827
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
@@ -203,6 +203,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1564918976}
   player: {fileID: 6553884800286680560}
+--- !u!1 &1566538049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1566538050}
+  - component: {fileID: 1566538051}
+  m_Layer: 11
+  m_Name: LevelPointTrigger
+  m_TagString: LevelPointTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1566538050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566538049}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6553884800286680561}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1566538051
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566538049}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.34049988, y: -0.9696789}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.11341858, y: 0.13505936}
+  m_EdgeRadius: 0
 --- !u!1 &2033598778
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +330,7 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1777684827
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
@@ -682,6 +739,7 @@ Transform:
   - {fileID: 1564918977}
   - {fileID: 6384997882885819317}
   - {fileID: 2033598779}
+  - {fileID: 1566538050}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -743,7 +801,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1382094431
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 01813f1b6c85edf43a9c028f87f48bc1, type: 3}
   m_Color: {r: 0, g: 1, b: 0.7872062, a: 1}
@@ -796,7 +854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveVelocity: 20
   jumpChargeTime: 1
-  jumpMaxVel: 70
+  jumpMaxVel: 65
   jumpMinVel: 40
   jumpBar: {fileID: 6553884798870423409}
   groundedCheckLayerMask:
@@ -893,6 +951,7 @@ MonoBehaviour:
   animator: {fileID: 1119475854}
   transparentFrog: {fileID: 21300000, guid: 3313ab310b3c6ea4a9a45ad7acbd60e3, type: 3}
   normalFrog: {fileID: 21300000, guid: 01813f1b6c85edf43a9c028f87f48bc1, type: 3}
+  move: {fileID: 0}
 --- !u!114 &1119475846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,7 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb7a802386d09b44a76ad7362dc24c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashTime: 0.5
+  dashTime: 0.45
   dashDelay: 1
   dashVelocity: 3
 --- !u!95 &1119475854
