@@ -110,6 +110,7 @@ public class FrogManager : MonoBehaviour
                 isPowerupActive = false;
                 glidePowerupTimer = 0;
                 StartCoroutine(GlidePowerupControlScript.glidePowerupScript.DeactivateGlidePowerup());
+               
             }
         }
         if (durianPowerupTimer > 0)
@@ -122,6 +123,7 @@ public class FrogManager : MonoBehaviour
                 durianPowerupActive = false;
                 testCharMovementScript.charMoveScript.moveVelocity = durianPowerupMovespeedSave;//Sets movespeed back to normal
                 particleManager.SetPlayDurianPowerupEffectActive(false);
+                animator.SetBool("isDurian", false);
             }
         }
 
@@ -212,7 +214,7 @@ public class FrogManager : MonoBehaviour
             //Slows down during durian powerup
             durianPowerupMovespeedSave = testCharMovementScript.charMoveScript.moveVelocity;
             testCharMovementScript.charMoveScript.moveVelocity = durianPowerupMovespeed;
-
+            animator.SetBool("isDurian", true);
             particleManager.SetPlayDurianPowerupEffectActive(true);
         }
         
