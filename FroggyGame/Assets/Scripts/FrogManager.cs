@@ -98,18 +98,25 @@ public class FrogManager : MonoBehaviour
             }
         }
 
-        //animator stuff
+       //animator stuff
        
         
-        
+        //checks if it hits the ground after a jump
         if (testCharMovementScript.methodGetGrounded == true && testCharMovementScript.prevGrounded == false)
         {
             testCharMovementScript.isJump = false;
         }
         testCharMovementScript.prevGrounded = testCharMovementScript.isGrounded;
-        Debug.Log(testCharMovementScript.isJump);
-        animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
+        //jump anim
         animator.SetBool("isJump", testCharMovementScript.isJump);
+
+        //for move animation
+        if (testCharMovementScript.isGrounded) 
+        {
+            animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
+        }
+        
+       
 
 
 
