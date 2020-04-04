@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class RambutanManagerScript : MonoBehaviour
 {
-    //Singleton
-    public static RambutanManagerScript charRambutanScript;
-
     public BumperScript leftBumper;
     public BumperScript rightBumper;
     private testCharMovementScript charMove;
@@ -15,16 +12,10 @@ public class RambutanManagerScript : MonoBehaviour
     private bool isStickingRight;
     public int jumpMagnitude;
     private float gravityConstant;
-    private bool isWallJumpActivated = false;
     void Awake()
     {
-        charRambutanScript = this;
-    }
-
-    void Start()
-    {
-        charMove = GetComponentInParent<testCharMovementScript>();
-        rBody = GetComponentInParent<Rigidbody2D>();
+        charMove = GetComponent<testCharMovementScript>();
+        rBody = GetComponent<Rigidbody2D>();
         gravityConstant = rBody.gravityScale;
         isStickingLeft = false;
         isStickingRight = false;
@@ -51,7 +42,7 @@ public class RambutanManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(!charMove.GetIsGrounded() && isWallJumpActivated)
+       if(!charMove.GetIsGrounded())
         {
             if (Input.GetKey(KeyCode.A) && leftBumper.isTouchingWall && !isStickingLeft)
             {
@@ -78,13 +69,13 @@ public class RambutanManagerScript : MonoBehaviour
             isStickingRight = false;
         }
         
-        if(isWallJumpActivated && (isStickingLeft || isStickingRight))
+        if(isStickingLeft || isStickingRight)
         {
             rBody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
             rBody.velocity = new Vector2(0, 0);
         }
 
-        if(Input.GetKeyUp(KeyCode.W) && isWallJumpActivated && !charMove.GetIsGrounded() && (isStickingLeft || isStickingRight))
+        if(Input.GetKeyUp(KeyCode.W) && !charMove.GetIsGrounded() && (isStickingLeft || isStickingRight))
         {
             if (leftBumper.isTouchingWall)
             {
@@ -97,15 +88,7 @@ public class RambutanManagerScript : MonoBehaviour
         }
         
     }
-    public void SetWallJumpPowerUp(bool var)
-    {
-        isWallJumpActivated = var;
-    }
-
-
 }
-
-
 
 //Hold Down side TO stay Stuck.
 //V makes char do it a short, predetermined hop in a given direction.

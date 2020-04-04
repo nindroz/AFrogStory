@@ -16,23 +16,33 @@ public class FrogManager : MonoBehaviour
     public Sprite transparentFrog;
     public Sprite normalFrog;
 
+       
+    //script reference
+    public testCharMovementScript move;
+
+    //prevents multiple powerups
+    private bool isPowerupActive = false;
+
     //Timers for powerups
     private float ghostPowerupDuration = 10f;
     private float ghostPowerupTimer = 0;
     private float firedashPowerupDuration = 10f;
     private float firedashPowerupTimer = 0;
     private float glidePowerupDuration = 10f;
-    private float glidePowerupTimer = 0; 
-    private float wallJumpPowerupDuration = 10f;
-    private float wallJumpPowerupTimer = 0;
+    private float glidePowerupTimer = 0;
+    private float durianPowerupDuration = 10f;
+    private float durianPowerupTimer = 0;
+    private bool durianPowerupActive = false;
+    private float durianPowerupMovespeedSave;//Saves original movespeed
+    private float durianPowerupMovespeed = 12;
 
     ParticleManager particleManager;
+
 
 
     void Awake()
     {
         charFrogManager = this;
-        
         respawnPosition = gameObject.transform.position;
         particleManager = ParticleManager.particleManager;
     }
@@ -71,6 +81,7 @@ public class FrogManager : MonoBehaviour
             ghostPowerupTimer -= Time.deltaTime;
             if (ghostPowerupTimer <= 0)
             {
+                isPowerupActive = false;
                 ghostPowerupTimer = 0;
                 GhostPowerupScript.charGhostPowerupScript.SetGhostPowerup(false);
                 particleManager.PlayGhostPowerupEffectDeactivated();
@@ -82,10 +93,13 @@ public class FrogManager : MonoBehaviour
             firedashPowerupTimer -= Time.deltaTime;
             if (firedashPowerupTimer <= 0)
             {
+                isPowerupActive = false;
                 firedashPowerupTimer = 0;
                 PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(false);
                 particleManager.PlayFiredashPowerupEffectDeactivated();
                 particleManager.SetPlayFiredashPowerupEffectPassive(false);
+                animator.SetBool("isRed",false);
+
             }
         }
         if (glidePowerupTimer > 0)
@@ -93,30 +107,59 @@ public class FrogManager : MonoBehaviour
             glidePowerupTimer -= Time.deltaTime;
             if (glidePowerupTimer <= 0)
             {
+                isPowerupActive = false;
                 glidePowerupTimer = 0;
                 StartCoroutine(GlidePowerupControlScript.glidePowerupScript.DeactivateGlidePowerup());
+               
             }
         }
-        if (wallJumpPowerupTimer > 0)
+        if (durianPowerupTimer > 0)
         {
-            wallJumpPowerupTimer -= Time.deltaTime;
-            if (wallJumpPowerupTimer <= 0)
+            durianPowerupTimer -= Time.deltaTime;
+            if (durianPowerupTimer <= 0)
             {
-                wallJumpPowerupTimer = 0;
-                RambutanManagerScript.charRambutanScript.SetWallJumpPowerUp(false);
+                isPowerupActive = false;
+                durianPowerupTimer = 0;
+                durianPowerupActive = false;
+                testCharMovementScript.charMoveScript.moveVelocity = durianPowerupMovespeedSave;//Sets movespeed back to normal
+                particleManager.SetPlayDurianPowerupEffectActive(false);
+                animator.SetBool("isDurian", false);
             }
-        }
-        //to set animator speed commands
-
-        animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
-        Debug.Log(Mathf.Abs(testCharMovementScript.getXinput()));
-     
+        }
+
+        //animator stuff
+
+
+        //checks if it hits the ground after a jump
+        if (testCharMovementScript.isGrounded == true && testCharMovementScript.prevGrounded == false)
+       {
+            testCharMovementScript.isJump = false;
+       }
+        testCharMovementScript.prevGrounded = testCharMovementScript.isGrounded;
+
+        //if (testCharMovementScript.isGrounded == false&& PitayaManagerScript.isDashing == false)
+        //{
+           //testCharMovementScript.isJump = true;
+        //}
+        Debug.Log(testCharMovementScript.isJump);
+        animator.SetBool("isJump", testCharMovementScript.isJump);
+
+        //for move animation
+        if ( testCharMovementScript.isJump==false)
+        {
+            Debug.Log(testCharMovementScript.getXinput());
+            animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
+
             
         }
 
         //to check if tongue is out and animate tongue out
        animator.SetBool("isTongue", TongueScript.charTongueScript.tongueOutVisual);
         
+        
+
+
+
     }
     //Manages collisions
     private void OnCollisionEnter2D(Collision2D collision)
@@ -126,18 +169,21 @@ public class FrogManager : MonoBehaviour
         {
             gameObject.transform.position = respawnPosition;
 
+            AudioManager.audioManager.PlayDeathSound();
             StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
         }
-        //hitting enemy does as well 
-        if (collision.gameObject.CompareTag("enemy"))
+        //hitting enemy does as well , unless durian is active
+        if (collision.gameObject.CompareTag("enemy") && !durianPowerupActive)
         {
             gameObject.transform.position = respawnPosition;
 
+            AudioManager.audioManager.PlayDeathSound();
             StartCoroutine(UIManager.uiManager.PlayRespawnOverlay());
         }
         //Activate ghost pwerup
-        if (collision.gameObject.CompareTag("GhostPowerupFruit"))
+        if (collision.gameObject.CompareTag("GhostPowerupFruit") && (!isPowerupActive || ghostPowerupTimer > 0))
         {
+            isPowerupActive = true;
             ghostPowerupTimer = ghostPowerupDuration;
             Destroy(collision.gameObject);
             particleManager.PlayGhostPowerupEffectActivated();
@@ -145,27 +191,37 @@ public class FrogManager : MonoBehaviour
             particleManager.SetPlayGhostPowerupEffectActive(true);
         }
         //Activate firedash pwerup
-        if (collision.gameObject.CompareTag("FiredashPowerupFruit"))
+        if (collision.gameObject.CompareTag("FiredashPowerupFruit") && (!isPowerupActive || firedashPowerupTimer > 0))
         {
+            isPowerupActive = true;
             firedashPowerupTimer = firedashPowerupDuration;
             Destroy(collision.gameObject);
             particleManager.PlayFiredashPowerupEffectActivated();
             PitayaManagerScript.fireDashPowerupScript.SetFiredashPowerup(true);
             particleManager.SetPlayFiredashPowerupEffectPassive(true);
+            animator.SetBool("isRed", true);
         }
         //Activate glide pwerup
-        if (collision.gameObject.CompareTag("GlidePowerupFruit"))
+        if (collision.gameObject.CompareTag("GlidePowerupFruit") && (!isPowerupActive || glidePowerupTimer > 0))
         {
+            isPowerupActive = true;
             glidePowerupTimer = glidePowerupDuration;
             Destroy(collision.gameObject);
             StartCoroutine(GlidePowerupControlScript.glidePowerupScript.ActivateGlidePowerup());
         }
-        //Activate walljump pwerup
-        if (collision.gameObject.CompareTag("WalljumpPowerupFruit"))
+        //Activate durian pwerup
+        if (collision.gameObject.CompareTag("DurianPowerupFruit") && (!isPowerupActive || durianPowerupTimer > 0))
         {
-            wallJumpPowerupTimer = wallJumpPowerupDuration;
+            durianPowerupActive = true;//for immunity against enemies
+            isPowerupActive = true;
+            durianPowerupTimer = durianPowerupDuration;
             Destroy(collision.gameObject);
-            RambutanManagerScript.charRambutanScript.SetWallJumpPowerUp(true);
+            //Slows down during durian powerup
+            durianPowerupMovespeedSave = testCharMovementScript.charMoveScript.moveVelocity;
+            testCharMovementScript.charMoveScript.moveVelocity = durianPowerupMovespeed;
+            animator.SetBool("isDurian", true);
+            particleManager.SetPlayDurianPowerupEffectActive(true);
         }
+        
     }
 }
