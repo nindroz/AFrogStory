@@ -35,6 +35,8 @@ public class GamespaceTextScript : MonoBehaviour
         textComponent.enabled = true;
         for (int x = 0;x <= 10;x++)
         {
+            if(x==5)
+                AudioManager.audioManager.PlayTextSound();
             c.a = x / 10f;
             textComponent.color = c;
             yield return new WaitForSeconds(interval);

@@ -13,39 +13,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-04-03T16:31:38.646-07:00
-  initializedAtString: 2020-04-03T14:52:21.075-07:00
+  lastUpdatedAtString: 2020-04-03T17:02:16.795-07:00
+  initializedAtString: 2020-04-03T16:35:13.156-07:00
   entries:
-  - path: FroggyGame\Assets\Prefabs\FruitSpawner.prefab
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\FruitSpawner.prefab
-    projectPath: Assets\Prefabs\FruitSpawner.prefab
+  - path: FroggyGame\.vs\FroggyGame\v16\.suo
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\.vs\FroggyGame\v16\.suo
+    projectPath: .vs\FroggyGame\v16\.suo
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: FroggyGame\Assets\AudioFiles\textAppear.ogg
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\AudioFiles\textAppear.ogg
+    projectPath: Assets\AudioFiles\textAppear.ogg
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\AudioFiles\textAppear.ogg.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\AudioFiles\textAppear.ogg.meta
+    projectPath: Assets\AudioFiles\textAppear.ogg.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\AudioManager.cs
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\AudioManager.cs
+    projectPath: Assets\AudioManager.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Prefabs\FrogCharacter.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\FrogCharacter.prefab
+    projectPath: Assets\Prefabs\FrogCharacter.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: FroggyGame\Assets\Prefabs\SceneChanger.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\SceneChanger.prefab
+    projectPath: Assets\Prefabs\SceneChanger.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\SceneChanger.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\SceneChanger.prefab.meta
+    projectPath: Assets\Prefabs\SceneChanger.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\Text1.prefab
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\Text1.prefab
+    projectPath: Assets\Prefabs\Text1.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: FroggyGame\Assets\Prefabs\Text1.prefab.meta
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Prefabs\Text1.prefab.meta
+    projectPath: Assets\Prefabs\Text1.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: FroggyGame\Assets\Scenes\GroundLevel1.unity
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scenes\GroundLevel1.unity
     projectPath: Assets\Scenes\GroundLevel1.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Assets\Scripts\UIManager.cs
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\UIManager.cs
-    projectPath: Assets\Scripts\UIManager.cs
+  - path: FroggyGame\Assets\Scripts\GamespaceTextScript.cs
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\GamespaceTextScript.cs
+    projectPath: Assets\Scripts\GamespaceTextScript.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: FroggyGame\Assets\Sprites\fruittree.png
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\fruittree.png
-    projectPath: Assets\Sprites\fruittree.png
+  - path: FroggyGame\Assets\Scripts\testCharMovementScript.cs
+    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Scripts\testCharMovementScript.cs
+    projectPath: Assets\Scripts\testCharMovementScript.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: FroggyGame\Assets\Sprites\fruittree.png.meta
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Assets\Sprites\fruittree.png.meta
-    projectPath: Assets\Sprites\fruittree.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: FroggyGame\Library\ArtifactDB
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\ArtifactDB
     projectPath: Library\ArtifactDB
@@ -73,12 +115,6 @@ MonoBehaviour:
   - path: FroggyGame\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: FroggyGame\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\Arthur\Documents\virtualCodeDay2020TeamRibbit\FroggyGame\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

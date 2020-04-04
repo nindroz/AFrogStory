@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource twigSound;
     public AudioSource fireDashSound;
 
+    public AudioSource textAppearSound;
 
     void Awake()
     {
@@ -38,6 +39,11 @@ public class AudioManager : MonoBehaviour
     public void PlayTwigSound()
     {
         twigSound.Play();
+    }
+
+    public void PlayTextSound()
+    {
+        textAppearSound.Play();
     }
 
     public IEnumerator PlayFiredashSound(float time)
