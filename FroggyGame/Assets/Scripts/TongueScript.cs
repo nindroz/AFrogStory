@@ -24,7 +24,7 @@ public class TongueScript : MonoBehaviour
     private bool tongueCooldown = false;
     private float tongueCooldownTime = 0.25f;
 
-    private Vector2 tongueBaseOffset = new Vector2(0,-1f);//Tongue offset from center of character
+    public static Vector2 tongueBaseOffset = new Vector2(0,-0.6f);//Tongue offset from center of character
 
     private float tongueMaxMoveForce = 450f;
 
@@ -45,7 +45,7 @@ public class TongueScript : MonoBehaviour
 
     private GameObject grabbedObject;
 
-    private bool tongueOut = false;
+    public static bool tongueOut = false;
     private void Awake()
     {
         charTongueScript = this;
