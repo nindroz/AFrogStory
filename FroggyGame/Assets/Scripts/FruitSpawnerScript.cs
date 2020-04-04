@@ -53,6 +53,7 @@ public class FruitSpawnerScript : MonoBehaviour
         isCountingDown = false;
         isTaken = false;
         currentFruit = Instantiate(fruitPrefab, gameObject.transform.position, Quaternion.identity);
+        currentFruit.GetComponent<Collider2D>().enabled = false;//Prevents being taken in transition, causing null object
         spriteRen = currentFruit.GetComponent<SpriteRenderer>();
         rb = currentFruit.GetComponent<Rigidbody2D>();
         storedGravity = rb.gravityScale;
@@ -65,6 +66,6 @@ public class FruitSpawnerScript : MonoBehaviour
             spriteRen.color = c;
             yield return new WaitForSeconds(0.05f);
         }
-            
+        currentFruit.GetComponent<Collider2D>().enabled = true;
     }
 }

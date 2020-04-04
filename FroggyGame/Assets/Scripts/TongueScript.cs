@@ -45,7 +45,10 @@ public class TongueScript : MonoBehaviour
 
     private GameObject grabbedObject;
 
-    public static bool tongueOut = false;
+    private bool tongueOut = false;
+
+    //For visuals
+    public bool tongueOutVisual = false;
     private void Awake()
     {
         charTongueScript = this;
@@ -64,8 +67,15 @@ public class TongueScript : MonoBehaviour
             testCharMovementScript.charMoveScript.SetHorizontalMovementActive(false);
             //Gets vector from mouse, limits to maxDist if larger
             tongueCooldown = true;
-            Vector2 targetVector = Camera.main.ScreenToWorldPoint(Input.mousePosition) - (transform.position+(Vector3)tongueBaseOffset);
-            if(targetVector.magnitude > maxDist)
+            Vector2 targetVector = Camera.main.ScreenToWorldPoint(Input.mousePosition) - (transform.position);
+            
+            if(targetVector.x > 0)//Flips position based oon direction
+                tongueBaseOffset = new Vector2(1f, -0.6f);
+            else
+                tongueBaseOffset = new Vector2(-1f, -0.6f);
+
+            targetVector -= tongueBaseOffset;
+            if (targetVector.magnitude > maxDist)
             {
                 targetVector = targetVector.normalized * maxDist;
             }
@@ -163,7 +173,6 @@ public class TongueScript : MonoBehaviour
     IEnumerator RetractTongue()
     {
         StartCoroutine(TongueIndicatorScriot.tongueIndicatorScriot.Hide());
-        testCharMovementScript.charMoveScript.SetHorizontalMovementActive(true);
         int counter = 0;
         if(mousePositionMinThreshholdReached && grabbedObject != null)//releases object
         {
@@ -195,6 +204,8 @@ public class TongueScript : MonoBehaviour
         {
             grabbedObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         }
+        testCharMovementScript.charMoveScript.SetHorizontalMovementActive(true);
+        tongueOutVisual = false;
         grabbedObject = null;
         yield return new WaitForSeconds(tongueCooldownTime);
         tongueCooldown = false;
@@ -203,6 +214,7 @@ public class TongueScript : MonoBehaviour
     //Instantiates tongue joints along target vector
     IEnumerator GenerateTongue(Vector2 _tongueSource, Vector2 _targetVector)
     {
+        tongueOutVisual = true;
         initialGrabMouseScreenPos = Input.mousePosition;
         mouseGrabTime = 0.1f;
         mousePositionMinThreshholdReached = false;

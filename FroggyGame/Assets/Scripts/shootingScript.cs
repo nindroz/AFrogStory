@@ -11,7 +11,7 @@ public class shootingScript : MonoBehaviour
     void Update()
     {   
         //shoots ifs right mouse is pressed
-        if (Input.GetButtonDown("Fire1") && !TongueScript.tongueOut)
+        if (Input.GetButtonDown("Fire1") && !TongueScript.charTongueScript.GetTongueOut())
         {
             Shoot();
         }

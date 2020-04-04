@@ -54,7 +54,6 @@ public class FrogManager : MonoBehaviour
         //filps sprite render and collider
         if (dir == 1)
         {
-            TongueScript.tongueBaseOffset = new Vector2(1f, -0.6f);
             render.flipX = false;
             //polygonCollider.transform.localScale = new Vector2(-1, 1);
 
@@ -62,7 +61,6 @@ public class FrogManager : MonoBehaviour
         if (dir == -1)
         {
             render.flipX = true;
-            TongueScript.tongueBaseOffset= new Vector2(-1f, -.6f);
             //polygonCollider.transform.localScale = new Vector2(1, 1);
 
         }
@@ -156,7 +154,7 @@ public class FrogManager : MonoBehaviour
         }
 
         //to check if tongue is out and animate tongue out
-       animator.SetBool("isTongue", TongueScript.tongueOut);
+       animator.SetBool("isTongue", TongueScript.charTongueScript.tongueOutVisual);
         
         
 
