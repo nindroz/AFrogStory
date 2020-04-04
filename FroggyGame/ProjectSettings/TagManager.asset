@@ -12,6 +12,7 @@ TagManager:
   - enemy
   - Hazard
   - Platform
+  - WalljumpPowerupFruit
   layers:
   - Default
   - TransparentFX

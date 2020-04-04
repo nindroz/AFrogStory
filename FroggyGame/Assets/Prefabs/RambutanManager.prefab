@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3175510523842127993}
+  - component: {fileID: 8046094009608707078}
   m_Layer: 0
   m_Name: RambutanManager
   m_TagString: Untagged
@@ -32,6 +33,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8046094009608707078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3175510523842127998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da4c7e6a0bd04249b537999b7ccc6b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftBumper: {fileID: 3175510525122557975}
+  rightBumper: {fileID: 3175510524839990941}
+  jumpMagnitude: 0
 --- !u!1 &3175510524839990946
 GameObject:
   m_ObjectHideFlags: 0

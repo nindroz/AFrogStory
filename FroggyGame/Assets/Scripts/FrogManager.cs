@@ -22,7 +22,9 @@ public class FrogManager : MonoBehaviour
     private float firedashPowerupDuration = 10f;
     private float firedashPowerupTimer = 0;
     private float glidePowerupDuration = 10f;
-    private float glidePowerupTimer = 0;
+    private float glidePowerupTimer = 0; 
+    private float wallJumpPowerupDuration = 10f;
+    private float wallJumpPowerupTimer = 0;
 
     ParticleManager particleManager;
 
@@ -30,6 +32,7 @@ public class FrogManager : MonoBehaviour
     void Awake()
     {
         charFrogManager = this;
+        
         respawnPosition = gameObject.transform.position;
         particleManager = ParticleManager.particleManager;
     }
@@ -94,9 +97,17 @@ public class FrogManager : MonoBehaviour
                 StartCoroutine(GlidePowerupControlScript.glidePowerupScript.DeactivateGlidePowerup());
             }
         }
-
+        if (wallJumpPowerupTimer > 0)
+        {
+            wallJumpPowerupTimer -= Time.deltaTime;
+            if (wallJumpPowerupTimer <= 0)
+            {
+                wallJumpPowerupTimer = 0;
+                RambutanManagerScript.charRambutanScript.SetWallJumpPowerUp(false);
+            }
+        }
         //to set animator speed commands
-       
+
         animator.SetFloat("speed", Mathf.Abs(testCharMovementScript.getXinput()));
         Debug.Log(Mathf.Abs(testCharMovementScript.getXinput()));
      
@@ -144,6 +155,13 @@ public class FrogManager : MonoBehaviour
             glidePowerupTimer = glidePowerupDuration;
             Destroy(collision.gameObject);
             StartCoroutine(GlidePowerupControlScript.glidePowerupScript.ActivateGlidePowerup());
+        }
+        //Activate walljump pwerup
+        if (collision.gameObject.CompareTag("WalljumpPowerupFruit"))
+        {
+            wallJumpPowerupTimer = wallJumpPowerupDuration;
+            Destroy(collision.gameObject);
+            RambutanManagerScript.charRambutanScript.SetWallJumpPowerUp(true);
         }
     }
 }
